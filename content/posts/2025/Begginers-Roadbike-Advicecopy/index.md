@@ -1,5 +1,5 @@
 ---
-title: "Which Bike Should You Choose as a Beginner?"
+title: "Which Bike Should You Choose as a Beginner..?"
 date: 2019-06-19
 authors: ["Frederik Beck"]
 draft: false
