@@ -1,0 +1,36 @@
+name: Build and Deploy Hugo Blog
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      # Checkout
+      - uses: actions/checkout@v5
+        with:
+          fetch-depth: 0
+
+      # Hugo installieren
+      - name: Setup Hugo
+        uses: peaceiris/actions-hugo@v3
+        with:
+          hugo-version: '0.149.0'
+
+      # Hugo bauen
+      - name: Build Hugo site
+        run: hugo --minify
+
+      # Deploy nach GitHub Pages
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./public
+          publish_branch: gh-pages
+          force_orphan: true

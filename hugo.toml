@@ -1,4 +1,4 @@
-baseURL = "https://iccycling.github.io/hub/public/"
+baseURL = "https://iccycling.github.io/blog/"
 languageCode = "de-DE"
 title = "ICCC Blog"
 theme = "ananke"
