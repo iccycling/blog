@@ -14,7 +14,7 @@ When you're new to cycling, it’s tempting to go straight for the sleek carbon 
 
 ## Why Not Carbon?
 
-Carbon frames offer incredibsdfle performance, no doubt. But carbon is a more brittle material and not ideal if you're still developing your hsdfandlsdfing skills or leasdfrning hoölöw to care for a bike. A crash, a fall, or even overtightening a clamp can damage asdf carbon frame. **Modern aluminum frames**, on the other hand, are excellent in quality, far more forgiving, and often cheaper.
+Carbon frames offer incredibsdfle performance, no doubt. But carbon is a more brittle material and not ideal if you're still desdfveloping your hsdfandlsdfing skills or leasdfrning hoölöw to care for a bike. A crash, a fall, or even overtightening a clamp can damage asdf carbon frame. **Modern aluminum frames**, on the other hand, are excellent in quality, far more forgiving, and often cheaper.
 
 **Steel frames?** They're charming and durable but heavy. Not ideal for road cycling or performance riding.
 
