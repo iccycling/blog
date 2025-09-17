@@ -7,7 +7,7 @@
   <title>ICCC Blog - {{ .Title }}</title>
 
 
-  <link rel="icon" href="{{ " images/favicon.ico" | relURL }}" type="image/x-icon">
+  <link rel="icon" href="{{ "images/favicon.ico" | relURL }}" type="image/x-icon">
 
   <!-- Externe CSS -->
   <link rel="stylesheet" href="https://iccycling.github.io/assets/css/glightbox.min.css" />
@@ -119,6 +119,14 @@
       /* Bild bleibt proportional */
     }
 
+    .post-content h1 {
+      /* volle Breite des Containers */
+      font-weight: 700;
+      /* fett */
+      font-size: 1.4em;
+      /* gewünschte Größe */
+    }
+
     /* Post-Tags */
     .post-tags {
       margin-bottom: 1rem;
@@ -141,14 +149,7 @@
       background-color: #ddd;
     }
 
-    /* Post-Titel */
-    .post-content h1 {
-      font-size: 2rem;
-      font-weight: bold;
-      margin-top: 0.5rem;
-      margin-bottom: 0.5rem;
 
-    }
 
     /* Autor + Datum */
     .post-meta {
@@ -180,13 +181,7 @@
       /* klickbar */
     }
 
-    /* Subheadings */
-    .post-content .subheading {
-      font-size: 1.4em;
-      font-weight: bold;
-      margin-top: 1em;
-      margin-bottom: 0.3em;
-    }
+
 
     .post-content figure {
       display: block;
@@ -269,10 +264,7 @@
 
 
 
-      .post-content {
-        margin-top: 50mm;
-        /* Platz für das Logo */
-      }
+
 
       body,
       html {
@@ -366,7 +358,7 @@
           {{ with .Params.tags }}
           <p class="post-tags">
             {{ range . }}
-            <a href="{{ " tags/" | relURL }}{{ . | urlize }}">{{ . }}</a>
+            <a href="{{ "tags/" | relURL }}{{ . | urlize }}">{{ . }}</a>
 
             {{ end }}
           </p>
@@ -376,10 +368,10 @@
           <h1>{{ .Title }}</h1>
           <p class="post-meta">
             {{ with .Params.authors }}
-            {{ range $index, $author := . }}
-            <a href="{{ "authors/" | relURL }}{{ $author | urlize }}" style="color:#777;">
-              {{ $author }}
-            </a>{{ if lt (add $index 1) (len .) }}, {{ end }}
+            {{ range . }}
+            <a href="{{ "authors/" | relURL }}{{ . | urlize }}" style="color:#777;">
+              {{ . }}
+            </a>
             {{ end }}
             {{ end }}
             {{ if .Date }} • <span class="date">{{ .Date.Format "02. January 2006" }}</span>{{ end }}
@@ -388,7 +380,7 @@
           <!-- Markdown Content -->
           {{ .Content }}
 
-          <div class="share-buttons" style="margin-top:2rem; display:flex; gap:10px; flex-wrap: wrap;">
+          <div class="share-buttons" style="margin-top:2rem; margin-bottom:2rem; display:flex; gap:10px; flex-wrap: wrap;">
             <!-- Twitter / X -->
             <a href="https://twitter.com/intent/tweet?url={{ .Permalink }}&text={{ .Title }}" target="_blank"
               class="share-btn" title="Share on X">
@@ -468,19 +460,14 @@
 
               <h3 class="major"><a href="{{ .RelPermalink }}">{{ .Title }}</a></h3>
 
-              <p>{{ .Summary }}</p>
+              <p style="margin-bottom:1em;">{{ .Summary }}</p>
 
-              <!-- Autor + Datum -->
-              <p style="font-size:0.85em; color:#777;">
-                {{ with .Params.authors }}
-                {{ range $index, $author := . }}
-                <a href="{{ "authors/" | relURL }}{{ $author | urlize }}" style="color:#777;">
-                  {{ $author }}
-                </a>{{ if lt (add $index 1) (len .) }}, {{ end }}
-                {{ end }}
-                {{ end }}
-                {{ if .Date }} • {{ .Date.Format "02. January 2006" }}{{ end }}
-              </p>
+          <!-- Autor + Datum -->
+          <p style="font-size:0.85em; color:#777; margin-bottom:1em;">
+            {{ with .Params.authors }}{{ delimit . ", " }}{{ end }}
+            {{ if .Date }} • {{ .Date.Format "02. January 2006" }}{{ end }}
+          </p>
+
 
 
               <a href="{{ .RelPermalink }}" class="special">Read More</a>
@@ -500,20 +487,16 @@
 
               <h3 class="major"><a href="{{ .RelPermalink }}">{{ .Title }}</a></h3>
 
-              <p>{{ .Summary }}</p>
+              
 
-              <!-- Autor + Datum -->
-              <p style="font-size:0.85em; color:#777;">
-                {{ with .Params.authors }}
-                {{ range $index, $author := . }}
-                <a href="{{ "authors/" | relURL }}{{ $author | urlize }}"
-                  style="color:#777;">
-                  {{ $author }}
-                </a>{{ if lt (add $index 1) (len .) }}, {{ end }}
-                {{ end }}
-                {{ end }}
-                {{ if .Date }} • {{ .Date.Format "02. January 2006" }}{{ end }}
-              </p>
+               <p style="margin-bottom:1em;">{{ .Summary }}</p>
+
+          <!-- Autor + Datum -->
+          <p style="font-size:0.85em; color:#777; margin-bottom:1em;">
+            {{ with .Params.authors }}{{ delimit . ", " }}{{ end }}
+            {{ if .Date }} • {{ .Date.Format "02. January 2006" }}{{ end }}
+          </p>
+
 
 
               <a href="{{ .RelPermalink }}" class="special">Read More</a>
@@ -564,98 +547,88 @@
   <script src="https://iccycling.github.io/assets/js/main.js"></script>
 
 
-  <script>
-    document.addEventListener('DOMContentLoaded', function () {
-      // --- Swiper: Alle Galerien ---
-      document.querySelectorAll('.gallery-swiper').forEach(swiperEl => {
-        const swiper = new Swiper(swiperEl, {
-          slidesPerView: 1,
-          loop: true,
-          loopedSlides: swiperEl.querySelectorAll('.swiper-slide').length, // wichtig für loop + pagination
-          spaceBetween: 10,
-          lazy: { loadPrevNext: true },
-          pagination: {
-            el: swiperEl.querySelector('.swiper-pagination'),
-            clickable: true
-          },
-          navigation: {
-            nextEl: swiperEl.querySelector('.swiper-button-next'),
-            prevEl: swiperEl.querySelector('.swiper-button-prev')
-          },
-          observer: true,
-          observeParents: true
-        });
-
-        // Pagination immer synchron halten, auch beim Swipen
-        swiper.on('slideChange', () => {
-          swiper.pagination.update();
-        });
-
-        // Videos beim Slidewechsel pausieren
-        swiper.on('slideChange', () => {
-          swiperEl.querySelectorAll('video').forEach(v => v.pause());
-        });
-      });
-
-      // --- GLightbox: Einzelbilder & Galerie ---
-      document.querySelectorAll('.post-content img').forEach(img => {
-        if (!img.parentElement.matches('a')) {
-          const link = document.createElement('a');
-          link.href = img.src;
-
-          if (img.closest('.gallery-swiper')) {
-            link.className = 'glightbox-gallery';
-          } else {
-            link.className = 'glightbox-single';
-          }
-
-          img.parentNode.insertBefore(link, img);
-          link.appendChild(img);
-        }
-      });
-
-      // Einzelbilder initialisieren
-      GLightbox({
-        selector: '.glightbox-single',
-        touchNavigation: true,
-        loop: false
-      });
-
-      // Galerie-Bilder initialisieren
-      GLightbox({
-        selector: '.glightbox-gallery',
-        touchNavigation: true,
-        loop: true
-      });
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+  // --- Swiper: Alle Galerien ---
+  document.querySelectorAll('.gallery-swiper').forEach(swiperEl => {
+    const swiper = new Swiper(swiperEl, {
+      slidesPerView: 1,
+      loop: true,
+      loopedSlides: swiperEl.querySelectorAll('.swiper-slide').length,
+      spaceBetween: 10,
+      lazy: { loadPrevNext: true },
+      pagination: {
+        el: swiperEl.querySelector('.swiper-pagination'),
+        clickable: true
+      },
+      navigation: {
+        nextEl: swiperEl.querySelector('.swiper-button-next'),
+        prevEl: swiperEl.querySelector('.swiper-button-prev')
+      },
+      observer: true,
+      observeParents: true
     });
 
-    document.addEventListener('DOMContentLoaded', function () {
-      // Copy Link
-      document.querySelectorAll('.share-copy').forEach(btn => {
-        btn.addEventListener('click', function (e) {
-          e.preventDefault();
-          const originalText = btn.innerHTML;
-          navigator.clipboard.writeText(window.location.href)
-            .then(() => {
-              btn.innerHTML = '<i class="fas fa-check"></i> Copied!';
-              setTimeout(() => {
-                btn.innerHTML = originalText;
-              }, 1500);
-            })
-            .catch(err => console.error('Failed to copy: ', err));
-        });
-      });
-
-
-      // Print
-      document.querySelectorAll('.share-print').forEach(btn => {
-        btn.addEventListener('click', function (e) {
-          e.preventDefault();
-          window.print();
-        });
-      });
+    swiper.on('slideChange', () => {
+      swiper.pagination.update();
+      swiperEl.querySelectorAll('video').forEach(v => v.pause());
     });
-  </script>
+  });
+
+  // --- GLightbox: Bilder initialisieren ---
+  document.querySelectorAll('.post-content img').forEach(img => {
+    // nur Bilder ohne Parent <a> verlinken
+    if (!img.parentElement.matches('a')) {
+      const link = document.createElement('a');
+      link.href = img.src; // falls du Hugo absURL nutzt: {{ . | absURL }}
+
+      if (img.closest('.gallery-swiper')) {
+        link.className = 'glightbox-gallery';
+      } else {
+        link.className = 'glightbox-single';
+      }
+
+      img.parentNode.insertBefore(link, img);
+      link.appendChild(img);
+    }
+  });
+
+  // Einzelbilder
+  GLightbox({
+    selector: '.glightbox-single',
+    touchNavigation: true,
+    loop: false
+  });
+
+  // Galerie-Bilder
+  GLightbox({
+    selector: '.glightbox-gallery',
+    touchNavigation: true,
+    loop: true
+  });
+
+  // --- Share Buttons ---
+  document.querySelectorAll('.share-copy').forEach(btn => {
+    btn.addEventListener('click', function (e) {
+      e.preventDefault();
+      const originalText = btn.innerHTML;
+      navigator.clipboard.writeText(window.location.href)
+        .then(() => {
+          btn.innerHTML = '<i class="fas fa-check"></i> Copied!';
+          setTimeout(() => { btn.innerHTML = originalText; }, 1500);
+        })
+        .catch(err => console.error('Failed to copy: ', err));
+    });
+  });
+
+  document.querySelectorAll('.share-print').forEach(btn => {
+    btn.addEventListener('click', function (e) {
+      e.preventDefault();
+      window.print();
+    });
+  });
+});
+</script>
 
 
 

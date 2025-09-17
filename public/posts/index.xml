@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Alle Blogposts on ICCC Blog</title>
+    <title>All Blog Posts on ICCC Blog</title>
     <link>http://localhost:1313/blog/posts/</link>
-    <description>Recent content in Alle Blogposts on ICCC Blog</description>
+    <description>Recent content in All Blog Posts on ICCC Blog</description>
     <generator>Hugo</generator>
     <language>de-DE</language>
     <lastBuildDate>Thu, 19 Jun 2025 00:00:00 +0000</lastBuildDate>
@@ -79,11 +79,9 @@
       <description>Ein ausführlicher Einblick in die Prinzipien der Permakultur und wie man sie im eigenen Garten umsetzen kann.</description>
     </item>
     <item>
-      <title>Which Bike Should You Choose as a Beginner?</title>
+      <title>Which Bike Should You Choose as a Beginner..?</title>
       <link>http://localhost:1313/blog/posts/2025/begginers-roadbike-advicecopy/</link>
       <pubDate>Wed, 19 Jun 2019 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/blog/posts/2025/begginers-roadbike-advicecopy/</guid>
       <description>A beginner&amp;rsquo;s guide to choosing the right bike, covering frame materials, sizes, types, and budget considerations.</description>
     </item>
-  </channel>
-</rss>

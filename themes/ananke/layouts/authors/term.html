@@ -1,6 +1,6 @@
 {{ define "main" }}
 <section id="wrapper">
-  <div class="wrapper style5">
+  <div class="wrapper style2">
     <div class="inner">
 
         {{ $authorPage := . }}  <!-- aktuelle Autoren-Term-Seite -->
@@ -48,22 +48,17 @@
 {{ end }}
 
 
-          {{ with .Params.tags }}
-          <p style="font-size:0.9em; margin:1em 0;">
-            {{ range . }}
-            <a href="{{ "tags/" | relURL }}{{ . | urlize }}" style="color:#777; margin-right:0.5em;">
-              {{ . }}
-            </a>
-            {{ end }}
-          </p>
-          {{ end }}
+        
 
           <h3 class="major"><a href="{{ .RelPermalink }}">{{ .Title }}</a></h3>
 
-          <p>{{ .Summary }}</p>
+          <!-- Summary -->
+          <p style="margin-bottom:1em;">{{ .Summary }}</p>
 
-          <p style="font-size:0.85em; color:#777;">
-            {{ with .Date }}{{ .Format "02. January 2006" }}{{ end }}
+          <!-- Autor + Datum -->
+          <p style="font-size:0.85em; color:#777; margin-bottom:1em;">
+            {{ with .Params.authors }}{{ delimit . ", " }}{{ end }}
+            {{ if .Date }} • {{ .Date.Format "02. January 2006" }}{{ end }}
           </p>
 
           <a href="{{ .RelPermalink }}" class="special">Read More</a>

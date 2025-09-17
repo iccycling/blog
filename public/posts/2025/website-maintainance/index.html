@@ -7,7 +7,7 @@
   <title>ICCC Blog - Website Maintenance Guide</title>
 
 
-  <link rel="icon" href="http://localhost:1313/blog/%20images/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="http://localhost:1313/blog/images/favicon.ico" type="image/x-icon">
 
   
   <link rel="stylesheet" href="https://iccycling.github.io/assets/css/glightbox.min.css" />
@@ -119,6 +119,14 @@
        
     }
 
+    .post-content h1 {
+       
+      font-weight: 700;
+       
+      font-size: 1.4em;
+       
+    }
+
      
     .post-tags {
       margin-bottom: 1rem;
@@ -141,14 +149,7 @@
       background-color: #ddd;
     }
 
-     
-    .post-content h1 {
-      font-size: 2rem;
-      font-weight: bold;
-      margin-top: 0.5rem;
-      margin-bottom: 0.5rem;
 
-    }
 
      
     .post-meta {
@@ -180,13 +181,7 @@
        
     }
 
-     
-    .post-content .subheading {
-      font-size: 1.4em;
-      font-weight: bold;
-      margin-top: 1em;
-      margin-bottom: 0.3em;
-    }
+
 
     .post-content figure {
       display: block;
@@ -269,10 +264,7 @@
 
 
 
-      .post-content {
-        margin-top: 50mm;
-         
-      }
+
 
       body,
       html {
@@ -327,7 +319,7 @@
 
     
     <header id="header">
-      <h1><a href="http://localhost:1313/blog/">
+      <h1><a href="http://localhost:1313/blog/posts/">
           <img src="http://localhost:1313/blog/images/ICCC-Blog.svg" alt="ICCC Blog Logo"
             style="height: 40px; padding-top: 10px;">
         </a>
@@ -341,7 +333,7 @@
         <ul class="links">
           
           <li><a href="https://iccycling.github.io/">Main Website</a></li>
-          <li><a href="http://localhost:1313/blog/">Blog Home</a></li>
+          <li><a href="http://localhost:1313/blog/posts/">Blog Home</a></li>
         </ul>
         <a href="#" class="close">Close</a>
       </div>
@@ -366,10 +358,10 @@
           
           <p class="post-tags">
             
-            <a href="http://localhost:1313/blog/%20tags/website">Website</a>
+            <a href="http://localhost:1313/blog/tags/website">Website</a>
 
             
-            <a href="http://localhost:1313/blog/%20tags/maintenance">Maintenance</a>
+            <a href="http://localhost:1313/blog/tags/maintenance">Maintenance</a>
 
             
           </p>
@@ -382,7 +374,7 @@
             
             <a href="http://localhost:1313/blog/authors/frederik-beck" style="color:#777;">
               Frederik Beck
-            </a>, 
+            </a>
             
             
              • <span class="date">07. June 2025</span>
@@ -426,7 +418,7 @@ Always <strong>test your changes locally in a browser</strong> before publishing
 Best regards!</p>
 
 
-          <div class="share-buttons" style="margin-top:2rem; display:flex; gap:10px; flex-wrap: wrap;">
+          <div class="share-buttons" style="margin-top:2rem; margin-bottom:2rem; display:flex; gap:10px; flex-wrap: wrap;">
             
             <a href="https://twitter.com/intent/tweet?url=http%3a%2f%2flocalhost%3a1313%2fblog%2fposts%2f2025%2fwebsite-maintainance%2f&text=Website%20Maintenance%20Guide" target="_blank"
               class="share-btn" title="Share on X">
@@ -489,19 +481,14 @@ Best regards!</p>
 
               <h3 class="major"><a href="http://localhost:1313/blog/posts/2025/create-logos/">Quick Guide: Creating Logos &amp; Graphics for the ICCC</a></h3>
 
-              <p>A practical guide to creating and using ICCC logos and graphics with free tools like Photopea and Inkscape.</p>
+              <p style="margin-bottom:1em;">A practical guide to creating and using ICCC logos and graphics with free tools like Photopea and Inkscape.</p>
 
-              
-              <p style="font-size:0.85em; color:#777;">
-                
-                
-                <a href="http://localhost:1313/blog/authors/frederik-beck" style="color:#777;">
-                  Frederik Beck
-                </a>, 
-                
-                
-                 • 08. June 2025
-              </p>
+          
+          <p style="font-size:0.85em; color:#777; margin-bottom:1em;">
+            Frederik Beck
+             • 08. June 2025
+          </p>
+
 
 
               <a href="http://localhost:1313/blog/posts/2025/create-logos/" class="special">Read More</a>
@@ -521,20 +508,16 @@ Best regards!</p>
 
               <h3 class="major"><a href="http://localhost:1313/blog/posts/2025/recent-test-post/">Recent Test Post</a></h3>
 
-              <p>Just a Test Post.</p>
-
               
-              <p style="font-size:0.85em; color:#777;">
-                
-                
-                <a href="http://localhost:1313/blog/authors/max-mustermann"
-                  style="color:#777;">
-                  Max Mustermann
-                </a>, 
-                
-                
-                 • 16. September 2020
-              </p>
+
+               <p style="margin-bottom:1em;">Just a Test Post.</p>
+
+          
+          <p style="font-size:0.85em; color:#777; margin-bottom:1em;">
+            Max Mustermann
+             • 16. September 2020
+          </p>
+
 
 
               <a href="http://localhost:1313/blog/posts/2025/recent-test-post/" class="special">Read More</a>
@@ -585,98 +568,88 @@ Best regards!</p>
   <script src="https://iccycling.github.io/assets/js/main.js"></script>
 
 
-  <script>
-    document.addEventListener('DOMContentLoaded', function () {
-      
-      document.querySelectorAll('.gallery-swiper').forEach(swiperEl => {
-        const swiper = new Swiper(swiperEl, {
-          slidesPerView: 1,
-          loop: true,
-          loopedSlides: swiperEl.querySelectorAll('.swiper-slide').length, 
-          spaceBetween: 10,
-          lazy: { loadPrevNext: true },
-          pagination: {
-            el: swiperEl.querySelector('.swiper-pagination'),
-            clickable: true
-          },
-          navigation: {
-            nextEl: swiperEl.querySelector('.swiper-button-next'),
-            prevEl: swiperEl.querySelector('.swiper-button-prev')
-          },
-          observer: true,
-          observeParents: true
-        });
-
-        
-        swiper.on('slideChange', () => {
-          swiper.pagination.update();
-        });
-
-        
-        swiper.on('slideChange', () => {
-          swiperEl.querySelectorAll('video').forEach(v => v.pause());
-        });
-      });
-
-      
-      document.querySelectorAll('.post-content img').forEach(img => {
-        if (!img.parentElement.matches('a')) {
-          const link = document.createElement('a');
-          link.href = img.src;
-
-          if (img.closest('.gallery-swiper')) {
-            link.className = 'glightbox-gallery';
-          } else {
-            link.className = 'glightbox-single';
-          }
-
-          img.parentNode.insertBefore(link, img);
-          link.appendChild(img);
-        }
-      });
-
-      
-      GLightbox({
-        selector: '.glightbox-single',
-        touchNavigation: true,
-        loop: false
-      });
-
-      
-      GLightbox({
-        selector: '.glightbox-gallery',
-        touchNavigation: true,
-        loop: true
-      });
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+  
+  document.querySelectorAll('.gallery-swiper').forEach(swiperEl => {
+    const swiper = new Swiper(swiperEl, {
+      slidesPerView: 1,
+      loop: true,
+      loopedSlides: swiperEl.querySelectorAll('.swiper-slide').length,
+      spaceBetween: 10,
+      lazy: { loadPrevNext: true },
+      pagination: {
+        el: swiperEl.querySelector('.swiper-pagination'),
+        clickable: true
+      },
+      navigation: {
+        nextEl: swiperEl.querySelector('.swiper-button-next'),
+        prevEl: swiperEl.querySelector('.swiper-button-prev')
+      },
+      observer: true,
+      observeParents: true
     });
 
-    document.addEventListener('DOMContentLoaded', function () {
-      
-      document.querySelectorAll('.share-copy').forEach(btn => {
-        btn.addEventListener('click', function (e) {
-          e.preventDefault();
-          const originalText = btn.innerHTML;
-          navigator.clipboard.writeText(window.location.href)
-            .then(() => {
-              btn.innerHTML = '<i class="fas fa-check"></i> Copied!';
-              setTimeout(() => {
-                btn.innerHTML = originalText;
-              }, 1500);
-            })
-            .catch(err => console.error('Failed to copy: ', err));
-        });
-      });
-
-
-      
-      document.querySelectorAll('.share-print').forEach(btn => {
-        btn.addEventListener('click', function (e) {
-          e.preventDefault();
-          window.print();
-        });
-      });
+    swiper.on('slideChange', () => {
+      swiper.pagination.update();
+      swiperEl.querySelectorAll('video').forEach(v => v.pause());
     });
-  </script>
+  });
+
+  
+  document.querySelectorAll('.post-content img').forEach(img => {
+    
+    if (!img.parentElement.matches('a')) {
+      const link = document.createElement('a');
+      link.href = img.src; 
+
+      if (img.closest('.gallery-swiper')) {
+        link.className = 'glightbox-gallery';
+      } else {
+        link.className = 'glightbox-single';
+      }
+
+      img.parentNode.insertBefore(link, img);
+      link.appendChild(img);
+    }
+  });
+
+  
+  GLightbox({
+    selector: '.glightbox-single',
+    touchNavigation: true,
+    loop: false
+  });
+
+  
+  GLightbox({
+    selector: '.glightbox-gallery',
+    touchNavigation: true,
+    loop: true
+  });
+
+  
+  document.querySelectorAll('.share-copy').forEach(btn => {
+    btn.addEventListener('click', function (e) {
+      e.preventDefault();
+      const originalText = btn.innerHTML;
+      navigator.clipboard.writeText(window.location.href)
+        .then(() => {
+          btn.innerHTML = '<i class="fas fa-check"></i> Copied!';
+          setTimeout(() => { btn.innerHTML = originalText; }, 1500);
+        })
+        .catch(err => console.error('Failed to copy: ', err));
+    });
+  });
+
+  document.querySelectorAll('.share-print').forEach(btn => {
+    btn.addEventListener('click', function (e) {
+      e.preventDefault();
+      window.print();
+    });
+  });
+});
+</script>
 
 
 

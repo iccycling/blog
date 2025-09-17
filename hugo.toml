@@ -8,7 +8,7 @@ canonifyURLs = true     # Macht alle Links sauber relativ zu baseURL
  
 [pagination]
   disableAliases = true
-  pagerSize = 4
+  pagerSize = 6
   path = "page"
 
 [markup]
