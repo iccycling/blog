@@ -1,4 +1,5 @@
 {{/* gallery-swipe.html */}}
+{{ $galleryID := printf "gallery-%d" (now.UnixNano) }}
 <div class="swiper-box">
   <div class="swiper-container gallery-swiper">
     <div class="swiper-wrapper">
@@ -12,7 +13,7 @@
           <figure>
             <a href="{{ .RelPermalink }}" 
                class="glightbox-gallery" 
-               data-gallery="gallery-{{ now.UnixNano }}"
+               data-gallery="{{ $galleryID }}"
                {{ if $caption }}data-title="{{ $caption }}"{{ end }}>
               <img src="{{ .RelPermalink }}" loading="lazy" alt="{{ $caption }}">
             </a>
@@ -29,3 +30,4 @@
     <div class="swiper-button-next"></div>
   </div>
 </div>
+
