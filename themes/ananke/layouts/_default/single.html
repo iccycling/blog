@@ -420,25 +420,7 @@
 
 
 
-          <!-- Galerie Inline -->
-          {{ with .Params.images }}
-          <div class="swiper-box">
-            <div class="swiper-container gallery-swiper">
-              <div class="swiper-wrapper">
-                {{ range . }}
-                <div class="swiper-slide">
-                  <a href="{{ . | relURL }}" class="glightbox-gallery">
-                    <img src="{{ . | relURL }}" loading="lazy" alt="Galerie Bild">
-                  </a>
-                </div>
-                {{ end }}
-              </div>
-              <div class="swiper-pagination"></div>
-              <div class="swiper-button-prev"></div>
-              <div class="swiper-button-next"></div>
-            </div>
-          </div>
-          {{ end }}
+          
         </article>
       </div>
 
