@@ -1,0 +1,687 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head><script src="/blog/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=blog/livereload" data-no-instant defer></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ICCC Blog - Is Bike Fitting Really That Precise?</title>
+
+
+  <link rel="icon" href="http://localhost:1313/blog/%20images/favicon.ico" type="image/x-icon">
+
+  
+  <link rel="stylesheet" href="https://iccycling.github.io/assets/css/glightbox.min.css" />
+  <link rel="stylesheet" href="https://iccycling.github.io/assets/css/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="https://iccycling.github.io/assets/css/main.css">
+
+  
+  <meta property="og:title" content="Is Bike Fitting Really That Precise?">
+  <meta property="og:description" content="Bike fitting myths and practical advice for beginners — how to adjust your saddle, handlebars, and cleats safely.">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="http://localhost:1313/blog/posts/2025/bike-fitting/">
+  
+  <meta property="og:image" content="http://localhost:1313/blog/jordan-0TPSP3L6RmA-unsplash.jpg">
+  
+
+  
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Is Bike Fitting Really That Precise?">
+  <meta name="twitter:description" content="Bike fitting myths and practical advice for beginners — how to adjust your saddle, handlebars, and cleats safely.">
+  
+  <meta name="twitter:image" content="http://localhost:1313/blog/jordan-0TPSP3L6RmA-unsplash.jpg">
+  
+
+
+
+  
+  <style>
+    .swiper-box {
+      width: 100%;
+      position: relative;
+      overflow: hidden;
+      margin: 2rem 0;
+    }
+
+    .gallery-swiper .swiper-slide img {
+      width: 100%;
+      aspect-ratio: 5/4;
+      max-height: 70vh;
+      object-fit: contain;
+      display: block;
+      border-radius: 3px;
+      cursor: pointer;
+    }
+
+    @media (max-width: 600px) {
+      .gallery-swiper .swiper-slide img {
+        aspect-ratio: 1/1;
+      }
+    }
+
+    .swiper-button-next,
+    .swiper-button-prev {
+      color: black;
+      font-size: 20px;
+    }
+
+    .swiper-pagination {
+      position: absolute;
+      bottom: 10px;
+      width: 100%;
+      text-align: center;
+    }
+
+    .swiper-pagination-bullet {
+      width: 10px;
+      height: 10px;
+      display: inline-block;
+      border-radius: 50%;
+      background-color: gray;
+      opacity: 0.33;
+      margin: 0 4px;
+      transition: opacity 0.3s, transform 0.3s;
+    }
+
+    .swiper-pagination-bullet-active {
+      opacity: 1;
+      transform: scale(1.2);
+      background-color: black;
+    }
+
+     
+    .glightbox-container,
+    .glightbox-container * {
+      pointer-events: auto !important;
+    }
+
+    .glightbox-clean button,
+    .glightbox-clean a {
+      all: initial;
+    }
+
+    .gallery-swiper a,
+    .gallery-swiper a img {
+      text-decoration: none;
+       
+      border: none;
+       
+      outline: none;
+       
+    }
+
+    .post-content img {
+      display: block;
+
+      width: 100%;
+       
+
+      object-fit: contain;
+       
+    }
+
+     
+    .post-tags {
+      margin-bottom: 1rem;
+      font-size: 0.9rem;
+      color: #555;
+    }
+
+    .post-tags a {
+      display: inline-block;
+      margin-right: 0.5rem;
+      padding: 0.2rem 0.5rem;
+      background-color: #333;
+      border-radius: 3px;
+      text-decoration: none;
+      color: #eee;
+      transition: background 0.3s;
+    }
+
+    .post-tags a:hover {
+      background-color: #ddd;
+    }
+
+     
+    .post-content h1 {
+      font-size: 2rem;
+      font-weight: bold;
+      margin-top: 0.5rem;
+      margin-bottom: 0.5rem;
+
+    }
+
+     
+    .post-meta {
+      color: #666;
+
+      margin-bottom: 2rem;
+    }
+
+    .post-meta .author {
+      font-weight: bold;
+    }
+
+    .post-meta .date {
+      font-style: italic;
+    }
+
+     
+    .post-content img {
+      display: block;
+      margin: 1em auto;
+       
+      width: 100%;
+       
+      max-height: 70vh;
+       
+      object-fit: contain;
+       
+      cursor: pointer;
+       
+    }
+
+     
+    .post-content .subheading {
+      font-size: 1.4em;
+      font-weight: bold;
+      margin-top: 1em;
+      margin-bottom: 0.3em;
+    }
+
+    .post-content figure {
+      display: block;
+      text-align: center;
+      margin: 1.5rem 0;
+    }
+
+    .post-content figure img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+      margin: 0 auto;
+    }
+
+    .post-content figure figcaption {
+      font-style: italic;
+
+      color: #666;
+      margin-top: 0.6rem;
+      margin-bottom: 1rem;
+    }
+
+    .glightbox-container .gslide-description,
+    .glightbox-container .gslide-description * {
+      background: transparent !important;
+       
+      color: #ffffff !important;
+       
+      font-size: 0.9rem;
+       
+      text-align: center;
+      padding: 0.3rem;
+      text-transform: none !important;
+
+    }
+
+    .share-buttons {
+      display: flex;
+      justify-content: center;
+       
+      gap: 10px;
+      flex-wrap: wrap;
+      margin-top: 2rem;
+    }
+
+    .share-btn {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 32px;
+       
+      height: 32px;
+       
+      border-radius: 50%;
+      background-color: #ddd;
+      color: #333;
+      text-decoration: none;
+      font-size: 14px;
+       
+      transition: all 0.3s;
+      border: none;
+      cursor: pointer;
+      padding: 0;
+    }
+
+    .share-btn i {
+      line-height: 1;
+    }
+
+    .share-btn:hover {
+      transform: scale(1.1);
+      background-color: #ccc;
+    }
+
+    @media print {
+      @page {
+        margin: 20mm;
+         
+      }
+
+
+
+      .post-content {
+        margin-top: 50mm;
+         
+      }
+
+      body,
+      html {
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+      }
+
+      body * {
+        visibility: hidden;
+         
+      }
+
+      .post-content,
+      .post-content * {
+        visibility: visible;
+        color: black !important;
+      }
+
+      .post-content {
+        position: relative;
+        left: 0;
+        top: 0;
+        width: 100%;
+        max-width: 100%;
+      }
+
+      .post-content img {
+        max-width: 100% !important;
+        height: auto !important;
+        display: block;
+        margin: 0 auto;
+         
+      }
+
+       
+      header,
+      #header,
+      nav,
+      #footer,
+      .share-buttons {
+        display: none !important;
+      }
+
+    }
+  </style>
+</head>
+
+<body>
+  <div id="page-wrapper">
+
+    
+    <header id="header">
+      <h1><a href="http://localhost:1313/blog/">
+          <img src="http://localhost:1313/blog/images/ICCC-Blog.svg" alt="ICCC Blog Logo"
+            style="height: 40px; padding-top: 10px;">
+        </a>
+      </h1>
+      <nav><a href="#menu">Menu</a></nav>
+    </header>
+
+    <nav id="menu">
+      <div class="inner">
+        <h2>Menu</h2>
+        <ul class="links">
+          
+          <li><a href="https://iccycling.github.io/">Main Website</a></li>
+          <li><a href="http://localhost:1313/blog/">Blog Home</a></li>
+        </ul>
+        <a href="#" class="close">Close</a>
+      </div>
+    </nav>
+
+
+    
+    <section id="wrapper">
+
+      <header>
+        <div class="inner">
+          <h2>Blog</h2>
+          <p>Your go-to place for tips and inspiring cycling stories. We welcome contributions on any cycling-related
+            topic!</p>
+
+        </div>
+      </header>
+
+      <div class="wrapper style5">
+        <article class="inner post-content">
+          
+          
+          <p class="post-tags">
+            
+            <a href="http://localhost:1313/blog/%20tags/cycling">Cycling</a>
+
+            
+            <a href="http://localhost:1313/blog/%20tags/bike-fit">Bike Fit</a>
+
+            
+            <a href="http://localhost:1313/blog/%20tags/equipment">Equipment</a>
+
+            
+            <a href="http://localhost:1313/blog/%20tags/beginner">Beginner</a>
+
+            
+          </p>
+          
+
+          
+          <h1>Is Bike Fitting Really That Precise?</h1>
+          <p class="post-meta">
+            
+            
+            <a href="http://localhost:1313/blog/authors/frederik-beck" style="color:#777;">
+              Frederik Beck
+            </a>, 
+            
+            
+             • <span class="date">13. June 2025</span>
+          </p>
+
+          
+          <p>In recent years, bike fitting has developed into a full-blown industry — often accompanied by bold claims that your bike must be set up with millimeter precision. But is this really true?</p>
+<p>We don’t think so. In fact, there are <strong>no universal reference points</strong> that could justify such surgical-level adjustments. Bike fit is highly individual and dynamic: you don’t ride in a lab — you ride on the road, adjusting your posture constantly, especially as fatigue sets in.</p>
+<p><img src="jordan-0TPSP3L6RmA-unsplash.jpg" alt="Expensive road bike"></p>
+<h2 id="the-myth-of-millimeter-perfect-fit">The Myth of Millimeter-Perfect Fit</h2>
+<p>Turn on any professional cycling race, and you’ll notice it: even the pros often sit slightly crooked or shift position as they tire. The idea that there is one “correct” static position doesn’t hold up in the real world. Instead, <strong>bike fit exists within a window</strong> of acceptable parameters — not a single point.</p>
+<p>That’s why, especially for beginners, it’s not worth spending large sums of money on an elaborate professional fitting. Your body needs time to adapt to cycling in general before an optimized fit can be meaningful. An exception might be for time trial setups, where extreme aero positions justify professional attention.</p>
+<h2 id="practical-bike-fit-advice">Practical Bike Fit Advice</h2>
+<ul>
+<li><strong>Saddle angle:</strong> Keep it flat or slightly tilted forward. Avoid excessive tilt in either direction. Use a smartphone level app to measure.</li>
+<li><strong>Saddle height:</strong> Slightly too low is better than too high. A high saddle leads to hip instability and lost efficiency.</li>
+<li><strong>Knee over pedal axle:</strong> This is a very rough guideline and not a strict rule — listen to your body.</li>
+<li><strong>Sliding on the saddle:</strong> If you’re sliding forward or backward constantly, try adjusting saddle position accordingly.</li>
+<li><strong>Reach to the handlebar:</strong> If you feel overstretched, your frame might be too large — but sometimes a shorter stem is enough.</li>
+<li><strong>Handlebar drop (saddle-to-bar height difference):</strong> Beginners should keep it low — no more than 0–5cm initially.</li>
+<li><strong>Cleat position:</strong> Set them symmetrically and slightly farther back rather than too far forward.</li>
+</ul>
+<h2 id="comfort-takes-time">Comfort Takes Time</h2>
+<p>Feeling uncomfortable at first is normal. You need to build proper pedaling technique and muscular adaptation. Indoor bikes (like Wattbikes at the gym) are a great way to practice form and make gradual changes.</p>
+<blockquote>
+<p>Listen to your body. Small aches can be normal; sharp pain or numbness should never be ignored.</p></blockquote>
+<h2 id="handling-discomfort">Handling Discomfort</h2>
+<ul>
+<li><strong>Saddle pain:</strong> If it’s on the sit bones, that’s usually harmless. Try different shorts, saddle shapes, or just give your body time.</li>
+<li><strong>Soft tissue pain:</strong> Be cautious. If there&rsquo;s no relief with adjustments, stop training and reassess.</li>
+<li><strong>Back or neck pain:</strong> This often reflects weak supporting muscles. Targeted strength training can help significantly.</li>
+<li><strong>Knee pain or other joint issues:</strong> These can have many causes — don’t hesitate to consult a physiotherapist if problems persist.</li>
+</ul>
+<h2 id="can-we-help-you-with-bike-fitting">Can We Help You with Bike Fitting?</h2>
+<p>Absolutely. If you&rsquo;re just starting out, our cycling club can support you with basic bike setup advice — no overcomplication, just practical tips based on experience.</p>
+<p>Remember, <strong>comfort, adaptation, and consistency</strong> are more important than finding a “perfect” setting from day one. You and your bike will grow together.</p>
+
+
+          <div class="share-buttons" style="margin-top:2rem; display:flex; gap:10px; flex-wrap: wrap;">
+            
+            <a href="https://twitter.com/intent/tweet?url=http%3a%2f%2flocalhost%3a1313%2fblog%2fposts%2f2025%2fbike-fitting%2f&text=Is%20Bike%20Fitting%20Really%20That%20Precise%3f" target="_blank"
+              class="share-btn" title="Share on X">
+              <i class="fab fa-x-twitter"></i>
+            </a>
+            
+            <a href="https://www.facebook.com/sharer/sharer.php?u=http%3a%2f%2flocalhost%3a1313%2fblog%2fposts%2f2025%2fbike-fitting%2f" target="_blank" class="share-btn"
+              title="Share on Facebook">
+              <i class="fab fa-facebook-f"></i>
+            </a>
+            
+            <a href="https://api.whatsapp.com/send?text=Is%20Bike%20Fitting%20Really%20That%20Precise%3f%20http%3a%2f%2flocalhost%3a1313%2fblog%2fposts%2f2025%2fbike-fitting%2f" target="_blank"
+              class="share-btn" title="Share on WhatsApp">
+              <i class="fab fa-whatsapp"></i>
+            </a>
+            
+            <a href="https://www.linkedin.com/shareArticle?mini=true&url=http%3a%2f%2flocalhost%3a1313%2fblog%2fposts%2f2025%2fbike-fitting%2f&title=Is%20Bike%20Fitting%20Really%20That%20Precise%3f"
+              target="_blank" class="share-btn" title="Share on LinkedIn">
+              <i class="fab fa-linkedin-in"></i>
+            </a>
+            
+            <a href="mailto:?subject=Is%20Bike%20Fitting%20Really%20That%20Precise%3f&body=http%3a%2f%2flocalhost%3a1313%2fblog%2fposts%2f2025%2fbike-fitting%2f" class="share-btn" title="Share via Email">
+              <i class="fas fa-envelope"></i>
+            </a>
+            
+            <a href="javascript:void(0);" class="share-btn share-copy" title="Copy link">
+              <i class="fas fa-link"></i>
+            </a>
+
+
+            
+            <a href="javascript:void(0);" class="share-btn share-print" title="Print">
+              <i class="fas fa-print"></i>
+            </a>
+
+          </div>
+
+
+
+          
+          
+        </article>
+      </div>
+
+      
+      <div class="wrapper style2 alt">
+        <div class="inner">
+          <section class="features">
+
+            
+            <article>
+              <a href="http://localhost:1313/blog/posts/2025/beginner-clothes-advice/" class="image" style="display:block;position:relative;">
+                
+                
+                <img src="http://localhost:1313/blog/posts/2025/beginner-clothes-advice/cyle-outfit_hu_24147fe6c23730c8.jpg" alt="cyle-outfit.jpg" style="width:100%;display:block;">
+                
+              </a>
+
+
+
+              <h3 class="major"><a href="http://localhost:1313/blog/posts/2025/beginner-clothes-advice/">Essential Road Cycling Clothing and Where to Buy</a></h3>
+
+              <p>A beginner-friendly guide to essential road cycling clothing, safety gear, and where to purchase them.</p>
+
+              
+              <p style="font-size:0.85em; color:#777;">
+                
+                
+                <a href="http://localhost:1313/blog/authors/frederik-beck" style="color:#777;">
+                  Frederik Beck
+                </a>, 
+                
+                
+                 • 16. June 2025
+              </p>
+
+
+              <a href="http://localhost:1313/blog/posts/2025/beginner-clothes-advice/" class="special">Read More</a>
+            </article>
+            
+
+            
+            <article>
+              <a href="http://localhost:1313/blog/posts/2025/bike-maintainance/" class="image" style="display:block;position:relative;">
+                
+                
+                <img src="http://localhost:1313/blog/posts/2025/bike-maintainance/wash-bike-unsplash_hu_5f3eac577ccc56e6.jpg" alt="wash-bike-unsplash.jpg" style="width:100%;display:block;">
+                
+              </a>
+
+
+
+              <h3 class="major"><a href="http://localhost:1313/blog/posts/2025/bike-maintainance/">Bike Washing, Maintenance &amp; Care</a></h3>
+
+              <p>Practical tips for cleaning, maintaining, and caring for your bike, including chain lubrication and basic repairs.</p>
+
+              
+              <p style="font-size:0.85em; color:#777;">
+                
+                
+                <a href="http://localhost:1313/blog/authors/frederik-beck"
+                  style="color:#777;">
+                  Frederik Beck
+                </a>, 
+                
+                
+                 • 10. June 2025
+              </p>
+
+
+              <a href="http://localhost:1313/blog/posts/2025/bike-maintainance/" class="special">Read More</a>
+            </article>
+            
+          </section>
+        </div>
+      </div>
+
+
+    </section>
+
+    <section id="footer">
+      <div class="inner">
+        <ul class="contact">
+          <li class="icon solid fa-home">
+            Imperial College Cycling Club<br />
+            Imperial College Union<br />
+            Beit Quadrangle<br />
+            Prince Consort Road<br />
+            London<br />
+            SW7 2BB
+          </li>
+          <li class="icon solid fa-envelope">
+            <a href="mailto:cycle@imperial.ac.uk">cycle@imperial.ac.uk</a>
+          </li>
+          <li class="icon brands fa-instagram">
+            <a href="https://instagram.com/iccycling" target="_blank" rel="noopener">@iccycling</a>
+          </li>
+        </ul>
+        <ul class="copyright">
+          <li>&copy; Imperial College Cycling Club</li>
+        </ul>
+      </div>
+    </section>
+
+
+  </div>
+
+  
+  <script src="https://iccycling.github.io/assets/js/glightbox.min.js"></script>
+  <script src="https://iccycling.github.io/assets/js/swiper-bundle.min.js"></script>
+  <script src="https://iccycling.github.io/assets/js/jquery.min.js"></script>
+  <script src="https://iccycling.github.io/assets/js/jquery.scrollex.min.js"></script>
+  <script src="https://iccycling.github.io/assets/js/browser.min.js"></script>
+  <script src="https://iccycling.github.io/assets/js/breakpoints.min.js"></script>
+  <script src="https://iccycling.github.io/assets/js/util.js"></script>
+  <script src="https://iccycling.github.io/assets/js/main.js"></script>
+
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      
+      document.querySelectorAll('.gallery-swiper').forEach(swiperEl => {
+        const swiper = new Swiper(swiperEl, {
+          slidesPerView: 1,
+          loop: true,
+          loopedSlides: swiperEl.querySelectorAll('.swiper-slide').length, 
+          spaceBetween: 10,
+          lazy: { loadPrevNext: true },
+          pagination: {
+            el: swiperEl.querySelector('.swiper-pagination'),
+            clickable: true
+          },
+          navigation: {
+            nextEl: swiperEl.querySelector('.swiper-button-next'),
+            prevEl: swiperEl.querySelector('.swiper-button-prev')
+          },
+          observer: true,
+          observeParents: true
+        });
+
+        
+        swiper.on('slideChange', () => {
+          swiper.pagination.update();
+        });
+
+        
+        swiper.on('slideChange', () => {
+          swiperEl.querySelectorAll('video').forEach(v => v.pause());
+        });
+      });
+
+      
+      document.querySelectorAll('.post-content img').forEach(img => {
+        if (!img.parentElement.matches('a')) {
+          const link = document.createElement('a');
+          link.href = img.src;
+
+          if (img.closest('.gallery-swiper')) {
+            link.className = 'glightbox-gallery';
+          } else {
+            link.className = 'glightbox-single';
+          }
+
+          img.parentNode.insertBefore(link, img);
+          link.appendChild(img);
+        }
+      });
+
+      
+      GLightbox({
+        selector: '.glightbox-single',
+        touchNavigation: true,
+        loop: false
+      });
+
+      
+      GLightbox({
+        selector: '.glightbox-gallery',
+        touchNavigation: true,
+        loop: true
+      });
+    });
+
+    document.addEventListener('DOMContentLoaded', function () {
+      
+      document.querySelectorAll('.share-copy').forEach(btn => {
+        btn.addEventListener('click', function (e) {
+          e.preventDefault();
+          const originalText = btn.innerHTML;
+          navigator.clipboard.writeText(window.location.href)
+            .then(() => {
+              btn.innerHTML = '<i class="fas fa-check"></i> Copied!';
+              setTimeout(() => {
+                btn.innerHTML = originalText;
+              }, 1500);
+            })
+            .catch(err => console.error('Failed to copy: ', err));
+        });
+      });
+
+
+      
+      document.querySelectorAll('.share-print').forEach(btn => {
+        btn.addEventListener('click', function (e) {
+          e.preventDefault();
+          window.print();
+        });
+      });
+    });
+  </script>
+
+
+
+
+</body>
+
+</html>

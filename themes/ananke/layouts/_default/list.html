@@ -4,7 +4,7 @@
     <div class="inner">
       <h2 class="major">All Posts – Newest First</h2>
       <section class="features">
-        {{ $paginator := .Paginate (where .Pages "Type" "blog") }}
+        {{ $paginator := .Paginate (where .Pages "Type" "posts") }}
         {{ range $paginator.Pages }}
         <article>
           {{ $post := . }}  <!-- speichert den aktuellen Blogpost -->

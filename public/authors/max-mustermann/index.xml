@@ -2,67 +2,18 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Max Mustermann on ICCC Blog</title>
-    <link>https://iccycling.github.io/hub/public/authors/max-mustermann/</link>
+    <link>http://localhost:1313/blog/authors/max-mustermann/</link>
     <description>Recent content in Max Mustermann on ICCC Blog</description>
     <generator>Hugo</generator>
     <language>de-DE</language>
-    <lastBuildDate>Sat, 06 Sep 2025 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://iccycling.github.io/hub/public/authors/max-mustermann/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Hello World</title>
-      <link>https://iccycling.github.io/hub/public/posts/recent-test-post/recent-test-post/</link>
-      <pubDate>Sat, 06 Sep 2025 00:00:00 +0000</pubDate>
-      <guid>https://iccycling.github.io/hub/public/posts/recent-test-post/recent-test-post/</guid>
-      <description>Just a Test Post.</description>
-    </item>
-    <item>
-      <title>Erster Blogpost: Kompakter Einstieg mit Text, Bildern, Code und Zitaten</title>
-      <link>https://iccycling.github.io/hub/public/posts/erster-post/</link>
-      <pubDate>Thu, 28 Aug 2025 00:00:00 +0000</pubDate>
-      <guid>https://iccycling.github.io/hub/public/posts/erster-post/</guid>
-      <description>Ein kompakter Beispielpost für unseren Blog mit Text, Bildern, Code und Zitaten. Ein kurzer Einstieg, der direkt neugierig macht.</description>
-    </item>
+    <lastBuildDate>Wed, 16 Sep 2020 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/blog/authors/max-mustermann/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Recent Test Post</title>
-      <link>https://iccycling.github.io/hub/public/blog/2025/recent-test-post/</link>
+      <link>http://localhost:1313/blog/posts/2025/recent-test-post/</link>
       <pubDate>Wed, 16 Sep 2020 00:00:00 +0000</pubDate>
-      <guid>https://iccycling.github.io/hub/public/blog/2025/recent-test-post/</guid>
+      <guid>http://localhost:1313/blog/posts/2025/recent-test-post/</guid>
       <description>Just a Test Post.</description>
-    </item>
-    <item>
-      <title>4. Post</title>
-      <link>https://iccycling.github.io/hub/public/posts/vierter-post/</link>
-      <pubDate>Wed, 01 Apr 2020 00:00:00 +0000</pubDate>
-      <guid>https://iccycling.github.io/hub/public/posts/vierter-post/</guid>
-      <description>Ein kompakter Beispielpost für unseren Blog mit Text, Bildern, Code und Zitaten. Ein kurzer Einstieg, der direkt neugierig macht.</description>
-    </item>
-    <item>
-      <title>3. Post</title>
-      <link>https://iccycling.github.io/hub/public/posts/dritter-post/</link>
-      <pubDate>Sun, 01 Mar 2020 00:00:00 +0000</pubDate>
-      <guid>https://iccycling.github.io/hub/public/posts/dritter-post/</guid>
-      <description>Ein kompakter Beispielpost für unseren Blog mit Text, Bildern, Code und Zitaten. Ein kurzer Einstieg, der direkt neugierig macht.</description>
-    </item>
-    <item>
-      <title>2. Post</title>
-      <link>https://iccycling.github.io/hub/public/posts/zweiter-post/</link>
-      <pubDate>Sat, 01 Feb 2020 00:00:00 +0000</pubDate>
-      <guid>https://iccycling.github.io/hub/public/posts/zweiter-post/</guid>
-      <description>Ein kompakter Beispielpost für unseren Blog mit Text, Bildern, Code und Zitaten. Ein kurzer Einstieg, der direkt neugierig macht.</description>
-    </item>
-    <item>
-      <title>1. Post</title>
-      <link>https://iccycling.github.io/hub/public/posts/test-post/</link>
-      <pubDate>Wed, 01 Jan 2020 00:00:00 +0000</pubDate>
-      <guid>https://iccycling.github.io/hub/public/posts/test-post/</guid>
-      <description>Ein kompakter Beispielpost für unseren Blog mit Text, Bildern, Code und Zitaten. Ein kurzer Einstieg, der direkt neugierig macht.</description>
-    </item>
-    <item>
-      <title>0. Post</title>
-      <link>https://iccycling.github.io/hub/public/posts/nulter-post/</link>
-      <pubDate>Fri, 01 Mar 2019 00:00:00 +0000</pubDate>
-      <guid>https://iccycling.github.io/hub/public/posts/nulter-post/</guid>
-      <description>Ein kompakter Beispielpost für unseren Blog mit Text, Bildern, Code und Zitaten. Ein kurzer Einstieg, der direkt neugierig macht.</description>
     </item>
   </channel>
 </rss>

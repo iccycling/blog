@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Bike Fit on ICCC Blog</title>
-    <link>https://iccycling.github.io/hub/public/tags/bike-fit/</link>
+    <link>http://localhost:1313/blog/tags/bike-fit/</link>
     <description>Recent content in Bike Fit on ICCC Blog</description>
     <generator>Hugo</generator>
     <language>de-DE</language>
     <lastBuildDate>Fri, 13 Jun 2025 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://iccycling.github.io/hub/public/tags/bike-fit/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/blog/tags/bike-fit/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Is Bike Fitting Really That Precise?</title>
-      <link>https://iccycling.github.io/hub/public/blog/2025/bike-fitting/</link>
+      <link>http://localhost:1313/blog/posts/2025/bike-fitting/</link>
       <pubDate>Fri, 13 Jun 2025 00:00:00 +0000</pubDate>
-      <guid>https://iccycling.github.io/hub/public/blog/2025/bike-fitting/</guid>
+      <guid>http://localhost:1313/blog/posts/2025/bike-fitting/</guid>
       <description>Bike fitting myths and practical advice for beginners — how to adjust your saddle, handlebars, and cleats safely.</description>
     </item>
   </channel>
