@@ -1,0 +1,98 @@
+{{ define "main" }}
+<section id="wrapper">
+  <div class="wrapper style5">
+    <div class="inner">
+
+        {{ $authorPage := . }}  <!-- aktuelle Autoren-Term-Seite -->
+<!-- Profilbild -->
+{{ with $authorPage.Resources.ByType "image" }}
+  {{ $img := (index . 0).Fill "200x200 center" }}
+
+
+  <div style="text-align:center; margin-bottom:1em;">
+    <img src="{{ $img.RelPermalink }}" alt="{{ $authorPage.Title }}" style="border-radius:50%;">
+  </div>
+{{ end }}
+
+
+
+      <!-- Name & Bio -->
+      <h2 style="text-align:center;">{{ $authorPage.Title }}</h2>
+      {{ with $authorPage.Params.bio }}
+  <p style="text-align:center; max-width:600px; margin:0 auto 2em auto;">
+    {{ . | markdownify }}
+  </p>
+{{ end }}
+
+</div>
+</div>
+
+
+<div class="wrapper alt style1">
+    <div class="inner">
+
+
+
+      <!-- Artikel des Autors -->
+      <h3>Posts by {{ .Title }}</h3>
+      <section class="features">
+        {{ $paginator := .Paginate .Pages }}
+        {{ range $paginator.Pages }}
+        <article>
+          {{ $post := . }} <!-- speichert den aktuellen Blogpost -->
+{{ with .Resources.GetMatch .Params.featured_image }}
+  {{ $img := .Fill "800x600 top center" }}
+  <a href="{{ $post.RelPermalink }}" class="image" style="display:block;position:relative;">
+    <img src="{{ $img.RelPermalink }}" alt="{{ $post.Title }}" style="width:100%;display:block;">
+  </a>
+{{ end }}
+
+
+          {{ with .Params.tags }}
+          <p style="font-size:0.9em; margin:1em 0;">
+            {{ range . }}
+            <a href="{{ "tags/" | relURL }}{{ . | urlize }}" style="color:#777; margin-right:0.5em;">
+              {{ . }}
+            </a>
+            {{ end }}
+          </p>
+          {{ end }}
+
+          <h3 class="major"><a href="{{ .RelPermalink }}">{{ .Title }}</a></h3>
+
+          <p>{{ .Summary }}</p>
+
+          <p style="font-size:0.85em; color:#777;">
+            {{ with .Date }}{{ .Format "02. January 2006" }}{{ end }}
+          </p>
+
+          <a href="{{ .RelPermalink }}" class="special">Read More</a>
+        </article>
+        {{ end }}
+      </section>
+
+      <!-- Pagination -->
+      {{ if gt $paginator.TotalPages 1 }}
+      <nav style="margin-top:3em; text-align:center; font-size:1.2rem; display:flex; flex-wrap:wrap; gap:2rem; justify-content:center;">
+        {{ with $paginator.Prev }}
+          <a href="{{ .URL }}">« Newer</a>
+        {{ end }}
+
+        {{ range $paginator.Pagers }}
+          {{ if eq . $paginator }}
+            <span style="font-weight:bold;">{{ .PageNumber }}</span>
+          {{ else }}
+            <a href="{{ .URL }}">{{ .PageNumber }}</a>
+          {{ end }}
+        {{ end }}
+
+        {{ with $paginator.Next }}
+          <a href="{{ .URL }}">Older »</a>
+        {{ end }}
+      </nav>
+      {{ end }}
+
+    </div>
+  </div>
+</section>
+{{ end }}

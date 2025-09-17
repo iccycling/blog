@@ -1,0 +1,17 @@
+{{ $posts := first 2 (where .Site.RegularPages "Section" "blog") }}
+<section class="features">
+  {{ range $posts }}
+    <article>
+      <a href="{{ .RelPermalink }}" class="image">
+        {{ with .Resources.GetMatch .Params.featured_image }}
+          {{ $img := .Fill "800x600 top center" }}  <!-- 1:1 Crop -->
+          <img src="{{ $img.RelPermalink }}" alt="{{ $.Title }}">
+        {{ end }}
+      </a>
+      <h3 class="major">{{ .Title }}</h3>
+      <p>{{ .Summary }}</p>
+      
+      <a href="{{ .RelPermalink }}" class="special">Read more</a>
+    </article>
+  {{ end }}
+</section>

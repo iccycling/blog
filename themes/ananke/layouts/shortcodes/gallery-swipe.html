@@ -1,0 +1,31 @@
+{{/* gallery-swipe.html */}}
+<div class="swiper-box">
+  <div class="swiper-container gallery-swiper">
+    <div class="swiper-wrapper">
+      {{ $images := split (.Get "images") "," }}
+      {{ $captions := split (.Get "captions") "," }}
+      {{ range $i, $imgName := $images }}
+        {{ $img := $.Page.Resources.GetMatch (trim $imgName " ") }}
+        {{ $caption := index $captions $i | default "" }}
+        {{ with $img }}
+        <div class="swiper-slide">
+          <figure>
+            <a href="{{ .RelPermalink }}" 
+               class="glightbox-gallery" 
+               data-gallery="gallery-{{ now.UnixNano }}"
+               {{ if $caption }}data-title="{{ $caption }}"{{ end }}>
+              <img src="{{ .RelPermalink }}" loading="lazy" alt="{{ $caption }}">
+            </a>
+            {{ if $caption }}
+            <figcaption>{{ $caption }}</figcaption>
+            {{ end }}
+          </figure>
+        </div>
+        {{ end }}
+      {{ end }}
+    </div>
+    <div class="swiper-pagination"></div>
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
+  </div>
+</div>

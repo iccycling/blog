@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Authors on ICCC Blog</title>
+    <link>https://iccycling.github.io/hub/public/authors/</link>
+    <description>Recent content in Authors on ICCC Blog</description>
+    <generator>Hugo</generator>
+    <language>de-DE</language>
+    <lastBuildDate>Sat, 06 Sep 2025 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://iccycling.github.io/hub/public/authors/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Max Mustermann</title>
+      <link>https://iccycling.github.io/hub/public/authors/max-mustermann/</link>
+      <pubDate>Sat, 06 Sep 2025 00:00:00 +0000</pubDate>
+      <guid>https://iccycling.github.io/hub/public/authors/max-mustermann/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Frederik Beck</title>
+      <link>https://iccycling.github.io/hub/public/authors/frederik-beck/</link>
+      <pubDate>Sat, 30 Aug 2025 00:00:00 +0000</pubDate>
+      <guid>https://iccycling.github.io/hub/public/authors/frederik-beck/</guid>
+      <description></description>
+    </item>
+  </channel>
+</rss>

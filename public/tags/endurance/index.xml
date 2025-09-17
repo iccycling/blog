@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Endurance on ICCC Blog</title>
+    <link>https://iccycling.github.io/hub/public/tags/endurance/</link>
+    <description>Recent content in Endurance on ICCC Blog</description>
+    <generator>Hugo</generator>
+    <language>de-DE</language>
+    <lastBuildDate>Wed, 18 Jun 2025 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://iccycling.github.io/hub/public/tags/endurance/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Endurance Training Methods, Recovery and Nutrition</title>
+      <link>https://iccycling.github.io/hub/public/blog/2025/training-methods/</link>
+      <pubDate>Wed, 18 Jun 2025 00:00:00 +0000</pubDate>
+      <guid>https://iccycling.github.io/hub/public/blog/2025/training-methods/</guid>
+      <description>A comprehensive guide to endurance training, recovery, strength work, and nutrition for cyclists and triathletes.</description>
+    </item>
+  </channel>
+</rss>

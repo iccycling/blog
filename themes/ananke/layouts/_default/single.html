@@ -1,0 +1,665 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ICCC Blog - {{ .Title }}</title>
+
+
+  <link rel="icon" href="{{ " images/favicon.ico" | relURL }}" type="image/x-icon">
+
+  <!-- Externe CSS -->
+  <link rel="stylesheet" href="https://iccycling.github.io/assets/css/glightbox.min.css" />
+  <link rel="stylesheet" href="https://iccycling.github.io/assets/css/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="https://iccycling.github.io/assets/css/main.css">
+
+  <!-- Open Graph / Social Media Cards -->
+  <meta property="og:title" content="{{ .Title }}">
+  <meta property="og:description" content="{{ .Summary }}">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="{{ .Permalink }}">
+  {{ with .Params.featured_image }}
+  <meta property="og:image" content="{{ . | absURL }}">
+  {{ end }}
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="{{ .Title }}">
+  <meta name="twitter:description" content="{{ .Summary }}">
+  {{ with .Params.featured_image }}
+  <meta name="twitter:image" content="{{ . | absURL }}">
+  {{ end }}
+
+
+
+  <!-- Inline zusätzliche Styles für Swiper + GLightbox-Isolation -->
+  <style>
+    .swiper-box {
+      width: 100%;
+      position: relative;
+      overflow: hidden;
+      margin: 2rem 0;
+    }
+
+    .gallery-swiper .swiper-slide img {
+      width: 100%;
+      aspect-ratio: 5/4;
+      max-height: 70vh;
+      object-fit: contain;
+      display: block;
+      border-radius: 3px;
+      cursor: pointer;
+    }
+
+    @media (max-width: 600px) {
+      .gallery-swiper .swiper-slide img {
+        aspect-ratio: 1/1;
+      }
+    }
+
+    .swiper-button-next,
+    .swiper-button-prev {
+      color: black;
+      font-size: 20px;
+    }
+
+    .swiper-pagination {
+      position: absolute;
+      bottom: 10px;
+      width: 100%;
+      text-align: center;
+    }
+
+    .swiper-pagination-bullet {
+      width: 10px;
+      height: 10px;
+      display: inline-block;
+      border-radius: 50%;
+      background-color: gray;
+      opacity: 0.33;
+      margin: 0 4px;
+      transition: opacity 0.3s, transform 0.3s;
+    }
+
+    .swiper-pagination-bullet-active {
+      opacity: 1;
+      transform: scale(1.2);
+      background-color: black;
+    }
+
+    /* GLightbox Isolation gegen Main-CSS */
+    .glightbox-container,
+    .glightbox-container * {
+      pointer-events: auto !important;
+    }
+
+    .glightbox-clean button,
+    .glightbox-clean a {
+      all: initial;
+    }
+
+    .gallery-swiper a,
+    .gallery-swiper a img {
+      text-decoration: none;
+      /* Unterstreichung weg */
+      border: none;
+      /* Rahmen weg, falls gesetzt */
+      outline: none;
+      /* Focus-Rahmen weg */
+    }
+
+    .post-content img {
+      display: block;
+
+      width: 100%;
+      /* volle Breite des Containers */
+
+      object-fit: contain;
+      /* Bild bleibt proportional */
+    }
+
+    /* Post-Tags */
+    .post-tags {
+      margin-bottom: 1rem;
+      font-size: 0.9rem;
+      color: #555;
+    }
+
+    .post-tags a {
+      display: inline-block;
+      margin-right: 0.5rem;
+      padding: 0.2rem 0.5rem;
+      background-color: #333;
+      border-radius: 3px;
+      text-decoration: none;
+      color: #eee;
+      transition: background 0.3s;
+    }
+
+    .post-tags a:hover {
+      background-color: #ddd;
+    }
+
+    /* Post-Titel */
+    .post-content h1 {
+      font-size: 2rem;
+      font-weight: bold;
+      margin-top: 0.5rem;
+      margin-bottom: 0.5rem;
+
+    }
+
+    /* Autor + Datum */
+    .post-meta {
+      color: #666;
+
+      margin-bottom: 2rem;
+    }
+
+    .post-meta .author {
+      font-weight: bold;
+    }
+
+    .post-meta .date {
+      font-style: italic;
+    }
+
+    /* Markdown-Bilder standardisieren */
+    .post-content img {
+      display: block;
+      margin: 1em auto;
+      /* zentriert */
+      width: 100%;
+      /* volle Breite des Containers */
+      max-height: 70vh;
+      /* maximale Höhe relativ zur Viewport-Höhe */
+      object-fit: contain;
+      /* proportional bleiben */
+      cursor: pointer;
+      /* klickbar */
+    }
+
+    /* Subheadings */
+    .post-content .subheading {
+      font-size: 1.4em;
+      font-weight: bold;
+      margin-top: 1em;
+      margin-bottom: 0.3em;
+    }
+
+    .post-content figure {
+      display: block;
+      text-align: center;
+      margin: 1.5rem 0;
+    }
+
+    .post-content figure img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+      margin: 0 auto;
+    }
+
+    .post-content figure figcaption {
+      font-style: italic;
+
+      color: #666;
+      margin-top: 0.6rem;
+      margin-bottom: 1rem;
+    }
+
+    .glightbox-container .gslide-description,
+    .glightbox-container .gslide-description * {
+      background: transparent !important;
+      /* kein weißer Kasten */
+      color: #ffffff !important;
+      /* weiße Schrift */
+      font-size: 0.9rem;
+      /* optional anpassen */
+      text-align: center;
+      padding: 0.3rem;
+      text-transform: none !important;
+
+    }
+
+    .share-buttons {
+      display: flex;
+      justify-content: center;
+      /* zentriert die Buttons */
+      gap: 10px;
+      flex-wrap: wrap;
+      margin-top: 2rem;
+    }
+
+    .share-btn {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 32px;
+      /* kleiner */
+      height: 32px;
+      /* kleiner */
+      border-radius: 50%;
+      background-color: #ddd;
+      color: #333;
+      text-decoration: none;
+      font-size: 14px;
+      /* kleiner Icon */
+      transition: all 0.3s;
+      border: none;
+      cursor: pointer;
+      padding: 0;
+    }
+
+    .share-btn i {
+      line-height: 1;
+    }
+
+    .share-btn:hover {
+      transform: scale(1.1);
+      background-color: #ccc;
+    }
+
+    @media print {
+      @page {
+        margin: 20mm;
+        /* moderate Seitenränder */
+      }
+
+
+
+      .post-content {
+        margin-top: 50mm;
+        /* Platz für das Logo */
+      }
+
+      body,
+      html {
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+      }
+
+      body * {
+        visibility: hidden;
+        /* alles ausblenden */
+      }
+
+      .post-content,
+      .post-content * {
+        visibility: visible;
+        color: black !important;
+      }
+
+      .post-content {
+        position: relative;
+        left: 0;
+        top: 0;
+        width: 100%;
+        max-width: 100%;
+      }
+
+      .post-content img {
+        max-width: 100% !important;
+        height: auto !important;
+        display: block;
+        margin: 0 auto;
+        /* zentriert */
+      }
+
+      /* Navigation, Header, Footer und Share-Buttons ausblenden */
+      header,
+      #header,
+      nav,
+      #footer,
+      .share-buttons {
+        display: none !important;
+      }
+
+    }
+  </style>
+</head>
+
+<body>
+  <div id="page-wrapper">
+
+    <!-- Header -->
+    <header id="header">
+      <h1><a href="{{ "blog/" | relURL }}">
+          <img src="{{ "images/ICCC-Blog.svg" | relURL }}" alt="ICCC Blog Logo"
+            style="height: 40px; padding-top: 10px;">
+        </a>
+      </h1>
+      <nav><a href="#menu">Menu</a></nav>
+    </header>
+
+    <nav id="menu">
+      <div class="inner">
+        <h2>Menu</h2>
+        <ul class="links">
+          <!-- Main Website (nur Basis-URL) -->
+          <li><a href="https://iccycling.github.io/">Main Website</a></li>
+          <li><a href="{{ "blog/" | relURL }}">Blog Home</a></li>
+        </ul>
+        <a href="#" class="close">Close</a>
+      </div>
+    </nav>
+
+
+    <!-- Content -->
+    <section id="wrapper">
+
+      <header>
+        <div class="inner">
+          <h2>Blog</h2>
+          <p>Your go-to place for tips and inspiring cycling stories. We welcome contributions on any cycling-related
+            topic!</p>
+
+        </div>
+      </header>
+
+      <div class="wrapper style5">
+        <article class="inner post-content">
+          <!-- Tags -->
+          {{ with .Params.tags }}
+          <p class="post-tags">
+            {{ range . }}
+            <a href="{{ " tags/" | relURL }}{{ . | urlize }}">{{ . }}</a>
+
+            {{ end }}
+          </p>
+          {{ end }}
+
+          <!-- Titel & Meta -->
+          <h1>{{ .Title }}</h1>
+          <p class="post-meta">
+            {{ with .Params.authors }}
+            {{ range $index, $author := . }}
+            <a href="{{ "authors/" | relURL }}{{ $author | urlize }}" style="color:#777;">
+              {{ $author }}
+            </a>{{ if lt (add $index 1) (len .) }}, {{ end }}
+            {{ end }}
+            {{ end }}
+            {{ if .Date }} • <span class="date">{{ .Date.Format "02. January 2006" }}</span>{{ end }}
+          </p>
+
+          <!-- Markdown Content -->
+          {{ .Content }}
+
+          <div class="share-buttons" style="margin-top:2rem; display:flex; gap:10px; flex-wrap: wrap;">
+            <!-- Twitter / X -->
+            <a href="https://twitter.com/intent/tweet?url={{ .Permalink }}&text={{ .Title }}" target="_blank"
+              class="share-btn" title="Share on X">
+              <i class="fab fa-x-twitter"></i>
+            </a>
+            <!-- Facebook -->
+            <a href="https://www.facebook.com/sharer/sharer.php?u={{ .Permalink }}" target="_blank" class="share-btn"
+              title="Share on Facebook">
+              <i class="fab fa-facebook-f"></i>
+            </a>
+            <!-- WhatsApp -->
+            <a href="https://api.whatsapp.com/send?text={{ .Title }}%20{{ .Permalink }}" target="_blank"
+              class="share-btn" title="Share on WhatsApp">
+              <i class="fab fa-whatsapp"></i>
+            </a>
+            <!-- LinkedIn -->
+            <a href="https://www.linkedin.com/shareArticle?mini=true&url={{ .Permalink }}&title={{ .Title }}"
+              target="_blank" class="share-btn" title="Share on LinkedIn">
+              <i class="fab fa-linkedin-in"></i>
+            </a>
+            <!-- E-Mail -->
+            <a href="mailto:?subject={{ .Title }}&body={{ .Permalink }}" class="share-btn" title="Share via Email">
+              <i class="fas fa-envelope"></i>
+            </a>
+            <!-- Link kopieren -->
+            <a href="javascript:void(0);" class="share-btn share-copy" title="Copy link">
+              <i class="fas fa-link"></i>
+            </a>
+
+
+            <!-- Drucken -->
+            <a href="javascript:void(0);" class="share-btn share-print" title="Print">
+              <i class="fas fa-print"></i>
+            </a>
+
+          </div>
+
+
+
+          <!-- Galerie Inline -->
+          {{ with .Params.images }}
+          <div class="swiper-box">
+            <div class="swiper-container gallery-swiper">
+              <div class="swiper-wrapper">
+                {{ range . }}
+                <div class="swiper-slide">
+                  <a href="{{ . | relURL }}" class="glightbox-gallery">
+                    <img src="{{ . | relURL }}" loading="lazy" alt="Galerie Bild">
+                  </a>
+                </div>
+                {{ end }}
+              </div>
+              <div class="swiper-pagination"></div>
+              <div class="swiper-button-prev"></div>
+              <div class="swiper-button-next"></div>
+            </div>
+          </div>
+          {{ end }}
+        </article>
+      </div>
+
+      <!-- Next / Previous Post Feature -->
+      <div class="wrapper style2 alt">
+        <div class="inner">
+          <section class="features">
+
+            {{ with .Next }}
+            <article>
+              <a href="{{ .RelPermalink }}" class="image" style="display:block;position:relative;">
+                {{ with .Resources.GetMatch .Params.featured_image }}
+                {{ $img := .Fill "800x600 top center" }}
+                <img src="{{ $img.RelPermalink }}" alt="{{ .Title }}" style="width:100%;display:block;">
+                {{ end }}
+              </a>
+
+
+
+              <h3 class="major"><a href="{{ .RelPermalink }}">{{ .Title }}</a></h3>
+
+              <p>{{ .Summary }}</p>
+
+              <!-- Autor + Datum -->
+              <p style="font-size:0.85em; color:#777;">
+                {{ with .Params.authors }}
+                {{ range $index, $author := . }}
+                <a href="{{ "authors/" | relURL }}{{ $author | urlize }}" style="color:#777;">
+                  {{ $author }}
+                </a>{{ if lt (add $index 1) (len .) }}, {{ end }}
+                {{ end }}
+                {{ end }}
+                {{ if .Date }} • {{ .Date.Format "02. January 2006" }}{{ end }}
+              </p>
+
+
+              <a href="{{ .RelPermalink }}" class="special">Read More</a>
+            </article>
+            {{ end }}
+
+            {{ with .Prev }}
+            <article>
+              <a href="{{ .RelPermalink }}" class="image" style="display:block;position:relative;">
+                {{ with .Resources.GetMatch .Params.featured_image }}
+                {{ $img := .Fill "800x600 top center" }}
+                <img src="{{ $img.RelPermalink }}" alt="{{ .Title }}" style="width:100%;display:block;">
+                {{ end }}
+              </a>
+
+
+
+              <h3 class="major"><a href="{{ .RelPermalink }}">{{ .Title }}</a></h3>
+
+              <p>{{ .Summary }}</p>
+
+              <!-- Autor + Datum -->
+              <p style="font-size:0.85em; color:#777;">
+                {{ with .Params.authors }}
+                {{ range $index, $author := . }}
+                <a href="{{ "authors/" | relURL }}{{ $author | urlize }}"
+                  style="color:#777;">
+                  {{ $author }}
+                </a>{{ if lt (add $index 1) (len .) }}, {{ end }}
+                {{ end }}
+                {{ end }}
+                {{ if .Date }} • {{ .Date.Format "02. January 2006" }}{{ end }}
+              </p>
+
+
+              <a href="{{ .RelPermalink }}" class="special">Read More</a>
+            </article>
+            {{ end }}
+          </section>
+        </div>
+      </div>
+
+
+    </section>
+
+    <section id="footer">
+      <div class="inner">
+        <ul class="contact">
+          <li class="icon solid fa-home">
+            Imperial College Cycling Club<br />
+            Imperial College Union<br />
+            Beit Quadrangle<br />
+            Prince Consort Road<br />
+            London<br />
+            SW7 2BB
+          </li>
+          <li class="icon solid fa-envelope">
+            <a href="mailto:cycle@imperial.ac.uk">cycle@imperial.ac.uk</a>
+          </li>
+          <li class="icon brands fa-instagram">
+            <a href="https://instagram.com/iccycling" target="_blank" rel="noopener">@iccycling</a>
+          </li>
+        </ul>
+        <ul class="copyright">
+          <li>&copy; Imperial College Cycling Club</li>
+        </ul>
+      </div>
+    </section>
+
+
+  </div>
+
+  <!-- JS -->
+  <script src="https://iccycling.github.io/assets/js/glightbox.min.js"></script>
+  <script src="https://iccycling.github.io/assets/js/swiper-bundle.min.js"></script>
+  <script src="https://iccycling.github.io/assets/js/jquery.min.js"></script>
+  <script src="https://iccycling.github.io/assets/js/jquery.scrollex.min.js"></script>
+  <script src="https://iccycling.github.io/assets/js/browser.min.js"></script>
+  <script src="https://iccycling.github.io/assets/js/breakpoints.min.js"></script>
+  <script src="https://iccycling.github.io/assets/js/util.js"></script>
+  <script src="https://iccycling.github.io/assets/js/main.js"></script>
+
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      // --- Swiper: Alle Galerien ---
+      document.querySelectorAll('.gallery-swiper').forEach(swiperEl => {
+        const swiper = new Swiper(swiperEl, {
+          slidesPerView: 1,
+          loop: true,
+          loopedSlides: swiperEl.querySelectorAll('.swiper-slide').length, // wichtig für loop + pagination
+          spaceBetween: 10,
+          lazy: { loadPrevNext: true },
+          pagination: {
+            el: swiperEl.querySelector('.swiper-pagination'),
+            clickable: true
+          },
+          navigation: {
+            nextEl: swiperEl.querySelector('.swiper-button-next'),
+            prevEl: swiperEl.querySelector('.swiper-button-prev')
+          },
+          observer: true,
+          observeParents: true
+        });
+
+        // Pagination immer synchron halten, auch beim Swipen
+        swiper.on('slideChange', () => {
+          swiper.pagination.update();
+        });
+
+        // Videos beim Slidewechsel pausieren
+        swiper.on('slideChange', () => {
+          swiperEl.querySelectorAll('video').forEach(v => v.pause());
+        });
+      });
+
+      // --- GLightbox: Einzelbilder & Galerie ---
+      document.querySelectorAll('.post-content img').forEach(img => {
+        if (!img.parentElement.matches('a')) {
+          const link = document.createElement('a');
+          link.href = img.src;
+
+          if (img.closest('.gallery-swiper')) {
+            link.className = 'glightbox-gallery';
+          } else {
+            link.className = 'glightbox-single';
+          }
+
+          img.parentNode.insertBefore(link, img);
+          link.appendChild(img);
+        }
+      });
+
+      // Einzelbilder initialisieren
+      GLightbox({
+        selector: '.glightbox-single',
+        touchNavigation: true,
+        loop: false
+      });
+
+      // Galerie-Bilder initialisieren
+      GLightbox({
+        selector: '.glightbox-gallery',
+        touchNavigation: true,
+        loop: true
+      });
+    });
+
+    document.addEventListener('DOMContentLoaded', function () {
+      // Copy Link
+      document.querySelectorAll('.share-copy').forEach(btn => {
+        btn.addEventListener('click', function (e) {
+          e.preventDefault();
+          const originalText = btn.innerHTML;
+          navigator.clipboard.writeText(window.location.href)
+            .then(() => {
+              btn.innerHTML = '<i class="fas fa-check"></i> Copied!';
+              setTimeout(() => {
+                btn.innerHTML = originalText;
+              }, 1500);
+            })
+            .catch(err => console.error('Failed to copy: ', err));
+        });
+      });
+
+
+      // Print
+      document.querySelectorAll('.share-print').forEach(btn => {
+        btn.addEventListener('click', function (e) {
+          e.preventDefault();
+          window.print();
+        });
+      });
+    });
+  </script>
+
+
+
+
+</body>
+
+</html>
