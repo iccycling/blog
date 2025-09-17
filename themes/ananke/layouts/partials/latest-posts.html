@@ -1,4 +1,4 @@
-{{ $posts := first 2 (where .Site.RegularPages "Section" "blog") }}
+{{ $posts := first 2 (where .Site.RegularPages "Section" "posts") }}
 <section class="features">
   {{ range $posts }}
     <article>
