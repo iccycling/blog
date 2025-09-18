@@ -5,7 +5,7 @@ authors: ["Frederik Beck"]
 draft: false
 featured_image: "wash-bike-unsplash.jpg"
 summary: "Practical tips for cleaning, maintaining, and caring for your bike, including chain lubrication and basic repairs."
-tags: ["Cycling", "Maintenance", "Care", "Beginner"]
+tags: ["Bikes"]
 ---
 
 Let's face it—cleaning your bike is one of those tasks that often gets neglected, especially if you don’t have access to a hose or yard. If you're stuck in student housing without outdoor space, washing becomes tricky. One simple solution: limit your rides to dry days. This alone can significantly reduce how often you need to clean your bike.

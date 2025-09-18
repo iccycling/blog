@@ -30,18 +30,18 @@
       <description>A beginner&amp;rsquo;s guide to choosing the right bike, covering frame materials, sizes, types, and budget considerations.</description>
     </item>
     <item>
-      <title>Endurance Training Methods, Recovery and Nutrition</title>
-      <link>http://localhost:1313/blog/posts/2025/training-methods/</link>
-      <pubDate>Wed, 18 Jun 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/blog/posts/2025/training-methods/</guid>
-      <description>A comprehensive guide to endurance training, recovery, strength work, and nutrition for cyclists and triathletes.</description>
-    </item>
-    <item>
       <title>Essential Road Cycling Clothing and Where to Buy</title>
       <link>http://localhost:1313/blog/posts/2025/beginner-clothes-advice/</link>
-      <pubDate>Mon, 16 Jun 2025 00:00:00 +0000</pubDate>
+      <pubDate>Wed, 18 Jun 2025 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/blog/posts/2025/beginner-clothes-advice/</guid>
       <description>A beginner-friendly guide to essential road cycling clothing, safety gear, and where to purchase them.</description>
+    </item>
+    <item>
+      <title>Endurance Training Methods, Recovery and Nutrition</title>
+      <link>http://localhost:1313/blog/posts/2025/training-methods/</link>
+      <pubDate>Mon, 16 Jun 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/blog/posts/2025/training-methods/</guid>
+      <description>A comprehensive guide to endurance training, recovery, strength work, and nutrition for cyclists and triathletes.</description>
     </item>
     <item>
       <title>Is Bike Fitting Really That Precise?</title>
@@ -72,13 +72,6 @@
       <description>A practical guide to creating and using ICCC logos and graphics with free tools like Photopea and Inkscape.</description>
     </item>
     <item>
-      <title>Website Maintenance Guide</title>
-      <link>http://localhost:1313/blog/posts/2025/website-maintainance/</link>
-      <pubDate>Sat, 07 Jun 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/blog/posts/2025/website-maintainance/</guid>
-      <description>A practical guide to maintaining and updating the ICCC website, including tips for content, images, galleries, tools, and workflow.</description>
-    </item>
-    <item>
       <title>ICCC Hugo Blog – Maintenance and Content Guide</title>
       <link>http://localhost:1313/blog/posts/2025/blog-maintainance/</link>
       <pubDate>Sun, 01 Jun 2025 00:00:00 +0000</pubDate>
@@ -86,46 +79,18 @@
       <description>A comprehensive guide on maintaining the ICCC Hugo blog, including repository structure, creating new posts, local testing, and deployment.</description>
     </item>
     <item>
-      <title>Hello this is a test</title>
-      <link>http://localhost:1313/blog/posts/2025/test-post/</link>
-      <pubDate>Sun, 18 Sep 2022 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/blog/posts/2025/test-post/</guid>
-      <description>No preview Image Test.</description>
+      <title>Creating Blog Posts – Example Guide</title>
+      <link>http://localhost:1313/blog/posts/2025/creating-blog-posts/</link>
+      <pubDate>Sun, 18 May 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/blog/posts/2025/creating-blog-posts/</guid>
+      <description>A complete example showing how to create a blog post in Hugo with headings, code, lists, images, captions, and galleries.</description>
     </item>
     <item>
-      <title>Recent Test Post</title>
-      <link>http://localhost:1313/blog/posts/2025/recent-test-post/</link>
-      <pubDate>Wed, 16 Sep 2020 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/blog/posts/2025/recent-test-post/</guid>
-      <description>Just a Test Post.</description>
-    </item>
-    <item>
-      <title>Permakultur: Nachhaltig Gärtnern für die Zukunft</title>
-      <link>http://localhost:1313/blog/posts/2025/perma-post/</link>
-      <pubDate>Mon, 31 Aug 2020 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/blog/posts/2025/perma-post/</guid>
-      <description>Ein ausführlicher Einblick in die Prinzipien der Permakultur und wie man sie im eigenen Garten umsetzen kann.</description>
-    </item>
-    <item>
-      <title>Which Bike Should You Choose as a Beginner..?</title>
-      <link>http://localhost:1313/blog/posts/2025/begginers-roadbike-advicecopy/</link>
-      <pubDate>Sun, 02 Jun 2019 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/blog/posts/2025/begginers-roadbike-advicecopy/</guid>
-      <description>A beginner&amp;rsquo;s guide to choosing the right bike, covering frame materials, sizes, types, and budget considerations.</description>
-    </item>
-    <item>
-      <title>Hello this is a test</title>
-      <link>http://localhost:1313/blog/posts/2025/test-post-copy-2/</link>
-      <pubDate>Wed, 18 Sep 2002 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/blog/posts/2025/test-post-copy-2/</guid>
-      <description>No preview Image Test.</description>
-    </item>
-    <item>
-      <title>Hello this is a test</title>
-      <link>http://localhost:1313/blog/posts/2025/test-post-copy/</link>
-      <pubDate>Wed, 18 Sep 2002 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/blog/posts/2025/test-post-copy/</guid>
-      <description>No preview Image Test.</description>
+      <title>Website Maintenance Guide</title>
+      <link>http://localhost:1313/blog/posts/2025/website-maintainance/</link>
+      <pubDate>Sat, 17 May 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/blog/posts/2025/website-maintainance/</guid>
+      <description>A practical guide to maintaining and updating the ICCC website, including tips for content, images, tools, and workflow.</description>
     </item>
     <item>
       <title>Gear Posts Snippet</title>

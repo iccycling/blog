@@ -1,11 +1,11 @@
 ---
 title: "Essential Road Cycling Clothing and Where to Buy"
-date: 2025-06-16
+date: 2025-06-18
 authors: ["Frederik Beck"]
 draft: false
 featured_image: "cyle-outfit.jpg"
 summary: "A beginner-friendly guide to essential road cycling clothing, safety gear, and where to purchase them."
-tags: ["Cycling", "Equipment", "Clothing"]
+tags: ["Cycling", "Beginners", "Clothing"]
 ---
 
 

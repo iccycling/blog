@@ -1,11 +1,11 @@
 ---
 title: "Endurance Training Methods, Recovery and Nutrition"
-date: 2025-06-18
+date: 2025-06-16
 authors: ["Frederik Beck"]
 draft: false
 featured_image: "gym-unsplash.jpg"
 summary: "A comprehensive guide to endurance training, recovery, strength work, and nutrition for cyclists and triathletes."
-tags: ["Training", "Endurance", "Cycling", "Nutrition"]
+tags: ["Training"]
 ---
 
 

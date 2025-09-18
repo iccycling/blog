@@ -1,38 +1,16 @@
 ---
 title: "Website Maintenance Guide"
-date: 2025-06-07
+date: 2025-05-17
 authors: ["Frederik Beck"]
 draft: false
 featured_image: "jordan-jnJVpJJmdkI-unsplash.jpg"
-summary: "A practical guide to maintaining and updating the ICCC website, including tips for content, images, galleries, tools, and workflow."
-tags: ["Website", "Maintenance"]
+summary: "A practical guide to maintaining and updating the ICCC website, including tips for content, images, tools, and workflow."
+tags: ["Website"]
 ---
 
-Welcome! This guide helps you maintain and update the website easily. No prior deep knowledge needed, but some basic coding experience helps. Otherwise, learning by doing and asking ChatGPT is a great way forward.
+Welcome! This guide helps you maintain and update the ICCC website easily. No prior deep knowledge is required — you can make changes directly using a simple editor. Learning by doing and asking ChatGPT is also a great way forward.
 
-## About the Website
-
-The website is built simply on a template from **HTML5UP** (big thanks for the awesome templates!).  
-This ensures the site is **responsive** and works well on mobile devices. The simple structure also means **easy maintenance**.
-
-## General Tips for Maintenance
-
-- Be **careful when editing `main.css`** — usually, you don’t need to change much here. Small mistakes can cause layout problems.
-- To **add or update content**, simply *copy & paste existing sections* and modify them.
-- Check out `elements.html` for an overview of available elements and how to use them.
-
-## Handling Images and Galleries
-
-You can use **Glightbox** to make galleries swipeable and more user-friendly. See the example gallery below for how to implement it.
-
-Optimize image size and format to keep load times low and site performance smooth. If unsure, ask ChatGPT for advice on best image formats and sizes.
-
-Don’t overload the site with too many images. For photo projects, consider using **Instagram**, **Flickr**, or similar platforms to showcase galleries externally.
-
-### Example Gallery
-
-If you use stock photos make sure they have a license that allows the usage. Unsplash is a good website to find free stock photos. Some of those stock photos can be found in the following gallery. (Thanks @jordphotography on Unsplash)
-
+## Example Gallery
 
 <!-- Three Images Side by Side (Zoomed, fixed aspect ratio 2:3) -->
 <div style="display:flex; gap:1em; flex-wrap:wrap; margin-bottom:1.5em;">
@@ -53,15 +31,72 @@ If you use stock photos make sure they have a license that allows the usage. Uns
 
 
 
+## About the Website
 
-## Tools and Workflow
+The website is a **static site**, built on an **HTML5UP template** and hosted on **GitHub Pages**.  
+It has a **simple structure**, which makes it **easy to maintain**.
 
-Install **VSCode** as your development environment. It’s free and beginner-friendly.  
-Always **test your changes locally in a browser** before publishing online. Keeping backups is also a good idea.
+The website repository is available here: [https://github.com/iccycling/iccycling.github.io](https://github.com/iccycling/iccycling.github.io).  
+You can download the folder as a ZIP file, edit files with a basic text editor on Windows, and check changes directly in your browser. For larger updates, using **VSCode with GitHub integration** is recommended.
 
-To keep blog pages manageable, after several posts create a new blog page like `blog4.html`, `blog5.html`, etc.
+### Main Structure
+
+Most content updates can be done by editing the following files/folders:
+
+    iccycling.github.io/
+        images/         # all images
+        videos/         # videos
+        assets/
+            js/         # JavaScript for dynamic functions
+            css/        # CSS for styling
+        index.html      # Homepage
+        about.html      # About the club
+        road.html       # Road cycling section
+        offroad.html    # Mountain biking section
+        gear.html       # Club wear and gear
+        other.html      # Other cycling disciplines
+        blog/           # Blog static pages (pre-built)
+
+For simple content edits, you only need to update these files — everything else is handled automatically.
+
+---
+
+## Editing Content
+
+- Open the HTML file for the page you want to update.
+- Copy & modify existing sections for new content.
+- Headings, paragraphs, lists, and images can be edited directly in the HTML.
+- Replace images in the `images/` folder and update the `<img src="">` references accordingly.
+
+No advanced coding skills are required — simple copy & paste and text edits are enough.
+
+---
+
+## Workflow and Tools
+
+- **Text Editor**: You can use Notepad or any basic editor for small edits.  
+- **Browser Testing**: Always open the page in a browser to check your changes.  
+- **Version Control**: For larger updates, use VSCode with GitHub to track changes and push updates.  
+- **Backups**: Keep a copy of your repository before making major edits.
+
+---
+
+## Special Note on the Blog
+
+The **blog** is handled separately using the **Hugo static site generator** and lives in its own repository.  
+
+- The main website **does not require Hugo** — it is fully static.  
+- Only the **latest blog posts** and **Gear articles** are dynamically pulled into the main site.  
+- For blog maintenance, see the dedicated guide for the Hugo blog.
+
+This separation keeps the main website simple and easy to maintain for anyone, while the blog can use Hugo for more advanced features.
+
+---
 
 ## Final Note
 
-I hope this website serves as a solid foundation for the club’s online presence and lasts for many years.  
-Best regards!
+The ICCC website is designed to be simple, robust, and easy to update. With this guide, anyone can maintain it safely, add new content, or update images.  
+
+Happy editing!
+
+

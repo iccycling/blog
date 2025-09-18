@@ -16,10 +16,17 @@
       <description></description>
     </item>
     <item>
-      <title>Beginner</title>
-      <link>http://localhost:1313/blog/tags/beginner/</link>
+      <title>Beginners</title>
+      <link>http://localhost:1313/blog/tags/beginners/</link>
       <pubDate>Thu, 19 Jun 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/blog/tags/beginner/</guid>
+      <guid>http://localhost:1313/blog/tags/beginners/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Bikes</title>
+      <link>http://localhost:1313/blog/tags/bikes/</link>
+      <pubDate>Thu, 19 Jun 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/blog/tags/bikes/</guid>
       <description></description>
     </item>
     <item>
@@ -30,59 +37,17 @@
       <description></description>
     </item>
     <item>
-      <title>Equipment</title>
-      <link>http://localhost:1313/blog/tags/equipment/</link>
-      <pubDate>Thu, 19 Jun 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/blog/tags/equipment/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Endurance</title>
-      <link>http://localhost:1313/blog/tags/endurance/</link>
+      <title>Clothing</title>
+      <link>http://localhost:1313/blog/tags/clothing/</link>
       <pubDate>Wed, 18 Jun 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/blog/tags/endurance/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Nutrition</title>
-      <link>http://localhost:1313/blog/tags/nutrition/</link>
-      <pubDate>Wed, 18 Jun 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/blog/tags/nutrition/</guid>
+      <guid>http://localhost:1313/blog/tags/clothing/</guid>
       <description></description>
     </item>
     <item>
       <title>Training</title>
       <link>http://localhost:1313/blog/tags/training/</link>
-      <pubDate>Wed, 18 Jun 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/blog/tags/training/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Clothing</title>
-      <link>http://localhost:1313/blog/tags/clothing/</link>
       <pubDate>Mon, 16 Jun 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/blog/tags/clothing/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Bike Fit</title>
-      <link>http://localhost:1313/blog/tags/bike-fit/</link>
-      <pubDate>Fri, 13 Jun 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/blog/tags/bike-fit/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Care</title>
-      <link>http://localhost:1313/blog/tags/care/</link>
-      <pubDate>Tue, 10 Jun 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/blog/tags/care/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Maintenance</title>
-      <link>http://localhost:1313/blog/tags/maintenance/</link>
-      <pubDate>Tue, 10 Jun 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/blog/tags/maintenance/</guid>
+      <guid>http://localhost:1313/blog/tags/training/</guid>
       <description></description>
     </item>
     <item>
@@ -93,31 +58,10 @@
       <description></description>
     </item>
     <item>
-      <title>Hello</title>
-      <link>http://localhost:1313/blog/tags/hello/</link>
-      <pubDate>Wed, 16 Sep 2020 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/blog/tags/hello/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Test</title>
-      <link>http://localhost:1313/blog/tags/test/</link>
-      <pubDate>Wed, 16 Sep 2020 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/blog/tags/test/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Garten</title>
-      <link>http://localhost:1313/blog/tags/garten/</link>
-      <pubDate>Mon, 31 Aug 2020 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/blog/tags/garten/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Permakultur</title>
-      <link>http://localhost:1313/blog/tags/permakultur/</link>
-      <pubDate>Mon, 31 Aug 2020 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/blog/tags/permakultur/</guid>
+      <title>Example</title>
+      <link>http://localhost:1313/blog/tags/example/</link>
+      <pubDate>Sun, 18 May 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/blog/tags/example/</guid>
       <description></description>
     </item>
   </channel>

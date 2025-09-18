@@ -5,7 +5,7 @@ authors: ["Frederik Beck"]
 draft: false
 featured_image: "roadbike-2.jpg"
 summary: "A beginner's guide to choosing the right bike, covering frame materials, sizes, types, and budget considerations."
-tags: ["Cycling", "Beginner", "Equipment"]
+tags: ["Cycling", "Bikes", "Beginners"]
 ---
 
 

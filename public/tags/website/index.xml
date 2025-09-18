@@ -23,18 +23,25 @@
       <description>A practical guide to creating and using ICCC logos and graphics with free tools like Photopea and Inkscape.</description>
     </item>
     <item>
-      <title>Website Maintenance Guide</title>
-      <link>http://localhost:1313/blog/posts/2025/website-maintainance/</link>
-      <pubDate>Sat, 07 Jun 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/blog/posts/2025/website-maintainance/</guid>
-      <description>A practical guide to maintaining and updating the ICCC website, including tips for content, images, galleries, tools, and workflow.</description>
-    </item>
-    <item>
       <title>ICCC Hugo Blog – Maintenance and Content Guide</title>
       <link>http://localhost:1313/blog/posts/2025/blog-maintainance/</link>
       <pubDate>Sun, 01 Jun 2025 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/blog/posts/2025/blog-maintainance/</guid>
       <description>A comprehensive guide on maintaining the ICCC Hugo blog, including repository structure, creating new posts, local testing, and deployment.</description>
+    </item>
+    <item>
+      <title>Creating Blog Posts – Example Guide</title>
+      <link>http://localhost:1313/blog/posts/2025/creating-blog-posts/</link>
+      <pubDate>Sun, 18 May 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/blog/posts/2025/creating-blog-posts/</guid>
+      <description>A complete example showing how to create a blog post in Hugo with headings, code, lists, images, captions, and galleries.</description>
+    </item>
+    <item>
+      <title>Website Maintenance Guide</title>
+      <link>http://localhost:1313/blog/posts/2025/website-maintainance/</link>
+      <pubDate>Sat, 17 May 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/blog/posts/2025/website-maintainance/</guid>
+      <description>A practical guide to maintaining and updating the ICCC website, including tips for content, images, tools, and workflow.</description>
     </item>
   </channel>
 </rss>

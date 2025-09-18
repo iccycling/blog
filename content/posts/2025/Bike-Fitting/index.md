@@ -5,7 +5,7 @@ authors: ["Frederik Beck"]
 draft: false
 featured_image: "jordan-0TPSP3L6RmA-unsplash.jpg"
 summary: "Bike fitting myths and practical advice for beginners — how to adjust your saddle, handlebars, and cleats safely."
-tags: ["Cycling", "Bike Fit", "Equipment", "Beginner"]
+tags: ["Cycling", "Bikes"]
 ---
 
 In recent years, bike fitting has developed into a full-blown industry — often accompanied by bold claims that your bike must be set up with millimeter precision. But is this really true?
