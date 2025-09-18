@@ -3,7 +3,7 @@
   <div class="wrapper style2">
     <div class="inner">
       <header>
-        <h2>Posts tagged: "{{ .Title }}"</h2>
+        <h1>Posts tagged: "{{ .Title }}"</h1>
       </header>
 
       <section class="features">
@@ -29,7 +29,7 @@
           <!-- Autor + Datum -->
           <p style="font-size:0.85em; color:#777; margin-bottom:1em;">
             {{ with .Params.authors }}{{ delimit . ", " }}{{ end }}
-            {{ if .Date }} • {{ .Date.Format "02. January 2006" }}{{ end }}
+            {{ if .Date }} • {{ .Date.Format "2 January 2006" }}{{ end }}
           </p>
 
           <a href="{{ .RelPermalink }}" class="special">Read More</a>

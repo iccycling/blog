@@ -2,7 +2,7 @@
 <section id="wrapper">
   <div class="wrapper style1">
     <div class="inner">
-      <h2 class="major">All Posts – Newest First</h2>
+      <h1 class="major">All Posts – Newest First</h1>
       <section class="features">
         {{ $paginator := .Paginate (where .Pages "Section" "posts") }}
         {{ range $paginator.Pages }}
@@ -24,7 +24,7 @@
   <!-- Autor + Datum -->
   <p style="font-size:0.85em; color:#777; margin-bottom:1em;">
     {{ with .Params.authors }}{{ delimit . ", " }}{{ end }}
-    {{ if .Date }} • {{ .Date.Format "02. January 2006" }}{{ end }}
+    {{ if .Date }} • {{ .Date.Format "2 January 2006" }}{{ end }}
   </p>
 
           <a href="{{ .RelPermalink }}" class="special">Read More</a>
@@ -63,28 +63,13 @@
   <div class="wrapper alt style5">
     <div class="inner">
       <h3>All Tags</h3>
-      <!-- Alle Tags Box -->
-      {{ $allTags := slice }}
-      {{ range .Site.RegularPages }}
-      {{ with .Params.tags }}
-      {{ range . }}
-      {{ $allTags = $allTags | append . }}
-      {{ end }}
-      {{ end }}
-      {{ end }}
-      {{ $allTags = $allTags | uniq | sort }}
+        {{ range $name, $taxonomy := .Site.Taxonomies.tags }}
+          <a href="{{ "tags/" | relURL }}{{ $name | urlize }}"
+            style="display:inline-block; margin:0.3em 0.5em; padding:0.3em 0.7em; background:#333; color:#eee; border-radius:3px; text-decoration:none; font-size:0.9rem;">
+            {{ $name }}
+          </a>
+        {{ end }}
 
-      {{ if gt (len $allTags) 0 }}
-
-
-      {{ range $allTags }}
-      <a href="{{ "tags/" | relURL }}{{ . | urlize }}"
-        style="display:inline-block; margin:0.3em 0.5em; padding:0.3em 0.7em; background:#333; color:#eee; border-radius:3px; text-decoration:none; font-size:0.9rem;">
-        {{ . }}
-      </a>
-      {{ end }}
-
-      {{ end }}
     </div>
   </div>
 

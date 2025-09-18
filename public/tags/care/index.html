@@ -11,6 +11,17 @@
   <meta name="description" content="Discover posts, tips and updates.">
   <link rel="icon" href="http://localhost:1313/blog/images/favicon.ico" type="image/x-icon">
 
+  <meta http-equiv="Content-Security-Policy"
+      content="
+        default-src 'self' https://iccycling.github.io;
+        script-src 'self' https://iccycling.github.io;
+        style-src 'self' 'unsafe-inline' https://iccycling.github.io;
+        img-src 'self' data: https://iccycling.github.io;
+        font-src 'self' https://iccycling.github.io;
+        connect-src 'self' https://iccycling.github.io;
+        frame-ancestors 'none';
+        base-uri 'self';
+      ">
  
   <meta name="referrer" content="no-referrer">
 
@@ -23,17 +34,6 @@
   
   <link rel="stylesheet" href="https://iccycling.github.io/assets/css/swiper-bundle.min.css">
 
-
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-
-
-
-
-
-  <noscript>
-    <link rel="stylesheet" href="http://localhost:1313/blog/css/noscript.css">
-  </noscript>
 
   
   <link rel="stylesheet" href="https://iccycling.github.io/assets/css/main.css">
@@ -65,14 +65,11 @@
 
     
     <header id="header">
-      <h1>
-        <a href="http://localhost:1313/blog/posts/">
-      <img src="http://localhost:1313/blog/images/ICCC-Blog.svg" alt="ICCC Blog Logo" style="height: 40px; padding-top: 10px;">
-    </a>
-      </h1>
-      <nav>
-        <a href="#menu">Menu</a>
-      </nav>
+      <a href="http://localhost:1313/blog/posts/">
+        <img src="http://localhost:1313/blog/images/ICCC-Blog.svg" alt="ICCC Blog Logo"
+            style="height: 40px; padding-top: 10px;">
+      </a>
+      <nav><a href="#menu">Menu</a></nav>
     </header>
 
 
@@ -95,11 +92,11 @@
       <header>
         <div class="inner">
           
-          <h2 style="display: inline-flex; align-items: flex-end; height: 60px;">
-          <img src="http://localhost:1313/blog/images/Blog-Logo.svg" 
-              alt="Imperial College Cycling Club Blog Logo" 
-              style="max-width: 100%; filter: invert(1);">
-          </h2>
+          <div style="display: flex; align-items: flex-end; height: 60px; margin-bottom: 1rem;">
+        <img src="http://localhost:1313/blog/images/Blog-Logo.svg" 
+       alt="Imperial College Cycling Club Blog Logo" 
+       style="max-width: 100%; max-height: 100%; filter: invert(1);">
+          </div>
           <p>Your go-to place for tips and inspiring cycling stories. We welcome contributions on any cycling-related topic!</p>
 
         </div>
@@ -113,7 +110,7 @@
   <div class="wrapper style2">
     <div class="inner">
       <header>
-        <h2>Posts tagged: "Care"</h2>
+        <h1>Posts tagged: "Care"</h1>
       </header>
 
       <section class="features">

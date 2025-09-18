@@ -352,12 +352,12 @@
 
     <!-- Header -->
     <header id="header">
-  <a href="{{ "posts/" | relURL }}">
-    <img src="{{ "images/ICCC-Blog.svg" | relURL }}" alt="ICCC Blog Logo"
-         style="height: 40px; padding-top: 10px;">
-  </a>
-  <nav><a href="#menu">Menu</a></nav>
-</header>
+      <a href="{{ "posts/" | relURL }}">
+        <img src="{{ "images/ICCC-Blog.svg" | relURL }}" alt="ICCC Blog Logo"
+            style="height: 40px; padding-top: 10px;">
+      </a>
+      <nav><a href="#menu">Menu</a></nav>
+    </header>
 
     <nav id="menu">
       <div class="inner">
@@ -411,7 +411,7 @@
             </a>
             {{ end }}
             {{ end }}
-            {{ if .Date }} • <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "02 January 2006" }}</time>{{ end }}
+            {{ if .Date }} • <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "2 January 2006" }}</time>{{ end }}
           </p>
 
           <!-- Markdown Content -->

@@ -1,6 +1,6 @@
 ---
 title: "Which Bike Should You Choose as a Beginner..?"
-date: 2019-06-19
+date: 2019-06-02
 authors: ["Frederik Beck"]
 draft: false
 featured_image: "roadbike-2.jpg"
