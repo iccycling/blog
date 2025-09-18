@@ -9,7 +9,8 @@ tags: ["Website", "Example"]
 ---
 
 **Download the complete bundle (Markdown + images) here:**  
-[Download example blog post bundle](https://github.io/iccycling/blog/content/posts/2025/creating-blog-posts)
+[Download example blog post bundle](https://github.com/iccycling/blog/tree/2c3a5e50ac42462f89f8012e0babf0a93476fba0/content/posts/2025/creating-blog-posts)
+
 
 ---
 
