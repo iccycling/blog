@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Gear on ICCC Blog</title>
+    <link>https://iccycling.github.io/blog/tags/gear/</link>
+    <description>Recent content in Gear on ICCC Blog</description>
+    <generator>Hugo</generator>
+    <language>de-DE</language>
+    <lastBuildDate>Thu, 18 Sep 2025 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://iccycling.github.io/blog/tags/gear/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Example Hoodie</title>
+      <link>https://iccycling.github.io/blog/gear/hoodie/</link>
+      <pubDate>Thu, 18 Sep 2025 00:00:00 +0000</pubDate>
+      <guid>https://iccycling.github.io/blog/gear/hoodie/</guid>
+      <description>Stylish ICCC hoodie, perfect for winter rides.</description>
+    </item>
+    <item>
+      <title>Example Hoodie</title>
+      <link>https://iccycling.github.io/blog/gear/road-jersey/</link>
+      <pubDate>Thu, 18 Sep 2025 00:00:00 +0000</pubDate>
+      <guid>https://iccycling.github.io/blog/gear/road-jersey/</guid>
+      <description>Stylish ICCC hoodie, perfect for winter rides.</description>
+    </item>
+  </channel>
+</rss>

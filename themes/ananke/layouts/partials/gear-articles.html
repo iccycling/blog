@@ -1,0 +1,24 @@
+{{/* layouts/partials/gear-articles.html */}}
+{{ $gearPosts := where (where .Site.RegularPages "Section" "gear") "Params.expired" "ne" true }}
+
+<section class="features">
+  {{ range $gearPosts }}
+    <article>
+      {{ with .Resources.GetMatch .Params.featured_image }}
+        {{ $img := .Fill "800x800 top center" }}
+        <a href="{{ .RelPermalink }}" class="image">
+          <img src="{{ $img.RelPermalink }}" alt="{{ $.Title }}">
+        </a>
+      {{ end }}
+
+      <h3 class="major">{{ .Title }}</h3>
+      <p style="margin-bottom:1em;">{{ .Summary }}</p>
+      <p style="font-size:0.85em; color:#777; margin-bottom:1em;">
+        {{ with .Params.authors }}{{ delimit . ", " }}{{ end }}
+        {{ if .Date }} • {{ .Date.Format "2 January 2006" }}{{ end }}
+      </p>
+
+      <a href="{{ .RelPermalink }}" class="special">Read More</a>
+    </article>
+  {{ end }}
+</section>

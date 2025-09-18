@@ -1,0 +1,138 @@
+---
+title: "ICCC Hugo Blog – Maintenance and Content Guide"
+date: 2025-06-01
+authors: ["Frederik Beck"]
+draft: false
+featured_image: "github-unsplash.jpg"
+summary: "A comprehensive guide on maintaining the ICCC Hugo blog, including repository structure, creating new posts, local testing, and deployment."  
+tags: ["Website"]
+---
+
+This guide explains step by step how to maintain the blog at [iccycling.github.io/blog](https://iccycling.github.io/blog/), add new content, and test changes. It is intended for all team members responsible for creating or maintaining content.
+
+---
+
+## Overview
+
+- **Generator:** Hugo (static site generator)
+- **Version:** 0.149
+- **Repository:** [github.com/iccycling/blog](https://github.com/iccycling/blog)
+- **Deployment:** GitHub Actions automatically build the blog and deploy to GitHub Pages
+- **How it works:** Hugo renders Markdown files into complete HTML pages, allowing structured content management while keeping styles and layout under centralized control.
+- **Theme:** Ananke (standard layout, adapted for ICCC)
+
+---
+
+## Key Folders & Files
+
+    iccycling.github.io/blog/
+    ├── content/
+    │   ├── posts/
+    │   │   └── 2025/
+    │   │       └── example-post/
+    │   │           ├── index.md       # Markdown file with post content
+    │   │           └── images/        # Images for this post
+    │   ├── gear/
+    │   │   └── example-hoodie/
+    │   │       ├── index.md
+    │   │       └── images/
+    │   ├── authors/
+    │   │   └── max-mustermann/
+    │   │       ├── index.md           # Author profile
+    │   │       └── profile-pic.jpg
+    │   └── snippets/
+    │       ├── latest.md               # Snippet: latest posts for main website
+    │       └── gear.md                 # Snippet: gear articles for main website
+    ├── public/                         # Output folder for generated HTML
+    ├── static/
+    │   ├── js/
+    │   ├── css/
+    │   └── images/
+    ├── themes/
+    │   └── ananke/
+    │       ├── _default/
+    │       │   ├── baseof.html         # Head, header, footer
+    │       │   ├── list.html           # Overview pages for posts
+    │       │   ├── single.html         # Single post layout
+    │       │   ├── empty.html          # Helper page for snippets
+    │       │   └── taxonomy.html       # Overview pages for tags
+    │       ├── authors/
+    │       │   └── term.html           # Author page with profile picture and posts
+    │       ├── partials/
+    │       │   ├── latest-post.html    # Snippet: latest posts
+    │       │   └── gear-articles.html  # Snippet: gear articles
+    │       ├── shortcodes/
+    │       │   └── gallery-swipe.html  # Gallery with Swiper + Lightbox
+    │       └── 404.html                # Error page
+    ├── .nojekyll                        # Prevents GitHub internal build
+    ├── hugo.toml                        # Hugo configuration
+    └── .github/workflows/deploy.yml     # GitHub Actions workflow
+
+
+**Note:** CSS and JS are currently loaded from the main website. Changes in `main.css` affect both the main website and the blog.
+
+---
+
+## Creating a New Blog Post
+
+1. **Create a bundle**  
+   - Create a new folder under `content/posts/YYYY/new-post/`  
+   - Add `index.md` with the Markdown content  
+   - Place images in the same folder and reference them in the Markdown file  
+   - For guidance on formatting and including a gallery, download the template Markdown from the example post.
+
+2. **Add author information** (optional)  
+   - Create a folder under `content/authors/`  
+   - Add `index.md` with the author profile  
+   - Place profile image in the same folder
+
+
+---
+
+## Local Testing
+
+Before uploading changes, test locally:
+
+1. Install Hugo (version 0.149)
+2. Download the repository: [github.com/iccycling/blog](https://github.com/iccycling/blog)  
+   - Download ZIP and extract
+3. Make changes in the appropriate folders (`content/posts/...`)
+4. Open terminal in the blog folder and run:
+
+        hugo server
+
+5. Open in browser: `http://localhost:1313/blog/posts/`  
+   - Check that content and layout display correctly
+
+---
+
+## Deployment
+
+- You can manually upload your post bundle directly on [github.com/iccycling/blog](https://github.com/iccycling/blog)  
+  by going to `content/posts/YYYY/` and adding your new folder with `index.md` and images.
+- GitHub Actions will automatically build the Hugo blog
+- The output is deployed to the `gh-pages` branch
+- You can check if the GitHub Actions workflow succeeded online at:
+  https://github.com/iccycling/blog/actions
+  There you see the status of each deployment attempt and detailed logs if something went wrong.
+
+---
+
+## Tips & Notes
+
+- Markdown files only contain raw text and metadata, no styling  
+- Styles and scripts are managed centrally under `static/css` and `static/js`  
+- Individual post images are handled via shortcodes (`gallery-swipe`)  
+- Overview pages are generated via `_default/list.html` and `_default/taxonomy.html`  
+- Author pages via `authors/term.html`  
+
+---
+
+## Summary
+
+- Understand repository structure: `content/`, `themes/`, `static/`, `public/`, `snippets/`  
+- Always create new posts as bundles  
+- Test locally before upload  
+- Deployment runs automatically via GitHub Actions  
+
+This ensures that any team member can safely maintain and extend the Hugo blog.

@@ -1,0 +1,704 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Imperial College Cycling Club - BLog: ICCC Hugo Blog – Maintenance and Content Guide</title>
+  <meta name="description" content="A comprehensive guide on maintaining the ICCC Hugo blog, including repository structure, creating new posts, local testing, and deployment.">
+
+  <meta http-equiv="Content-Security-Policy"
+      content="
+        default-src 'self' https://iccycling.github.io;
+        script-src 'self' https://iccycling.github.io;
+        style-src 'self' 'unsafe-inline' https://iccycling.github.io;
+        img-src 'self' data: https://iccycling.github.io;
+        font-src 'self' https://iccycling.github.io;
+        connect-src 'self' https://iccycling.github.io;
+        frame-ancestors 'none';
+        base-uri 'self';
+      ">
+
+  <meta name="referrer" content="no-referrer">
+  <meta name="robots" content="index, follow">
+
+  <link rel="icon" href="https://iccycling.github.io/blog/images/favicon.ico" type="image/x-icon">
+
+  
+  <link rel="stylesheet" href="https://iccycling.github.io/assets/css/glightbox.min.css" />
+  <link rel="stylesheet" href="https://iccycling.github.io/assets/css/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="https://iccycling.github.io/assets/css/main.css">
+
+   
+  <meta property="og:site_name" content="Imperial College Cycling Club">
+  <meta property="og:title" content="ICCC Hugo Blog – Maintenance and Content Guide">
+  <meta property="og:description" content="A comprehensive guide on maintaining the ICCC Hugo blog, including repository structure, creating new posts, local testing, and deployment.">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://iccycling.github.io/blog/posts/2025/blog-maintainance/">
+  <meta property="og:article:published_time" content="2025-06-01T00:00:00Z">
+  <meta property="og:locale" content="en_GB">
+
+
+
+  
+    <meta property="og:image" content="https://iccycling.github.io/blog/posts/2025/blog-maintainance/github-unsplash.jpg">
+    <meta name="twitter:image" content="https://iccycling.github.io/blog/posts/2025/blog-maintainance/github-unsplash.jpg">
+    <meta property="og:image:alt" content="Imperial College Cycling Club - ICCC Hugo Blog – Maintenance and Content Guide">
+    <meta name="twitter:image:alt" content="Imperial College Cycling Club - ICCC Hugo Blog – Maintenance and Content Guide">
+  
+
+  
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="ICCC Hugo Blog – Maintenance and Content Guide">
+  <meta name="twitter:description" content="A comprehensive guide on maintaining the ICCC Hugo blog, including repository structure, creating new posts, local testing, and deployment.">
+</head>
+
+
+  
+  <style>
+    .swiper-box {
+      width: 100%;
+      position: relative;
+      overflow: hidden;
+      margin: 2rem 0;
+    }
+
+    .gallery-swiper .swiper-slide img {
+      width: 100%;
+      aspect-ratio: 5/4;
+      max-height: 70vh;
+      object-fit: contain;
+      display: block;
+      border-radius: 3px;
+      cursor: pointer;
+    }
+
+    @media (max-width: 600px) {
+      .gallery-swiper .swiper-slide img {
+        aspect-ratio: 1/1;
+      }
+    }
+
+    .swiper-button-next,
+    .swiper-button-prev {
+      color: black;
+      font-size: 20px;
+    }
+
+    .swiper-pagination {
+      position: absolute;
+      bottom: 10px;
+      width: 100%;
+      text-align: center;
+    }
+
+    .swiper-pagination-bullet {
+      width: 10px;
+      height: 10px;
+      display: inline-block;
+      border-radius: 50%;
+      background-color: gray;
+      opacity: 0.33;
+      margin: 0 4px;
+      transition: opacity 0.3s, transform 0.3s;
+    }
+
+    .swiper-pagination-bullet-active {
+      opacity: 1;
+      transform: scale(1.2);
+      background-color: black;
+    }
+
+     
+    .glightbox-container,
+    .glightbox-container * {
+      pointer-events: auto !important;
+    }
+
+    .glightbox-clean button,
+    .glightbox-clean a {
+      all: initial;
+    }
+
+    .gallery-swiper a,
+    .gallery-swiper a img {
+      text-decoration: none;
+       
+      border: none;
+       
+      outline: none;
+       
+    }
+
+    .post-content img {
+      display: block;
+
+      width: 100%;
+       
+
+      object-fit: contain;
+       
+    }
+
+    .post-content h1 {
+       
+      font-weight: 700;
+       
+      font-size: 1.4em;
+       
+    }
+
+     
+    .post-tags {
+      margin-bottom: 1rem;
+      font-size: 0.9rem;
+      color: #555;
+    }
+
+    .post-tags a {
+      display: inline-block;
+      margin-right: 0.5rem;
+      padding: 0.2rem 0.5rem;
+      background-color: #333;
+      border-radius: 3px;
+      text-decoration: none;
+      color: #eee;
+      transition: background 0.3s;
+    }
+
+    .post-tags a:hover {
+      background-color: #ddd;
+    }
+
+
+
+     
+    .post-meta {
+      color: #666;
+
+      margin-bottom: 2rem;
+    }
+
+    .post-meta .author {
+      font-weight: bold;
+    }
+
+    .post-meta .date {
+      font-style: italic;
+    }
+
+     
+    .post-content img {
+      display: block;
+      margin: 1em auto;
+       
+      width: 100%;
+       
+      max-height: 70vh;
+       
+      object-fit: contain;
+       
+      cursor: pointer;
+       
+    }
+
+
+
+    .post-content figure {
+      display: block;
+      text-align: center;
+      margin: 1.5rem 0;
+    }
+
+    .post-content figure img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+      margin: 0 auto;
+    }
+
+    .post-content figure figcaption {
+      font-style: italic;
+
+      color: #666;
+      margin-top: 0.6rem;
+      margin-bottom: 1rem;
+    }
+
+    .glightbox-container .gslide-description,
+    .glightbox-container .gslide-description * {
+      background: transparent !important;
+       
+      color: #ffffff !important;
+       
+      font-size: 0.9rem;
+       
+      text-align: center;
+      padding: 0.3rem;
+      text-transform: none !important;
+
+    }
+
+    .share-buttons {
+      display: flex;
+      justify-content: center;
+       
+      gap: 10px;
+      flex-wrap: wrap;
+      margin-top: 2rem;
+    }
+
+    .share-btn {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 32px;
+       
+      height: 32px;
+       
+      border-radius: 50%;
+      background-color: #ddd;
+      color: #333;
+      text-decoration: none;
+      font-size: 14px;
+       
+      transition: all 0.3s;
+      border: none;
+      cursor: pointer;
+      padding: 0;
+    }
+
+    .share-btn i {
+      line-height: 1;
+    }
+
+    .share-btn:hover {
+      transform: scale(1.1);
+      background-color: #ccc;
+    }
+
+  @media print {
+  @page {
+    margin: 20mm;  
+  }
+
+  body,
+  html {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+  }
+
+   
+  body * {
+    visibility: hidden;
+  }
+
+   
+  .post-content,
+  .post-content *,
+  header h2,
+  header h2 * {
+    visibility: visible;
+    color: black !important;
+  }
+
+   
+  header h2 img {
+    filter: invert(0) !important;  
+    max-width: 80%;
+    height: auto;
+    display: block;
+    margin-bottom: 1rem;  
+  }
+
+   
+  .post-content {
+    position: relative;
+    left: 0;
+    top: 0;
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .post-content img {
+    max-width: 100% !important;
+    height: auto !important;
+    display: block;
+    margin: 0 auto;
+  }
+
+   
+  nav,
+  #footer,
+  .share-buttons,
+  header h1 {
+    display: none !important;
+  }
+}
+
+
+  </style>
+</head>
+
+<body>
+  <div id="page-wrapper">
+
+    
+    <header id="header">
+      <a href="https://iccycling.github.io/blog/posts/">
+        <img src="https://iccycling.github.io/blog/images/ICCC-Blog.svg" alt="ICCC Blog Logo"
+            style="height: 40px; padding-top: 10px;">
+      </a>
+      <nav><a href="#menu">Menu</a></nav>
+    </header>
+
+    <nav id="menu">
+      <div class="inner">
+        <h2>Menu</h2>
+        <ul class="links">
+          
+          <li><a href="https://iccycling.github.io/">Main Website</a></li>
+          <li><a href="https://iccycling.github.io/blog/posts/">Blog Home</a></li>
+        </ul>
+        <a href="#" class="close">Close</a>
+      </div>
+    </nav>
+
+
+    
+    <section id="wrapper">
+
+      <header>
+        <div class="inner">
+          
+          <div style="display: flex; align-items: flex-end; height: 60px; margin-bottom: 1rem;">
+  <img src="https://iccycling.github.io/blog/images/Blog-Logo.svg" 
+       alt="Imperial College Cycling Club Blog Logo" 
+       style="max-width: 100%; max-height: 100%; filter: invert(1);">
+</div>
+          <p>Your go-to place for tips and inspiring cycling stories. We welcome contributions on any cycling-related topic!</p>
+
+        </div>
+      </header>
+
+
+      <div class="wrapper style5">
+        <article class="inner post-content">
+          
+          
+          <p class="post-tags">
+            
+            <a href="https://iccycling.github.io/blog/tags/website">Website</a>
+
+            
+          </p>
+          
+
+          
+          <h1>ICCC Hugo Blog – Maintenance and Content Guide</h1>
+          <p class="post-meta">
+            
+            
+            <a href="https://iccycling.github.io/blog/authors/frederik-beck" style="color:#777;">
+              Frederik Beck
+            </a>
+            
+            
+             • <time datetime="2025-06-01">1 June 2025</time>
+          </p>
+
+          
+          <p>This guide explains step by step how to maintain the blog at <a href="https://iccycling.github.io/blog/">iccycling.github.io/blog</a>, add new content, and test changes. It is intended for all team members responsible for creating or maintaining content.</p>
+<hr>
+<h2 id="overview">Overview</h2>
+<ul>
+<li><strong>Generator:</strong> Hugo (static site generator)</li>
+<li><strong>Version:</strong> 0.149</li>
+<li><strong>Repository:</strong> <a href="https://github.com/iccycling/blog">github.com/iccycling/blog</a></li>
+<li><strong>Deployment:</strong> GitHub Actions automatically build the blog and deploy to GitHub Pages</li>
+<li><strong>How it works:</strong> Hugo renders Markdown files into complete HTML pages, allowing structured content management while keeping styles and layout under centralized control.</li>
+<li><strong>Theme:</strong> Ananke (standard layout, adapted for ICCC)</li>
+</ul>
+<hr>
+<h2 id="key-folders--files">Key Folders &amp; Files</h2>
+<pre><code>iccycling.github.io/blog/
+├── content/
+│   ├── posts/
+│   │   └── 2025/
+│   │       └── example-post/
+│   │           ├── index.md       # Markdown file with post content
+│   │           └── images/        # Images for this post
+│   ├── gear/
+│   │   └── example-hoodie/
+│   │       ├── index.md
+│   │       └── images/
+│   ├── authors/
+│   │   └── max-mustermann/
+│   │       ├── index.md           # Author profile
+│   │       └── profile-pic.jpg
+│   └── snippets/
+│       ├── latest.md               # Snippet: latest posts for main website
+│       └── gear.md                 # Snippet: gear articles for main website
+├── public/                         # Output folder for generated HTML
+├── static/
+│   ├── js/
+│   ├── css/
+│   └── images/
+├── themes/
+│   └── ananke/
+│       ├── _default/
+│       │   ├── baseof.html         # Head, header, footer
+│       │   ├── list.html           # Overview pages for posts
+│       │   ├── single.html         # Single post layout
+│       │   ├── empty.html          # Helper page for snippets
+│       │   └── taxonomy.html       # Overview pages for tags
+│       ├── authors/
+│       │   └── term.html           # Author page with profile picture and posts
+│       ├── partials/
+│       │   ├── latest-post.html    # Snippet: latest posts
+│       │   └── gear-articles.html  # Snippet: gear articles
+│       ├── shortcodes/
+│       │   └── gallery-swipe.html  # Gallery with Swiper + Lightbox
+│       └── 404.html                # Error page
+├── .nojekyll                        # Prevents GitHub internal build
+├── hugo.toml                        # Hugo configuration
+└── .github/workflows/deploy.yml     # GitHub Actions workflow
+</code></pre>
+<p><strong>Note:</strong> CSS and JS are currently loaded from the main website. Changes in <code>main.css</code> affect both the main website and the blog.</p>
+<hr>
+<h2 id="creating-a-new-blog-post">Creating a New Blog Post</h2>
+<ol>
+<li>
+<p><strong>Create a bundle</strong></p>
+<ul>
+<li>Create a new folder under <code>content/posts/YYYY/new-post/</code></li>
+<li>Add <code>index.md</code> with the Markdown content</li>
+<li>Place images in the same folder and reference them in the Markdown file</li>
+<li>For guidance on formatting and including a gallery, download the template Markdown from the example post.</li>
+</ul>
+</li>
+<li>
+<p><strong>Add author information</strong> (optional)</p>
+<ul>
+<li>Create a folder under <code>content/authors/</code></li>
+<li>Add <code>index.md</code> with the author profile</li>
+<li>Place profile image in the same folder</li>
+</ul>
+</li>
+</ol>
+<hr>
+<h2 id="local-testing">Local Testing</h2>
+<p>Before uploading changes, test locally:</p>
+<ol>
+<li>
+<p>Install Hugo (version 0.149)</p>
+</li>
+<li>
+<p>Download the repository: <a href="https://github.com/iccycling/blog">github.com/iccycling/blog</a></p>
+<ul>
+<li>Download ZIP and extract</li>
+</ul>
+</li>
+<li>
+<p>Make changes in the appropriate folders (<code>content/posts/...</code>)</p>
+</li>
+<li>
+<p>Open terminal in the blog folder and run:</p>
+<pre><code> hugo server
+</code></pre>
+</li>
+<li>
+<p>Open in browser: <code>http://localhost:1313/blog/posts/</code></p>
+<ul>
+<li>Check that content and layout display correctly</li>
+</ul>
+</li>
+</ol>
+<hr>
+<h2 id="deployment">Deployment</h2>
+<ul>
+<li>You can manually upload your post bundle directly on <a href="https://github.com/iccycling/blog">github.com/iccycling/blog</a><br>
+by going to <code>content/posts/YYYY/</code> and adding your new folder with <code>index.md</code> and images.</li>
+<li>GitHub Actions will automatically build the Hugo blog</li>
+<li>The output is deployed to the <code>gh-pages</code> branch</li>
+<li>You can check if the GitHub Actions workflow succeeded online at:
+<a href="https://github.com/iccycling/blog/actions">https://github.com/iccycling/blog/actions</a>
+There you see the status of each deployment attempt and detailed logs if something went wrong.</li>
+</ul>
+<hr>
+<h2 id="tips--notes">Tips &amp; Notes</h2>
+<ul>
+<li>Markdown files only contain raw text and metadata, no styling</li>
+<li>Styles and scripts are managed centrally under <code>static/css</code> and <code>static/js</code></li>
+<li>Individual post images are handled via shortcodes (<code>gallery-swipe</code>)</li>
+<li>Overview pages are generated via <code>_default/list.html</code> and <code>_default/taxonomy.html</code></li>
+<li>Author pages via <code>authors/term.html</code></li>
+</ul>
+<hr>
+<h2 id="summary">Summary</h2>
+<ul>
+<li>Understand repository structure: <code>content/</code>, <code>themes/</code>, <code>static/</code>, <code>public/</code>, <code>snippets/</code></li>
+<li>Always create new posts as bundles</li>
+<li>Test locally before upload</li>
+<li>Deployment runs automatically via GitHub Actions</li>
+</ul>
+<p>This ensures that any team member can safely maintain and extend the Hugo blog.</p>
+
+
+          <div class="share-buttons" style="margin-top:2rem; margin-bottom:2rem; display:flex; gap:10px; flex-wrap: wrap;">
+            
+            <a href="https://twitter.com/intent/tweet?url=https%3a%2f%2ficcycling.github.io%2fblog%2fposts%2f2025%2fblog-maintainance%2f&text=ICCC%20Hugo%20Blog%20%e2%80%93%20Maintenance%20and%20Content%20Guide" target="_blank"
+              class="share-btn" title="Share on X">
+              <i class="fab fa-x-twitter"></i>
+            </a>
+            
+            <a href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2ficcycling.github.io%2fblog%2fposts%2f2025%2fblog-maintainance%2f" target="_blank" class="share-btn"
+              title="Share on Facebook">
+              <i class="fab fa-facebook-f"></i>
+            </a>
+            
+            <a href="https://api.whatsapp.com/send?text=ICCC%20Hugo%20Blog%20%e2%80%93%20Maintenance%20and%20Content%20Guide%20https%3a%2f%2ficcycling.github.io%2fblog%2fposts%2f2025%2fblog-maintainance%2f" target="_blank"
+              class="share-btn" title="Share on WhatsApp">
+              <i class="fab fa-whatsapp"></i>
+            </a>
+            
+            <a href="https://www.linkedin.com/shareArticle?mini=true&url=https%3a%2f%2ficcycling.github.io%2fblog%2fposts%2f2025%2fblog-maintainance%2f&title=ICCC%20Hugo%20Blog%20%e2%80%93%20Maintenance%20and%20Content%20Guide"
+              target="_blank" class="share-btn" title="Share on LinkedIn">
+              <i class="fab fa-linkedin-in"></i>
+            </a>
+            
+            <a href="mailto:?subject=ICCC%20Hugo%20Blog%20%e2%80%93%20Maintenance%20and%20Content%20Guide&body=https%3a%2f%2ficcycling.github.io%2fblog%2fposts%2f2025%2fblog-maintainance%2f" class="share-btn" title="Share via Email">
+              <i class="fas fa-envelope"></i>
+            </a>
+            
+            <a href="javascript:void(0);" class="share-btn share-copy" title="Copy link">
+              <i class="fas fa-link"></i>
+            </a>
+
+
+            
+            <a href="javascript:void(0);" class="share-btn share-print" title="Print">
+              <i class="fas fa-print"></i>
+            </a>
+
+          </div>
+
+
+
+          
+        </article>
+      </div>
+
+      
+      <div class="wrapper style2 alt">
+        <div class="inner">
+          <section class="features">
+
+            
+            <article>
+              <a href="https://iccycling.github.io/blog/posts/2025/website-maintainance/" class="image" style="display:block;position:relative;">
+                
+                
+                <img src="https://iccycling.github.io/blog/posts/2025/website-maintainance/jordan-jnJVpJJmdkI-unsplash_hu_d362f58064af8888.jpg" alt="jordan-jnJVpJJmdkI-unsplash.jpg" style="width:100%;display:block;">
+                
+              </a>
+
+
+
+              <h3 class="major"><a href="https://iccycling.github.io/blog/posts/2025/website-maintainance/">Website Maintenance Guide</a></h3>
+
+              <p style="margin-bottom:1em;">A practical guide to maintaining and updating the ICCC website, including tips for content, images, galleries, tools, and workflow.</p>
+
+          
+          <p style="font-size:0.85em; color:#777; margin-bottom:1em;">
+            Frederik Beck
+             • 07. June 2025
+          </p>
+
+
+
+              <a href="https://iccycling.github.io/blog/posts/2025/website-maintainance/" class="special">Read More</a>
+            </article>
+            
+
+            
+            <article>
+              <a href="https://iccycling.github.io/blog/posts/2025/recent-test-post/" class="image" style="display:block;position:relative;">
+                
+                
+                <img src="https://iccycling.github.io/blog/posts/2025/recent-test-post/gravel-portrait_hu_da3cd5410a753f2e.jpg" alt="gravel-portrait.jpg" style="width:100%;display:block;">
+                
+              </a>
+
+
+
+              <h3 class="major"><a href="https://iccycling.github.io/blog/posts/2025/recent-test-post/">Recent Test Post</a></h3>
+
+              
+
+               <p style="margin-bottom:1em;">Just a Test Post.</p>
+
+          
+          <p style="font-size:0.85em; color:#777; margin-bottom:1em;">
+            Max Mustermann
+             • 16. September 2020
+          </p>
+
+
+
+              <a href="https://iccycling.github.io/blog/posts/2025/recent-test-post/" class="special">Read More</a>
+            </article>
+            
+          </section>
+        </div>
+      </div>
+
+
+    </section>
+
+    <section id="footer">
+      <div class="inner">
+        <ul class="contact">
+          <li class="icon solid fa-home">
+            Imperial College Cycling Club<br />
+            Imperial College Union<br />
+            Beit Quadrangle<br />
+            Prince Consort Road<br />
+            London<br />
+            SW7 2BB
+          </li>
+          <li class="icon solid fa-envelope">
+            <a href="mailto:cycle@imperial.ac.uk">cycle@imperial.ac.uk</a>
+          </li>
+          <li class="icon brands fa-instagram">
+            <a href="https://instagram.com/iccycling" target="_blank" rel="noopener">@iccycling</a>
+          </li>
+        </ul>
+        <ul class="copyright">
+          <li>&copy; Imperial College Cycling Club</li>
+        </ul>
+      </div>
+    </section>
+
+
+  </div>
+
+  
+  <script src="https://iccycling.github.io/assets/js/glightbox.min.js"></script>
+  <script src="https://iccycling.github.io/assets/js/swiper-bundle.min.js"></script>
+  <script src="https://iccycling.github.io/assets/js/jquery.min.js"></script>
+  <script src="https://iccycling.github.io/assets/js/jquery.scrollex.min.js"></script>
+  <script src="https://iccycling.github.io/assets/js/browser.min.js"></script>
+  <script src="https://iccycling.github.io/assets/js/breakpoints.min.js"></script>
+  <script src="https://iccycling.github.io/assets/js/util.js"></script>
+  <script src="https://iccycling.github.io/assets/js/main.js"></script>
+  <script src="https://iccycling.github.io/blog/js/blog.js"></script>
+
+
+
+
+</body>
+
+</html>
