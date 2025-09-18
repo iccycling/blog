@@ -2,94 +2,94 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>ICCC Blog</title>
-    <link>http://localhost:1313/blog/</link>
+    <link>https://iccycling.github.io/blog/</link>
     <description>Recent content on ICCC Blog</description>
     <generator>Hugo</generator>
     <language>de-DE</language>
     <lastBuildDate>Thu, 19 Jun 2025 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/blog/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://iccycling.github.io/blog/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Which Bike Should You Choose as a Beginner?</title>
-      <link>http://localhost:1313/blog/posts/2025/beginners-roadbike-advice/</link>
+      <link>https://iccycling.github.io/blog/posts/2025/beginners-roadbike-advice/</link>
       <pubDate>Thu, 19 Jun 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/blog/posts/2025/beginners-roadbike-advice/</guid>
+      <guid>https://iccycling.github.io/blog/posts/2025/beginners-roadbike-advice/</guid>
       <description>A beginner&amp;rsquo;s guide to choosing the right bike, covering frame materials, sizes, types, and budget considerations.</description>
     </item>
     <item>
       <title>Endurance Training Methods, Recovery and Nutrition</title>
-      <link>http://localhost:1313/blog/posts/2025/training-methods/</link>
+      <link>https://iccycling.github.io/blog/posts/2025/training-methods/</link>
       <pubDate>Wed, 18 Jun 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/blog/posts/2025/training-methods/</guid>
+      <guid>https://iccycling.github.io/blog/posts/2025/training-methods/</guid>
       <description>A comprehensive guide to endurance training, recovery, strength work, and nutrition for cyclists and triathletes.</description>
     </item>
     <item>
       <title>Essential Road Cycling Clothing and Where to Buy</title>
-      <link>http://localhost:1313/blog/posts/2025/beginner-clothes-advice/</link>
+      <link>https://iccycling.github.io/blog/posts/2025/beginner-clothes-advice/</link>
       <pubDate>Mon, 16 Jun 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/blog/posts/2025/beginner-clothes-advice/</guid>
+      <guid>https://iccycling.github.io/blog/posts/2025/beginner-clothes-advice/</guid>
       <description>A beginner-friendly guide to essential road cycling clothing, safety gear, and where to purchase them.</description>
     </item>
     <item>
       <title>Is Bike Fitting Really That Precise?</title>
-      <link>http://localhost:1313/blog/posts/2025/bike-fitting/</link>
+      <link>https://iccycling.github.io/blog/posts/2025/bike-fitting/</link>
       <pubDate>Fri, 13 Jun 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/blog/posts/2025/bike-fitting/</guid>
+      <guid>https://iccycling.github.io/blog/posts/2025/bike-fitting/</guid>
       <description>Bike fitting myths and practical advice for beginners — how to adjust your saddle, handlebars, and cleats safely.</description>
     </item>
     <item>
       <title>Bike Washing, Maintenance &amp; Care</title>
-      <link>http://localhost:1313/blog/posts/2025/bike-maintainance/</link>
+      <link>https://iccycling.github.io/blog/posts/2025/bike-maintainance/</link>
       <pubDate>Tue, 10 Jun 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/blog/posts/2025/bike-maintainance/</guid>
+      <guid>https://iccycling.github.io/blog/posts/2025/bike-maintainance/</guid>
       <description>Practical tips for cleaning, maintaining, and caring for your bike, including chain lubrication and basic repairs.</description>
     </item>
     <item>
       <title>New Website and a Vision for the ICCC</title>
-      <link>http://localhost:1313/blog/posts/2025/new-website/</link>
+      <link>https://iccycling.github.io/blog/posts/2025/new-website/</link>
       <pubDate>Mon, 09 Jun 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/blog/posts/2025/new-website/</guid>
+      <guid>https://iccycling.github.io/blog/posts/2025/new-website/</guid>
       <description>An overview of the new ICCC website and vision to make cycling more accessible. Covers communication, club facilities, indoor training, partnerships, and safety to grow membership and strengthen club culture.</description>
     </item>
     <item>
       <title>Quick Guide: Creating Logos &amp; Graphics for the ICCC</title>
-      <link>http://localhost:1313/blog/posts/2025/create-logos/</link>
+      <link>https://iccycling.github.io/blog/posts/2025/create-logos/</link>
       <pubDate>Sun, 08 Jun 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/blog/posts/2025/create-logos/</guid>
+      <guid>https://iccycling.github.io/blog/posts/2025/create-logos/</guid>
       <description>A practical guide to creating and using ICCC logos and graphics with free tools like Photopea and Inkscape.</description>
     </item>
     <item>
       <title>Website Maintenance Guide</title>
-      <link>http://localhost:1313/blog/posts/2025/website-maintainance/</link>
+      <link>https://iccycling.github.io/blog/posts/2025/website-maintainance/</link>
       <pubDate>Sat, 07 Jun 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/blog/posts/2025/website-maintainance/</guid>
+      <guid>https://iccycling.github.io/blog/posts/2025/website-maintainance/</guid>
       <description>A practical guide to maintaining and updating the ICCC website, including tips for content, images, galleries, tools, and workflow.</description>
     </item>
     <item>
       <title>Recent Test Post</title>
-      <link>http://localhost:1313/blog/posts/2025/recent-test-post/</link>
+      <link>https://iccycling.github.io/blog/posts/2025/recent-test-post/</link>
       <pubDate>Wed, 16 Sep 2020 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/blog/posts/2025/recent-test-post/</guid>
+      <guid>https://iccycling.github.io/blog/posts/2025/recent-test-post/</guid>
       <description>Just a Test Post.</description>
     </item>
     <item>
       <title>Permakultur: Nachhaltig Gärtnern für die Zukunft</title>
-      <link>http://localhost:1313/blog/posts/2025/perma-post/</link>
+      <link>https://iccycling.github.io/blog/posts/2025/perma-post/</link>
       <pubDate>Mon, 31 Aug 2020 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/blog/posts/2025/perma-post/</guid>
+      <guid>https://iccycling.github.io/blog/posts/2025/perma-post/</guid>
       <description>Ein ausführlicher Einblick in die Prinzipien der Permakultur und wie man sie im eigenen Garten umsetzen kann.</description>
     </item>
     <item>
       <title>Which Bike Should You Choose as a Beginner..?</title>
-      <link>http://localhost:1313/blog/posts/2025/begginers-roadbike-advicecopy/</link>
+      <link>https://iccycling.github.io/blog/posts/2025/begginers-roadbike-advicecopy/</link>
       <pubDate>Wed, 19 Jun 2019 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/blog/posts/2025/begginers-roadbike-advicecopy/</guid>
+      <guid>https://iccycling.github.io/blog/posts/2025/begginers-roadbike-advicecopy/</guid>
       <description>A beginner&amp;rsquo;s guide to choosing the right bike, covering frame materials, sizes, types, and budget considerations.</description>
     </item>
     <item>
       <title>Latest Posts Snippet</title>
-      <link>http://localhost:1313/blog/snippets/latest/</link>
+      <link>https://iccycling.github.io/blog/snippets/latest/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/blog/snippets/latest/</guid>
+      <guid>https://iccycling.github.io/blog/snippets/latest/</guid>
       <description></description>
     </item>
   </channel>

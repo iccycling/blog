@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="de">
+<html lang="en-GB">
 
 <head>
   <meta charset="UTF-8">
@@ -19,17 +19,17 @@
   <meta property="og:description" content="{{ .Summary }}">
   <meta property="og:type" content="article">
   <meta property="og:url" content="{{ .Permalink }}">
-  {{ with .Params.featured_image }}
-  <meta property="og:image" content="{{ . | absURL }}">
-  {{ end }}
+  {{ with .Resources.GetMatch .Params.featured_image }}
+  <meta name="twitter:image" content="{{ .Permalink }}">
+{{ end }}
 
   <!-- Twitter Card -->
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="{{ .Title }}">
   <meta name="twitter:description" content="{{ .Summary }}">
-  {{ with .Params.featured_image }}
-  <meta name="twitter:image" content="{{ . | absURL }}">
-  {{ end }}
+  {{ with .Resources.GetMatch .Params.featured_image }}
+  <meta name="twitter:image" content="{{ .Permalink }}">
+{{ end }}
 
 
 
@@ -353,12 +353,10 @@
       <header>
         <div class="inner">
           
-          <h2>
-          
-              <img src="{{ "images/Blog-Logo.svg" | relURL }}" 
-                  alt="Imperial College Cycling Club Blog Logo" 
-                  style="height: 60px; max-width: 80%; filter: invert(1);">
-            
+          <h2 style="display: inline-flex; align-items: flex-end; height: 60px;">
+          <img src="{{ "images/Blog-Logo.svg" | relURL }}" 
+              alt="Imperial College Cycling Club Blog Logo" 
+              style="max-width: 100%; filter: invert(1);">
           </h2>
           <p>Your go-to place for tips and inspiring cycling stories. We welcome contributions on any cycling-related topic!</p>
 

@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Nutrition on ICCC Blog</title>
-    <link>http://localhost:1313/blog/tags/nutrition/</link>
+    <link>https://iccycling.github.io/blog/tags/nutrition/</link>
     <description>Recent content in Nutrition on ICCC Blog</description>
     <generator>Hugo</generator>
     <language>de-DE</language>
     <lastBuildDate>Wed, 18 Jun 2025 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/blog/tags/nutrition/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://iccycling.github.io/blog/tags/nutrition/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Endurance Training Methods, Recovery and Nutrition</title>
-      <link>http://localhost:1313/blog/posts/2025/training-methods/</link>
+      <link>https://iccycling.github.io/blog/posts/2025/training-methods/</link>
       <pubDate>Wed, 18 Jun 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/blog/posts/2025/training-methods/</guid>
+      <guid>https://iccycling.github.io/blog/posts/2025/training-methods/</guid>
       <description>A comprehensive guide to endurance training, recovery, strength work, and nutrition for cyclists and triathletes.</description>
     </item>
   </channel>
