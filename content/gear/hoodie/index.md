@@ -5,7 +5,7 @@ draft: false
 featured_image: "collegiatestyle.jpg"
 tags: ["gear"]
 summary: "Stylish ICCC hoodie, perfect for winter rides."
-expired: true
+expired: false
 ---
 This is a description of the Example Hoodie. You can add specifications, sizing info, or other notes here.
 
