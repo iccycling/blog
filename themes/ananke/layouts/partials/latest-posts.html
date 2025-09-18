@@ -2,12 +2,13 @@
 <section class="features">
   {{ range $posts }}
     <article>
-      <a href="{{ .RelPermalink }}" class="image">
-        {{ with .Resources.GetMatch .Params.featured_image }}
-          {{ $img := .Fill "800x600 top center" }}  <!-- 1:1 Crop -->
+      {{ with .Resources.GetMatch .Params.featured_image }}
+        <a href="{{ $.RelPermalink }}" class="image">
+          {{ $img := .Fill "800x600 top center" }}
           <img src="{{ $img.RelPermalink }}" alt="{{ $.Title }}">
-        {{ end }}
-      </a>
+        </a>
+      {{ end }}
+
       <h3 class="major">{{ .Title }}</h3>
       <!-- Summary -->
           <p style="margin-bottom:1em;">{{ .Summary }}</p>
