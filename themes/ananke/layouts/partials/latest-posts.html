@@ -1,25 +1,26 @@
 {{ $posts := first 2 (where .Site.RegularPages "Section" "posts") }}
 <section class="features">
   {{ range $posts }}
-    <article>
-      {{ with .Resources.GetMatch .Params.featured_image }}
-        <a href="{{ $.RelPermalink }}" class="image">
-          {{ $img := .Fill "800x600 top center" }}
-          <img src="{{ $img.RelPermalink }}" alt="{{ $.Title }}">
-        </a>
-      {{ end }}
+  <article>
+    {{ $post := . }} <!-- speichert die Page -->
+    {{ with .Resources.GetMatch .Params.featured_image }}
+    {{ $img := .Fill "800x600 top center" }}
+    <a href="{{ $post.RelPermalink }}" class="image">
+      <img src="{{ $img.RelPermalink }}" alt="{{ $post.Title }}">
+    </a>
+    {{ end }}
 
-      <h3 class="major">{{ .Title }}</h3>
-      <!-- Summary -->
-          <p style="margin-bottom:1em;">{{ .Summary }}</p>
+    <h3 class="major">{{ .Title }}</h3>
+    <!-- Summary -->
+    <p style="margin-bottom:1em;">{{ .Summary }}</p>
 
-          <!-- Autor + Datum -->
-          <p style="font-size:0.85em; color:#777; margin-bottom:1em;">
-            {{ with .Params.authors }}{{ delimit . ", " }}{{ end }}
-            {{ if .Date }} • {{ .Date.Format "2 January 2006" }}{{ end }}
-          </p>
-      
-      <a href="{{ .RelPermalink }}" class="special">Read more</a>
-    </article>
+    <!-- Autor + Datum -->
+    <p style="font-size:0.85em; color:#777; margin-bottom:1em;">
+      {{ with .Params.authors }}{{ delimit . ", " }}{{ end }}
+      {{ if .Date }} • {{ .Date.Format "2 January 2006" }}{{ end }}
+    </p>
+
+    <a href="{{ .RelPermalink }}" class="special">Read more</a>
+  </article>
   {{ end }}
 </section>

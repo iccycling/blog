@@ -2,59 +2,59 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Equipment on ICCC Blog</title>
-    <link>https://iccycling.github.io/blog/tags/equipment/</link>
+    <link>http://localhost:1313/blog/tags/equipment/</link>
     <description>Recent content in Equipment on ICCC Blog</description>
     <generator>Hugo</generator>
     <language>de-DE</language>
     <lastBuildDate>Thu, 18 Sep 2025 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://iccycling.github.io/blog/tags/equipment/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/blog/tags/equipment/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Hello this is a test</title>
-      <link>https://iccycling.github.io/blog/posts/2025/test-post-copy-2/</link>
+      <link>http://localhost:1313/blog/posts/2025/test-post-copy-2/</link>
       <pubDate>Thu, 18 Sep 2025 00:00:00 +0000</pubDate>
-      <guid>https://iccycling.github.io/blog/posts/2025/test-post-copy-2/</guid>
+      <guid>http://localhost:1313/blog/posts/2025/test-post-copy-2/</guid>
       <description>No preview Image Test.</description>
     </item>
     <item>
       <title>Hello this is a test</title>
-      <link>https://iccycling.github.io/blog/posts/2025/test-post-copy/</link>
+      <link>http://localhost:1313/blog/posts/2025/test-post-copy/</link>
       <pubDate>Thu, 18 Sep 2025 00:00:00 +0000</pubDate>
-      <guid>https://iccycling.github.io/blog/posts/2025/test-post-copy/</guid>
+      <guid>http://localhost:1313/blog/posts/2025/test-post-copy/</guid>
       <description>No preview Image Test.</description>
     </item>
     <item>
       <title>Hello this is a test</title>
-      <link>https://iccycling.github.io/blog/posts/2025/test-post/</link>
+      <link>http://localhost:1313/blog/posts/2025/test-post/</link>
       <pubDate>Thu, 18 Sep 2025 00:00:00 +0000</pubDate>
-      <guid>https://iccycling.github.io/blog/posts/2025/test-post/</guid>
+      <guid>http://localhost:1313/blog/posts/2025/test-post/</guid>
       <description>No preview Image Test.</description>
     </item>
     <item>
       <title>Which Bike Should You Choose as a Beginner?</title>
-      <link>https://iccycling.github.io/blog/posts/2025/beginners-roadbike-advice/</link>
+      <link>http://localhost:1313/blog/posts/2025/beginners-roadbike-advice/</link>
       <pubDate>Thu, 19 Jun 2025 00:00:00 +0000</pubDate>
-      <guid>https://iccycling.github.io/blog/posts/2025/beginners-roadbike-advice/</guid>
+      <guid>http://localhost:1313/blog/posts/2025/beginners-roadbike-advice/</guid>
       <description>A beginner&amp;rsquo;s guide to choosing the right bike, covering frame materials, sizes, types, and budget considerations.</description>
     </item>
     <item>
       <title>Essential Road Cycling Clothing and Where to Buy</title>
-      <link>https://iccycling.github.io/blog/posts/2025/beginner-clothes-advice/</link>
+      <link>http://localhost:1313/blog/posts/2025/beginner-clothes-advice/</link>
       <pubDate>Mon, 16 Jun 2025 00:00:00 +0000</pubDate>
-      <guid>https://iccycling.github.io/blog/posts/2025/beginner-clothes-advice/</guid>
+      <guid>http://localhost:1313/blog/posts/2025/beginner-clothes-advice/</guid>
       <description>A beginner-friendly guide to essential road cycling clothing, safety gear, and where to purchase them.</description>
     </item>
     <item>
       <title>Is Bike Fitting Really That Precise?</title>
-      <link>https://iccycling.github.io/blog/posts/2025/bike-fitting/</link>
+      <link>http://localhost:1313/blog/posts/2025/bike-fitting/</link>
       <pubDate>Fri, 13 Jun 2025 00:00:00 +0000</pubDate>
-      <guid>https://iccycling.github.io/blog/posts/2025/bike-fitting/</guid>
+      <guid>http://localhost:1313/blog/posts/2025/bike-fitting/</guid>
       <description>Bike fitting myths and practical advice for beginners — how to adjust your saddle, handlebars, and cleats safely.</description>
     </item>
     <item>
       <title>Which Bike Should You Choose as a Beginner..?</title>
-      <link>https://iccycling.github.io/blog/posts/2025/begginers-roadbike-advicecopy/</link>
+      <link>http://localhost:1313/blog/posts/2025/begginers-roadbike-advicecopy/</link>
       <pubDate>Sun, 02 Jun 2019 00:00:00 +0000</pubDate>
-      <guid>https://iccycling.github.io/blog/posts/2025/begginers-roadbike-advicecopy/</guid>
+      <guid>http://localhost:1313/blog/posts/2025/begginers-roadbike-advicecopy/</guid>
       <description>A beginner&amp;rsquo;s guide to choosing the right bike, covering frame materials, sizes, types, and budget considerations.</description>
     </item>
   </channel>
