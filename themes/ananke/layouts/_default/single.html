@@ -14,23 +14,30 @@
   <link rel="stylesheet" href="https://iccycling.github.io/assets/css/swiper-bundle.min.css" />
   <link rel="stylesheet" href="https://iccycling.github.io/assets/css/main.css">
 
-  <!-- Open Graph / Social Media Cards -->
+   <!-- Open Graph / Social Media Cards -->
+  <meta property="og:site_name" content="Imperial College Cycling Club">
   <meta property="og:title" content="{{ .Title }}">
   <meta property="og:description" content="{{ .Summary }}">
   <meta property="og:type" content="article">
   <meta property="og:url" content="{{ .Permalink }}">
+
   {{ with .Resources.GetMatch .Params.featured_image }}
-  <meta name="twitter:image" content="{{ .Permalink }}">
-{{ end }}
+    <meta property="og:image" content="{{ .Permalink }}">
+    <meta name="twitter:image" content="{{ .Permalink }}">
+    <meta property="og:image:alt" content="Imperial College Cycling Club - {{ $.Title }}">
+    <meta name="twitter:image:alt" content="Imperial College Cycling Club - {{ $.Title }}">
+  {{ else }}
+    <meta property="og:image" content="{{ "images/Insta-Preview.jpg" | absURL }}">
+    <meta name="twitter:image" content="{{ "images/Insta-Preview.jpg" | absURL }}">
+    <meta property="og:image:alt" content="Imperial College Cycling Club">
+    <meta name="twitter:image:alt" content="Imperial College Cycling Club">
+  {{ end }}
 
   <!-- Twitter Card -->
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="{{ .Title }}">
   <meta name="twitter:description" content="{{ .Summary }}">
-  {{ with .Resources.GetMatch .Params.featured_image }}
-  <meta name="twitter:image" content="{{ .Permalink }}">
-{{ end }}
-
+</head>
 
 
   <!-- Inline zusätzliche Styles für Swiper + GLightbox-Isolation -->
