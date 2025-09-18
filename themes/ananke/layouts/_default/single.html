@@ -256,61 +256,68 @@
       background-color: #ccc;
     }
 
-    @media print {
-      @page {
-        margin: 20mm;
-        /* moderate Seitenränder */
-      }
+  @media print {
+  @page {
+    margin: 20mm; /* moderate Seitenränder */
+  }
+
+  body,
+  html {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+  }
+
+  /* Alles unsichtbar machen */
+  body * {
+    visibility: hidden;
+  }
+
+  /* Nur post-content und Header h2 sichtbar */
+  .post-content,
+  .post-content *,
+  header h2,
+  header h2 * {
+    visibility: visible;
+    color: black !important;
+  }
+
+  /* Header h2 Logo invertieren */
+  header h2 img {
+    filter: invert(0) !important; /* weiß statt schwarz */
+    max-width: 80%;
+    height: auto;
+    display: block;
+    margin-bottom: 1rem; /* Abstand zum Text darunter */
+  }
+
+  /* Position und Größe post-content */
+  .post-content {
+    position: relative;
+    left: 0;
+    top: 0;
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .post-content img {
+    max-width: 100% !important;
+    height: auto !important;
+    display: block;
+    margin: 0 auto;
+  }
+
+  /* Alles andere ausblenden */
+  nav,
+  #footer,
+  .share-buttons,
+  header h1 {
+    display: none !important;
+  }
+}
 
 
-
-
-
-      body,
-      html {
-        width: 100%;
-        height: 100%;
-        margin: 0;
-        padding: 0;
-      }
-
-      body * {
-        visibility: hidden;
-        /* alles ausblenden */
-      }
-
-      .post-content,
-      .post-content * {
-        visibility: visible;
-        color: black !important;
-      }
-
-      .post-content {
-        position: relative;
-        left: 0;
-        top: 0;
-        width: 100%;
-        max-width: 100%;
-      }
-
-      .post-content img {
-        max-width: 100% !important;
-        height: auto !important;
-        display: block;
-        margin: 0 auto;
-        /* zentriert */
-      }
-
-      /* Navigation, Header, Footer und Share-Buttons ausblenden */
-      header,
-      #header,
-      nav,
-      #footer,
-      .share-buttons {
-        display: none !important;
-      }
-
-    }
   </style>
 </head>
 
@@ -345,12 +352,19 @@
 
       <header>
         <div class="inner">
-          <h2>Blog</h2>
-          <p>Your go-to place for tips and inspiring cycling stories. We welcome contributions on any cycling-related
-            topic!</p>
+          
+          <h2>
+          
+              <img src="{{ "images/Blog-Logo.svg" | relURL }}" 
+                  alt="Imperial College Cycling Club Blog Logo" 
+                  style="height: 60px; max-width: 80%; filter: invert(1);">
+            
+          </h2>
+          <p>Your go-to place for tips and inspiring cycling stories. We welcome contributions on any cycling-related topic!</p>
 
         </div>
       </header>
+
 
       <div class="wrapper style5">
         <article class="inner post-content">
@@ -596,7 +610,8 @@ document.addEventListener('DOMContentLoaded', function () {
       const originalText = btn.innerHTML;
       navigator.clipboard.writeText(window.location.href)
         .then(() => {
-          btn.innerHTML = '<i class="fas fa-check"></i> Copied!';
+          btn.innerHTML = '<span ><i class="fas fa-check"></i></span>';
+
           setTimeout(() => { btn.innerHTML = originalText; }, 1500);
         })
         .catch(err => console.error('Failed to copy: ', err));

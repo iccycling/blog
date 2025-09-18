@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Hello on ICCC Blog</title>
-    <link>https://iccycling.github.io/blog/tags/hello/</link>
+    <link>http://localhost:1313/blog/tags/hello/</link>
     <description>Recent content in Hello on ICCC Blog</description>
     <generator>Hugo</generator>
     <language>de-DE</language>
     <lastBuildDate>Wed, 16 Sep 2020 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://iccycling.github.io/blog/tags/hello/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/blog/tags/hello/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Recent Test Post</title>
-      <link>https://iccycling.github.io/blog/posts/2025/recent-test-post/</link>
+      <link>http://localhost:1313/blog/posts/2025/recent-test-post/</link>
       <pubDate>Wed, 16 Sep 2020 00:00:00 +0000</pubDate>
-      <guid>https://iccycling.github.io/blog/posts/2025/recent-test-post/</guid>
+      <guid>http://localhost:1313/blog/posts/2025/recent-test-post/</guid>
       <description>Just a Test Post.</description>
     </item>
   </channel>

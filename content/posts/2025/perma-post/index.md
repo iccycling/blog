@@ -66,6 +66,13 @@ Beispiel für eine einfache Umsetzung: Ein Hochbeet mit Mischkultur aus Tomaten,
     captions="Mischkultur im Hochbeet,Regentonnen & Bewässerung,Kompostierung im Permakultur-Garten,Kompostierung im Permakultur-Garten 2" 
 >}}
 
+## Galerie: Weitere Inspirationen
+
+{{< gallery-swipe 
+    images="gallery/perm2.jpg,gallery/perm3.jpg,gallery/perm4.jpg,gallery/perm5.jpg,gallery/perm6.jpg" 
+    captions="Mischkultur im Hochbeet,Regentonnen & Bewässerung,Kompostierung im Permakultur-Garten,Kompostierung im Permakultur-Garten 2" 
+>}}
+
 
 
 
