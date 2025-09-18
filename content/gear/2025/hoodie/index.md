@@ -1,6 +1,6 @@
 ---
 title: "Example Hoodie"
-date: 2025-09-18
+date: 2025-09-15
 draft: false
 featured_image: "hoodie0.png"
 tags: ["gear"]
