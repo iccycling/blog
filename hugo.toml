@@ -2,6 +2,7 @@ baseURL = "https://iccycling.github.io/blog/"
 languageCode = "de-DE"
 title = "ICCC Blog"
 theme = "ananke"
+enableRobotsTXT = true
 
 relativeURLs = false   # Absolut ist für GitHub Pages am zuverlässigsten
 canonifyURLs = true     # Macht alle Links sauber relativ zu baseURL
@@ -23,3 +24,4 @@ canonifyURLs = true     # Macht alle Links sauber relativ zu baseURL
 [caches]
   [caches.images]
     dir = ":cacheDir/images"
+    

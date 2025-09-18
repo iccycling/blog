@@ -4,7 +4,21 @@
 <head><script src="/blog/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=blog/livereload" data-no-instant defer></script>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>ICCC Blog - Recent Test Post</title>
+  <title>Imperial College Cycling Club - BLog: Recent Test Post</title>
+  <meta name="description" content="Just a Test Post.">
+
+<meta http-equiv="Content-Security-Policy"
+      content="
+        default-src 'self' https://iccycling.github.io;
+        script-src 'self' https://iccycling.github.io;
+        style-src 'self' 'unsafe-inline' https://iccycling.github.io;
+        img-src 'self' data: https://iccycling.github.io;
+        font-src 'self' https://iccycling.github.io;
+        connect-src 'self' https://iccycling.github.io;
+        frame-ancestors 'none';
+        base-uri 'self';
+      ">
+
 
 
   <link rel="icon" href="http://localhost:1313/blog/images/favicon.ico" type="image/x-icon">
@@ -20,6 +34,10 @@
   <meta property="og:description" content="Just a Test Post.">
   <meta property="og:type" content="article">
   <meta property="og:url" content="http://localhost:1313/blog/posts/2025/recent-test-post/">
+  <meta property="og:article:published_time" content="2020-09-16T00:00:00Z">
+  <meta property="og:locale" content="en_GB">
+
+
 
   
     <meta property="og:image" content="http://localhost:1313/blog/posts/2025/recent-test-post/gravel-portrait.jpg">
@@ -328,13 +346,12 @@
 
     
     <header id="header">
-      <h1><a href="http://localhost:1313/blog/posts/">
-          <img src="http://localhost:1313/blog/images/ICCC-Blog.svg" alt="ICCC Blog Logo"
-            style="height: 40px; padding-top: 10px;">
-        </a>
-      </h1>
-      <nav><a href="#menu">Menu</a></nav>
-    </header>
+  <a href="http://localhost:1313/blog/posts/">
+    <img src="http://localhost:1313/blog/images/ICCC-Blog.svg" alt="ICCC Blog Logo"
+         style="height: 40px; padding-top: 10px;">
+  </a>
+  <nav><a href="#menu">Menu</a></nav>
+</header>
 
     <nav id="menu">
       <div class="inner">
@@ -355,11 +372,11 @@
       <header>
         <div class="inner">
           
-          <h2 style="display: inline-flex; align-items: flex-end; height: 60px;">
-          <img src="http://localhost:1313/blog/images/Blog-Logo.svg" 
-              alt="Imperial College Cycling Club Blog Logo" 
-              style="max-width: 100%; filter: invert(1);">
-          </h2>
+          <div style="display: flex; align-items: flex-end; height: 60px; margin-bottom: 1rem;">
+  <img src="http://localhost:1313/blog/images/Blog-Logo.svg" 
+       alt="Imperial College Cycling Club Blog Logo" 
+       style="max-width: 100%; max-height: 100%; filter: invert(1);">
+</div>
           <p>Your go-to place for tips and inspiring cycling stories. We welcome contributions on any cycling-related topic!</p>
 
         </div>
@@ -391,7 +408,7 @@
             </a>
             
             
-             • <span class="date">16. September 2020</span>
+             • <time datetime="2020-09-16">16 September 2020</time>
           </p>
 
           
@@ -550,91 +567,7 @@
   <script src="https://iccycling.github.io/assets/js/breakpoints.min.js"></script>
   <script src="https://iccycling.github.io/assets/js/util.js"></script>
   <script src="https://iccycling.github.io/assets/js/main.js"></script>
-
-
-<script>
-document.addEventListener('DOMContentLoaded', function () {
-  
-  document.querySelectorAll('.gallery-swiper').forEach(swiperEl => {
-    const swiper = new Swiper(swiperEl, {
-      slidesPerView: 1,
-      loop: true,
-      loopedSlides: swiperEl.querySelectorAll('.swiper-slide').length,
-      spaceBetween: 10,
-      lazy: { loadPrevNext: true },
-      pagination: {
-        el: swiperEl.querySelector('.swiper-pagination'),
-        clickable: true
-      },
-      navigation: {
-        nextEl: swiperEl.querySelector('.swiper-button-next'),
-        prevEl: swiperEl.querySelector('.swiper-button-prev')
-      },
-      observer: true,
-      observeParents: true
-    });
-
-    swiper.on('slideChange', () => {
-      swiper.pagination.update();
-      swiperEl.querySelectorAll('video').forEach(v => v.pause());
-    });
-  });
-
-  
-  document.querySelectorAll('.post-content img').forEach(img => {
-    
-    if (!img.parentElement.matches('a')) {
-      const link = document.createElement('a');
-      link.href = img.src; 
-
-      if (img.closest('.gallery-swiper')) {
-        link.className = 'glightbox-gallery';
-      } else {
-        link.className = 'glightbox-single';
-      }
-
-      img.parentNode.insertBefore(link, img);
-      link.appendChild(img);
-    }
-  });
-
-  
-  GLightbox({
-    selector: '.glightbox-single',
-    touchNavigation: true,
-    loop: false
-  });
-
-  
-  GLightbox({
-    selector: '.glightbox-gallery',
-    touchNavigation: true,
-    loop: true
-  });
-
-  
-  document.querySelectorAll('.share-copy').forEach(btn => {
-    btn.addEventListener('click', function (e) {
-      e.preventDefault();
-      const originalText = btn.innerHTML;
-      navigator.clipboard.writeText(window.location.href)
-        .then(() => {
-          btn.innerHTML = '<span ><i class="fas fa-check"></i></span>';
-
-          setTimeout(() => { btn.innerHTML = originalText; }, 1500);
-        })
-        .catch(err => console.error('Failed to copy: ', err));
-    });
-  });
-
-  document.querySelectorAll('.share-print').forEach(btn => {
-    btn.addEventListener('click', function (e) {
-      e.preventDefault();
-      window.print();
-    });
-  });
-});
-</script>
+  <script src="http://localhost:1313/blog/js/blog.js"></script>
 
 
 

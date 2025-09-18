@@ -10,13 +10,14 @@
         {{ $paginator := .Paginate .Pages 6 }}
         {{ range $paginator.Pages }}
         <article>
-          {{ $post := . }} <!-- speichert den aktuellen Blogpost -->
+          {{ $post := . }}  <!-- speichert den aktuellen Blogpost -->
           {{ with .Resources.GetMatch .Params.featured_image }}
-          {{ $img := .Fill "800x600 top center" }}
-          <a href="{{ $post.RelPermalink }}" class="image" style="display:block;position:relative;">
-            <img src="{{ $img.RelPermalink }}" alt="{{ $post.Title }}" style="width:100%;display:block;">
-          </a>
+            {{ $img := .Fill "800x600 top center" }}
+            <a href="{{ $post.RelPermalink }}" class="image" style="display:block;position:relative;">
+              <img src="{{ $img.RelPermalink }}" alt="{{ $post.Title }}" style="width:100%;display:block;">
+            </a>
           {{ end }}
+
 
 
 
