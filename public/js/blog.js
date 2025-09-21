@@ -26,22 +26,31 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 
     // --- GLightbox: Bilder initialisieren ---
-    document.querySelectorAll('.post-content img').forEach(img => {
-        // nur Bilder ohne Parent <a> verlinken
-        if (!img.parentElement.matches('a')) {
-            const link = document.createElement('a');
-            link.href = img.src; // falls du Hugo absURL nutzt: {{ . | absURL }}
+document.querySelectorAll('.post-content img').forEach((img, idx) => {
+    if (!img.parentElement.matches('a')) {
+        const link = document.createElement('a');
+        link.href = img.src;
 
-            if (img.closest('.gallery-swiper')) {
-                link.className = 'glightbox-gallery';
-            } else {
-                link.className = 'glightbox-single';
-            }
-
-            img.parentNode.insertBefore(link, img);
-            link.appendChild(img);
+        if (img.closest('.gallery-swiper')) {
+            link.className = 'glightbox-gallery';
+        } else {
+            link.className = 'glightbox-single';
+            
+            // Bildnamen (ohne Pfad + ohne Extension) als Gallery-ID nehmen
+            const fileName = img.src.split('/').pop().split('.')[0];
+            link.dataset.gallery = `single-${fileName}`;
         }
-    });
+
+        const figcaption = img.closest('figure')?.querySelector('figcaption');
+        if (figcaption) {
+            link.setAttribute('data-title', figcaption.innerHTML);
+        }
+
+        img.parentNode.insertBefore(link, img);
+        link.appendChild(img);
+    }
+});
+
 
     // Einzelbilder
     GLightbox({
