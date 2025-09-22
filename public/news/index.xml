@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>All News on ICCC Blog</title>
+    <link>https://iccycling.github.io/blog/news/</link>
+    <description>Recent content in All News on ICCC Blog</description>
+    <generator>Hugo</generator>
+    <language>de-DE</language>
+    <lastBuildDate>Sat, 20 Sep 2025 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://iccycling.github.io/blog/news/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>2025 Welcome Fair on campus</title>
+      <link>https://iccycling.github.io/blog/news/2025/welcome-fair/</link>
+      <pubDate>Sat, 20 Sep 2025 00:00:00 +0000</pubDate>
+      <guid>https://iccycling.github.io/blog/news/2025/welcome-fair/</guid>
+      <description>30 Sept – 01 Oct 2025: Welcome Faire on Campus: Find us there&amp;hellip;</description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://iccycling.github.io/blog/news/2025/new-website/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://iccycling.github.io/blog/news/2025/new-website/</guid>
+      <description></description>
+    </item>
+  </channel>
+</rss>

@@ -2,13 +2,14 @@
 
 {{ if eq .Type "snippets" }}
   
-  {{/* Prüfen, welches Snippet gerade gerendert wird */}}
   {{ $name := .File.BaseFileName }}
 
   {{ if eq $name "latest" }}
     {{ partial "latest-posts.html" . }}
   {{ else if eq $name "gear" }}
     {{ partial "gear-articles.html" . }}
+  {{ else if eq $name "news" }}
+    {{ partial "news-updates.html" . }}
   {{ end }}
 
 {{ end }}

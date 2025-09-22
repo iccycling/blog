@@ -1,0 +1,27 @@
+{{ $today := now }}
+{{ $newsPosts := where .Site.RegularPages "Section" "news" }}
+{{ $activeNews := slice }}
+
+{{ range $newsPosts }}
+  {{ $expiry := index .Params "expiry-date" | time }}
+  {{ if or (not $expiry) (gt $expiry $today) }}
+    {{ $activeNews = $activeNews | append . }}
+  {{ end }}
+{{ end }}
+
+<div class="news-updates" style="margin-top: 2em;">
+  <ul style="list-style: none; padding-left: 0;">
+    {{ range $activeNews }}
+      <li style="margin-bottom: 1em; display: flex; align-items: flex-start;">
+        <span
+          style="background: #FFA500; width: 10px; height: 10px; display: inline-block; margin-right: 0.8em; margin-top: 0.5em; border-radius: 50%; flex-shrink: 0;">
+        </span>
+        <div>
+          <a href="{{ .RelPermalink }}" style="text-decoration: none; color: inherit;">
+            {{ .Summary }} →
+          </a>
+        </div>
+      </li>
+    {{ end }}
+  </ul>
+</div>
