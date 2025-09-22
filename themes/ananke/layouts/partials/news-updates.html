@@ -17,8 +17,9 @@
           style="background: #FFA500; width: 10px; height: 10px; display: inline-block; margin-right: 0.8em; margin-top: 0.5em; border-radius: 50%; flex-shrink: 0;">
         </span>
         <div>
-          <a href="{{ .RelPermalink }}" style="text-decoration: none; color: inherit;">
-            {{ .Summary }} →
+          <span>{{ .Summary }}</span>
+          <a href="{{ .RelPermalink }}" style="text-decoration: none; color: inherit; margin-left: 0.3em;">
+            <i class="fas fa-arrow-right"></i>
           </a>
         </div>
       </li>

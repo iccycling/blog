@@ -12,6 +12,6 @@ tags: ["News", "Events"]
 
 30 Sept – 01 Oct 2025
 
-"Find us there and learn more about ICCC!"
+Find us there and learn more about ICCC!
 
 https://www.imperialcollegeunion.org/whats-on/events/welcome-fair-2025
