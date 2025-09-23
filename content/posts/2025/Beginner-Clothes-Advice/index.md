@@ -16,7 +16,7 @@ When hitting the road on your bike, having the right clothing is just as importa
 
 The bike helmet is your most important safety accessory. Designs and technology have come a long way, making helmets both protective and stylish. Trusted brands like Abus, Kask, Rudy Project, Giro, and Specialized offer certified models. It’s important the helmet fits well, so buying from a specialist store is recommended. Used helmets are not advised due to material fatigue risks. You can usually find the production date inside the helmet.
 
-Sport sunglasses protect your eyes and add style. Popular brands include 100% and Oakley. The key is good UV protection—cheap knock-offs can actually harm your eyes by causing pupils to dilate in the darkened lenses. For beginners, a simple sport or lab glasses like Uvex also work fine.
+Sport sunglasses not only add style but also protect your eyes from insects and debris that can fly into your face while riding. For beginners, simple sport or lab glasses like Uvex work perfectly fine.
 
 ![Early morning meetup](cyle-outfit.jpg)
 

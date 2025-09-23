@@ -26,7 +26,7 @@ Also, avoid bikes that are too old. Besides wear and tear, **technology in bikes
 
 Getting the **right frame size** is crucial. A bike that’s too big or too small will be uncomfortable and inefficient. If in doubt, most major brands (like Canyon or Giant) offer **online size calculators**.
 
-One great example of a beginner-friendly setup is the **Canyon Endurace AL with Shimano 105** – modern geometry, solid components, and a trusted manufacturer.
+One great example of a beginner-friendly setup is the **Canyon Endurace AllRoad** – modern geometry, solid components, and a trusted manufacturer.
 
 ## Buying on a Budget
 
@@ -40,7 +40,7 @@ Look for a used bike with:
 
 - A **reputable brand** (e.g., Canyon, Scott, Trek, Specialized, Giant, Cube, BMC, Cannondale, Ribble, etc.)
 - **Aluminum frame**
-- **Shimano 105 or Ultegra** drivetrain (or SRAM equivalent)
+- **Shimano 105 or Ultegra** drivetrain (or CUES/SRAM equivalent)
 - **Good condition**, no cracks, rust, or worn-out drivetrain parts
 
 If you’re unsure, ask a knowledgeable friend to help evaluate the bike. Buying used without experience is risky, and what looks like a bargain can quickly turn into an expensive repair project.
@@ -77,4 +77,4 @@ For those on a tight budget or who want one bike for many uses, a **hardtail mou
 
 Buying a new bike is one of the most exciting parts of getting into cycling – but it’s easy to overthink. Go for a reliable, modern aluminum bike that fits your budget and riding style. Don’t get caught up in the hype around gear and accessories.
 
-Need help? We’re happy to assist you in finding the right bike. Maybe we can even arrange a **10% discount** through a local partner.
+Need help? We’re happy to assist you in finding the right bike.

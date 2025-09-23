@@ -43,8 +43,14 @@ Feeling uncomfortable at first is normal. You need to build proper pedaling tech
 - **Back or neck pain:** This often reflects weak supporting muscles. Targeted strength training can help significantly.  
 - **Knee pain or other joint issues:** These can have many causes — don’t hesitate to consult a physiotherapist if problems persist.  
 
+## Watch: Practical Bike Fitting Tips
+
+{{< youtube 4qL9ijQutn0 >}}
+
 ## Can We Help You with Bike Fitting?
 
 Absolutely. If you're just starting out, our cycling club can support you with basic bike setup advice — no overcomplication, just practical tips based on experience.
 
 Remember, **comfort, adaptation, and consistency** are more important than finding a “perfect” setting from day one. You and your bike will grow together.
+
+

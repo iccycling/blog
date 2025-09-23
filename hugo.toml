@@ -24,4 +24,8 @@ canonifyURLs = true     # Macht alle Links sauber relativ zu baseURL
 [caches]
   [caches.images]
     dir = ":cacheDir/images"
+
+[privacy.youtube]
+    privacyEnhanced = true
+
     
