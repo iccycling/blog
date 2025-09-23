@@ -5,7 +5,7 @@ expiry-date: 2025-10-07                     # news hidden after this date
 authors: ["Frederik Beck"]  
 featured_image: 
 draft: false
-summary: "30 Sept – 01 Oct 2025: Welcome Faire on Campus: Find us there..."  # text shown in snippet
+summary: "**30 Sept – 01 Oct 2025**: Welcome Fair on Campus: Find us there..."  # text shown in snippet
 tags: ["News", "Events"]
 ---
 

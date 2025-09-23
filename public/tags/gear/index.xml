@@ -2,24 +2,24 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Gear on ICCC Blog</title>
-    <link>https://iccycling.github.io/blog/tags/gear/</link>
+    <link>http://localhost:1313/blog/tags/gear/</link>
     <description>Recent content in Gear on ICCC Blog</description>
     <generator>Hugo</generator>
     <language>de-DE</language>
     <lastBuildDate>Tue, 16 Sep 2025 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://iccycling.github.io/blog/tags/gear/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/blog/tags/gear/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>2025 Road Kit</title>
-      <link>https://iccycling.github.io/blog/gear/2025/road-jersey/</link>
+      <link>http://localhost:1313/blog/gear/2025/road-jersey/</link>
       <pubDate>Tue, 16 Sep 2025 00:00:00 +0000</pubDate>
-      <guid>https://iccycling.github.io/blog/gear/2025/road-jersey/</guid>
+      <guid>http://localhost:1313/blog/gear/2025/road-jersey/</guid>
       <description>ICCC Road Racing Kit – Coming Soon! Stylish and high-performance kit for serious riders.</description>
     </item>
     <item>
       <title>Club Hoodie</title>
-      <link>https://iccycling.github.io/blog/gear/2025/hoodie/</link>
+      <link>http://localhost:1313/blog/gear/2025/hoodie/</link>
       <pubDate>Mon, 15 Sep 2025 00:00:00 +0000</pubDate>
-      <guid>https://iccycling.github.io/blog/gear/2025/hoodie/</guid>
+      <guid>http://localhost:1313/blog/gear/2025/hoodie/</guid>
       <description>ICCC Hoodie – Coming Soon!</description>
     </item>
   </channel>

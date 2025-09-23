@@ -2,17 +2,24 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Authors on ICCC Blog</title>
-    <link>https://iccycling.github.io/blog/authors/</link>
+    <link>http://localhost:1313/blog/authors/</link>
     <description>Recent content in Authors on ICCC Blog</description>
     <generator>Hugo</generator>
     <language>de-DE</language>
-    <lastBuildDate>Sat, 20 Sep 2025 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://iccycling.github.io/blog/authors/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 23 Sep 2025 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/blog/authors/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>ICCC</title>
+      <link>http://localhost:1313/blog/authors/iccc/</link>
+      <pubDate>Tue, 23 Sep 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/blog/authors/iccc/</guid>
+      <description></description>
+    </item>
     <item>
       <title>Frederik Beck</title>
-      <link>https://iccycling.github.io/blog/authors/frederik-beck/</link>
+      <link>http://localhost:1313/blog/authors/frederik-beck/</link>
       <pubDate>Sat, 20 Sep 2025 00:00:00 +0000</pubDate>
-      <guid>https://iccycling.github.io/blog/authors/frederik-beck/</guid>
+      <guid>http://localhost:1313/blog/authors/frederik-beck/</guid>
       <description></description>
     </item>
   </channel>
