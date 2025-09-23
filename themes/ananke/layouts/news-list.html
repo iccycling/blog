@@ -3,27 +3,57 @@
   <div class="inner">
     <h2 class="major">All News</h2>
 
-    <ul style="list-style: none; padding-left: 0;">
-      {{ $today := now }}
-      {{ $newsPosts := where .Site.RegularPages "Section" "news" }}  <!-- nur echte Pages -->
-      {{ $newsPosts = sort $newsPosts "Date" "desc" }}
+    {{ $today := now }}
+    {{ $newsPosts := where .Site.RegularPages "Section" "news" }}
+    {{ $newsPosts = sort $newsPosts "Date" "desc" }}
 
-      {{ range $newsPosts }}
-        {{ $expiryStr := index .Params "expiry-date" }}
-        {{ $expiry := cond $expiryStr ($expiryStr | time) nil }}
+    {{/* Split in active + expired */}}
+    {{ $active := slice }}
+    {{ $expired := slice }}
+    {{ range $newsPosts }}
+      {{ $expiryStr := index .Params "expiry-date" }}
+      {{ $expiry := cond $expiryStr ($expiryStr | time) nil }}
+      {{ if or (not $expiry) (gt $expiry $today) }}
+        {{ $active = $active | append . }}
+      {{ else }}
+        {{ $expired = $expired | append . }}
+      {{ end }}
+    {{ end }}
+
+    {{/* Active News */}}
+    <ul style="list-style: none; padding-left: 0;">
+      {{ range $active }}
         <li style="margin-bottom: 1em; display: flex; align-items: flex-start;">
           <span style="background: #FFA500; width: 10px; height: 10px; display: inline-block; margin-right: 0.8em; margin-top: 0.5em; border-radius: 50%; flex-shrink: 0;"></span>
           <div>
             <a href="{{ .RelPermalink }}" style="color: inherit;">
               {{ .Summary | markdownify }} &nbsp;<i class="fas fa-arrow-right" style="font-size:1.2em;"></i>
             </a>
-            {{ if and $expiry (lt $expiry $today) }}
-              <span style="color: red; font-weight: bold;">(expired)</span>
-            {{ end }}
           </div>
         </li>
       {{ end }}
     </ul>
+
+    {{/* Expired News with Pagination */}}
+    {{ if gt (len $expired) 0 }}
+      <h3 style="margin-top:2em;">Older</h3>
+      {{ $paginator := .Paginate $expired 20 }}  <!-- 2 per page zum Testen -->
+      <ul style="list-style: none; padding-left: 0;">
+        {{ range $paginator.Pages }}
+          <li style="margin-bottom: 1em; display: flex; align-items: flex-start;">
+            <span style="background: #ccc; width: 10px; height: 10px; display: inline-block; margin-right: 0.8em; margin-top: 0.5em; border-radius: 50%; flex-shrink: 0;"></span>
+            <div>
+              <a href="{{ .RelPermalink }}" style="color: inherit;">
+                {{ .Summary | markdownify }} &nbsp;<i class="fas fa-arrow-right" style="font-size:1.2em;"></i>
+              </a>
+            </div>
+          </li>
+        {{ end }}
+      </ul>
+
+      {{ template "_internal/pagination.html" . }}  <!-- hier die aktuelle Page übergeben -->
+    {{ end }}
+
   </div>
 </section>
 {{ end }}
