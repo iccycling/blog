@@ -14,7 +14,7 @@
         <li style="margin-bottom: 1em; display: flex; align-items: flex-start;">
           <span style="background: #FFA500; width: 10px; height: 10px; display: inline-block; margin-right: 0.8em; margin-top: 0.5em; border-radius: 50%; flex-shrink: 0;"></span>
           <div>
-            <a href="{{ .RelPermalink }}" style="text-decoration: underline; color: inherit;">
+            <a href="{{ .RelPermalink }}" style="color: inherit;">
               {{ .Summary | markdownify }} &nbsp;<i class="fas fa-arrow-right" style="font-size:1.2em;"></i>
             </a>
             {{ if and $expiry (lt $expiry $today) }}
