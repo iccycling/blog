@@ -136,3 +136,105 @@ Before uploading changes, test locally:
 - Deployment runs automatically via GitHub Actions  
 
 This ensures that any team member can safely maintain and extend the Hugo blog.
+
+---
+
+## Annex: News
+
+The **News** section is a lightweight version of blog posts.  
+It is used for short announcements (e.g. events, updates, fairs) that are also displayed as a snippet on the main website.
+
+---
+
+### Structure
+
+    content/
+    ├── news/
+    │   ├── _index.md           # overview page for all news
+    │   └── 2025/
+    │       └── example-news/
+    │           ├── index.md    # single news post
+    │           └── images/     # optional images for this post
+    themes/
+    ├── ananke/
+    │   ├── layouts/
+    │   │   └── news-list.html  # custom template for the news archive
+    │   └── partials/
+    │       └── news-updates.html  # snippet used for embedding latest news
+
+---
+
+### Creating a News Post
+
+1. Create a new folder under:  
+   `content/news/YYYY/new-post/`  
+
+2. Add an `index.md` with this front matter:
+
+    ```yaml
+    ---
+    title: "Welcome Fair on Campus"
+    date: 2025-09-30              # date of publication
+    expiry-date: 2025-10-05       # optional, hides news after this date
+    authors: ["Frederik Beck"]
+    draft: false
+    summary: "**Sept 2025**: Welcome Fair on Campus"  # shown in the snippet
+    tags: ["News", "Events"]
+    ---
+    ```
+
+3. Add some body text and optionally images.  
+   Example:
+
+    ```markdown
+    We will be at the **Welcome Fair** on campus.  
+    Visit our stand to learn more about ICCC, events, and membership.
+
+    ![welcome-fair](images/fair.jpg)
+    ```
+
+---
+
+### Snippet on the Main Website
+
+- The **snippet** is defined in `themes/ananke/partials/news-updates.html`.  
+- It fetches all active news (`expiry-date` > today or none set) and lists them with a small orange dot + clickable summary + arrow.  
+- Old news are still accessible but marked as **(expired)** in red on the archive page.
+
+---
+
+### News Archive
+
+- `_index.md` inside `content/news/` defines the news overview page:
+
+    ```yaml
+    ---
+    title: "All News"
+    type: "news-list"
+    layout: "news-list"
+    ---
+    ```
+
+- The template `themes/ananke/layouts/news-list.html` renders the archive with all news posts, sorted by date.
+
+---
+
+### Workflow
+
+1. **Create bundle** in `content/news/YYYY/...`  
+2. **Set correct `date`** and optional `expiry-date`  
+3. **Test locally** with `hugo server`  
+4. **Commit & push** to GitHub → GitHub Actions deploy automatically  
+5. Snippet updates automatically on the main site via fetch (no manual changes required)  
+
+---
+
+### Summary
+
+- News works like blog posts, but **shorter and time-bound**  
+- `summary` is shown in the snippet  
+- `expiry-date` hides old news automatically from the snippet  
+- Full list available at `/blog/news/`  
+- Maintenance = just create/edit/delete bundles in `content/news/`
+
+
