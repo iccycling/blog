@@ -3,7 +3,7 @@ title: "Quick Guide: Creating Logos & Graphics for the ICCC"
 date: 2025-06-08
 authors: ["Frederik Beck"]
 draft: false
-featured_image: "icc-instagram-profilpic.png"
+featured_image: "ICCC-Logo-alt.png"
 summary: "A practical guide to creating and using ICCC logos and graphics with free tools like Photopea and Inkscape."
 tags: ["Website"]
 ---
@@ -44,3 +44,9 @@ The current logo was built in Photopea. You can open the PSD to explore all laye
 ## Old Logo Still in Use
 
 The older design with the Imperial crest and bicycle is still part of the club’s identity. We now treat it as our **heritage logo** – used for merch, events, or when we want to tap into tradition.
+
+## Social Media Profile Pic
+
+<img src="ICCC-Logo-alt.png" alt="ICCC Logo" width="100">
+<img src="Icc-black.png" alt="ICCC Logo Black" width="100">
+
