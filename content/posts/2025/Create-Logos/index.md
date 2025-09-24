@@ -47,6 +47,7 @@ The older design with the Imperial crest and bicycle is still part of the clubâ€
 
 ## Social Media Profile Pic
 
-<img src="ICCC-Logo-alt.png" alt="ICCC Logo" width="100">
-<img src="Icc-black.png" alt="ICCC Logo Black" width="100">
-
+{{< gallery-swipe 
+        images="ICCC-Logo-alt.png,ICCC-Logo-alt2.png,Icc-black.png" 
+        captions="Profile Pic,Profile Pic,Profile Pic"  
+    >}}
