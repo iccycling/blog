@@ -6,8 +6,15 @@
     <description>Recent content in Gear on ICCC Blog</description>
     <generator>Hugo</generator>
     <language>de-DE</language>
-    <lastBuildDate>Tue, 16 Sep 2025 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 01 Oct 2025 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/blog/tags/gear/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>New ICCC Road Kit 2025 Design</title>
+      <link>http://localhost:1313/blog/news/2025/kalas-kit-new/</link>
+      <pubDate>Wed, 01 Oct 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/blog/news/2025/kalas-kit-new/</guid>
+      <description>ICCC Road Kit 2025 Design now available!</description>
+    </item>
     <item>
       <title>2025 Road Kit</title>
       <link>http://localhost:1313/blog/gear/2025/road-jersey/</link>

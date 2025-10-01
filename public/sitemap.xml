@@ -3,24 +3,39 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>http://localhost:1313/blog/news/</loc>
-    <lastmod>2025-09-23T00:00:00+00:00</lastmod>
+    <lastmod>2025-10-01T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/blog/authors/</loc>
-    <lastmod>2025-09-23T00:00:00+00:00</lastmod>
+    <lastmod>2025-10-01T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/blog/tags/events/</loc>
-    <lastmod>2025-09-23T00:00:00+00:00</lastmod>
+    <lastmod>2025-10-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/blog/authors/iccc/</loc>
-    <lastmod>2025-09-23T00:00:00+00:00</lastmod>
+    <loc>http://localhost:1313/blog/authors/frederik-beck/</loc>
+    <lastmod>2025-10-01T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/blog/tags/gear/</loc>
+    <lastmod>2025-10-01T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/blog/</loc>
-    <lastmod>2025-09-23T00:00:00+00:00</lastmod>
+    <lastmod>2025-10-01T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/blog/news/2025/kalas-kit-new/</loc>
+    <lastmod>2025-10-01T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/blog/tags/news/</loc>
-    <lastmod>2025-09-23T00:00:00+00:00</lastmod>
+    <lastmod>2025-10-01T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/blog/news/2025/road-taster/</loc>
+    <lastmod>2025-10-01T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/blog/tags/</loc>
+    <lastmod>2025-10-01T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/blog/news/2025/road-taster2/</loc>
+    <lastmod>2025-09-30T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/blog/authors/iccc/</loc>
     <lastmod>2025-09-23T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/blog/news/2025/mtb-tasters/</loc>
@@ -32,9 +47,6 @@
     <loc>http://localhost:1313/blog/news/2025/welcome-fair/</loc>
     <lastmod>2025-09-20T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/blog/authors/frederik-beck/</loc>
-    <lastmod>2025-09-20T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>http://localhost:1313/blog/news/2025/new-website/</loc>
     <lastmod>2025-09-20T00:00:00+00:00</lastmod>
   </url><url>
@@ -42,9 +54,6 @@
     <lastmod>2025-09-16T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/blog/gear/</loc>
-    <lastmod>2025-09-16T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/blog/tags/gear/</loc>
     <lastmod>2025-09-16T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/blog/gear/2025/hoodie/</loc>
