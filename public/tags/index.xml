@@ -2,80 +2,80 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on ICCC Blog</title>
-    <link>https://iccycling.github.io/blog/tags/</link>
+    <link>http://localhost:1313/blog/tags/</link>
     <description>Recent content in Tags on ICCC Blog</description>
     <generator>Hugo</generator>
     <language>de-DE</language>
     <lastBuildDate>Thu, 02 Oct 2025 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://iccycling.github.io/blog/tags/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/blog/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Gear</title>
-      <link>https://iccycling.github.io/blog/tags/gear/</link>
+      <link>http://localhost:1313/blog/tags/gear/</link>
       <pubDate>Thu, 02 Oct 2025 00:00:00 +0000</pubDate>
-      <guid>https://iccycling.github.io/blog/tags/gear/</guid>
+      <guid>http://localhost:1313/blog/tags/gear/</guid>
       <description></description>
     </item>
     <item>
       <title>Events</title>
-      <link>https://iccycling.github.io/blog/tags/events/</link>
+      <link>http://localhost:1313/blog/tags/events/</link>
       <pubDate>Wed, 01 Oct 2025 00:00:00 +0000</pubDate>
-      <guid>https://iccycling.github.io/blog/tags/events/</guid>
+      <guid>http://localhost:1313/blog/tags/events/</guid>
       <description></description>
     </item>
     <item>
       <title>News</title>
-      <link>https://iccycling.github.io/blog/tags/news/</link>
+      <link>http://localhost:1313/blog/tags/news/</link>
       <pubDate>Wed, 01 Oct 2025 00:00:00 +0000</pubDate>
-      <guid>https://iccycling.github.io/blog/tags/news/</guid>
+      <guid>http://localhost:1313/blog/tags/news/</guid>
       <description></description>
     </item>
     <item>
       <title>Website</title>
-      <link>https://iccycling.github.io/blog/tags/website/</link>
+      <link>http://localhost:1313/blog/tags/website/</link>
       <pubDate>Fri, 20 Jun 2025 00:00:00 +0000</pubDate>
-      <guid>https://iccycling.github.io/blog/tags/website/</guid>
+      <guid>http://localhost:1313/blog/tags/website/</guid>
       <description></description>
     </item>
     <item>
       <title>Beginners</title>
-      <link>https://iccycling.github.io/blog/tags/beginners/</link>
+      <link>http://localhost:1313/blog/tags/beginners/</link>
       <pubDate>Thu, 19 Jun 2025 00:00:00 +0000</pubDate>
-      <guid>https://iccycling.github.io/blog/tags/beginners/</guid>
+      <guid>http://localhost:1313/blog/tags/beginners/</guid>
       <description></description>
     </item>
     <item>
       <title>Bikes</title>
-      <link>https://iccycling.github.io/blog/tags/bikes/</link>
+      <link>http://localhost:1313/blog/tags/bikes/</link>
       <pubDate>Thu, 19 Jun 2025 00:00:00 +0000</pubDate>
-      <guid>https://iccycling.github.io/blog/tags/bikes/</guid>
+      <guid>http://localhost:1313/blog/tags/bikes/</guid>
       <description></description>
     </item>
     <item>
       <title>Cycling</title>
-      <link>https://iccycling.github.io/blog/tags/cycling/</link>
+      <link>http://localhost:1313/blog/tags/cycling/</link>
       <pubDate>Thu, 19 Jun 2025 00:00:00 +0000</pubDate>
-      <guid>https://iccycling.github.io/blog/tags/cycling/</guid>
+      <guid>http://localhost:1313/blog/tags/cycling/</guid>
       <description></description>
     </item>
     <item>
       <title>Clothing</title>
-      <link>https://iccycling.github.io/blog/tags/clothing/</link>
+      <link>http://localhost:1313/blog/tags/clothing/</link>
       <pubDate>Wed, 18 Jun 2025 00:00:00 +0000</pubDate>
-      <guid>https://iccycling.github.io/blog/tags/clothing/</guid>
+      <guid>http://localhost:1313/blog/tags/clothing/</guid>
       <description></description>
     </item>
     <item>
       <title>Training</title>
-      <link>https://iccycling.github.io/blog/tags/training/</link>
+      <link>http://localhost:1313/blog/tags/training/</link>
       <pubDate>Mon, 16 Jun 2025 00:00:00 +0000</pubDate>
-      <guid>https://iccycling.github.io/blog/tags/training/</guid>
+      <guid>http://localhost:1313/blog/tags/training/</guid>
       <description></description>
     </item>
     <item>
       <title>Example</title>
-      <link>https://iccycling.github.io/blog/tags/example/</link>
+      <link>http://localhost:1313/blog/tags/example/</link>
       <pubDate>Sun, 18 May 2025 00:00:00 +0000</pubDate>
-      <guid>https://iccycling.github.io/blog/tags/example/</guid>
+      <guid>http://localhost:1313/blog/tags/example/</guid>
       <description></description>
     </item>
   </channel>

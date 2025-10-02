@@ -47,6 +47,8 @@ Feeling uncomfortable at first is normal. You need to build proper pedaling tech
 
 {{< youtube 4qL9ijQutn0 >}}
 
+---
+
 ## Can We Help You with Bike Fitting?
 
 Absolutely. If you're just starting out, our cycling club can support you with basic bike setup advice — no overcomplication, just practical tips based on experience.

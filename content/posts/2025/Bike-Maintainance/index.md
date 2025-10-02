@@ -14,6 +14,8 @@ If you're unsure about how to wash your bike properly, we recommend checking out
 
 {{< youtube id="DifcPmKyPYs" >}}
 
+---
+
 For cleaning, a basic all-purpose household cleaner will do the job. However, be extra careful around your disc brakes—getting any oil on them can ruin braking performance.
 
 Chain cleaning is a bit of a controversial topic. While degreasers will get your chain spotless, some argue they can strip away the internal lubrication. For lubrication, stick with a simple chain oil. Avoid heavy-duty products for very wet conditions — they contain Teflon, which is both environmentally unfriendly and messy. Once applied, it’s almost impossible to clean off.
@@ -21,6 +23,8 @@ Chain cleaning is a bit of a controversial topic. While degreasers will get your
 Other than that, you don’t need fancy care products. Less is often more.
 
 ![Clean bike on a sunny day](wash-bike-unsplash.jpg)
+
+
 
 ## Maintenance & Repairs
 

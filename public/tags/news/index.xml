@@ -2,66 +2,66 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>News on ICCC Blog</title>
-    <link>https://iccycling.github.io/blog/tags/news/</link>
+    <link>http://localhost:1313/blog/tags/news/</link>
     <description>Recent content in News on ICCC Blog</description>
     <generator>Hugo</generator>
     <language>de-DE</language>
     <lastBuildDate>Wed, 01 Oct 2025 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://iccycling.github.io/blog/tags/news/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/blog/tags/news/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>New ICCC Road Kit 2025 Design</title>
-      <link>https://iccycling.github.io/blog/news/2025/kalas-kit-new/</link>
+      <link>http://localhost:1313/blog/news/2025/kalas-kit-new/</link>
       <pubDate>Wed, 01 Oct 2025 00:00:00 +0000</pubDate>
-      <guid>https://iccycling.github.io/blog/news/2025/kalas-kit-new/</guid>
+      <guid>http://localhost:1313/blog/news/2025/kalas-kit-new/</guid>
       <description>ICCC Road Kit 2025 Design now available!</description>
     </item>
     <item>
       <title>Road Tasters Longer Group Ride</title>
-      <link>https://iccycling.github.io/blog/news/2025/road-taster/</link>
+      <link>http://localhost:1313/blog/news/2025/road-taster/</link>
       <pubDate>Wed, 01 Oct 2025 00:00:00 +0000</pubDate>
-      <guid>https://iccycling.github.io/blog/news/2025/road-taster/</guid>
+      <guid>http://localhost:1313/blog/news/2025/road-taster/</guid>
       <description>&lt;strong&gt;Sun. 05 Oct 2025&lt;/strong&gt;: Road Tasters Longer Group Ride</description>
     </item>
     <item>
       <title>Road Tasters Kick-off Ride &amp; Social</title>
-      <link>https://iccycling.github.io/blog/news/2025/road-taster2/</link>
+      <link>http://localhost:1313/blog/news/2025/road-taster2/</link>
       <pubDate>Tue, 30 Sep 2025 00:00:00 +0000</pubDate>
-      <guid>https://iccycling.github.io/blog/news/2025/road-taster2/</guid>
+      <guid>http://localhost:1313/blog/news/2025/road-taster2/</guid>
       <description>&lt;strong&gt;Wed. 01 Oct 2025&lt;/strong&gt;: Road Tasters Kick-off Ride &amp;amp; Social</description>
     </item>
     <item>
       <title>Taster Session at Lee Valley VeloPark</title>
-      <link>https://iccycling.github.io/blog/news/2025/mtb-tasters/</link>
+      <link>http://localhost:1313/blog/news/2025/mtb-tasters/</link>
       <pubDate>Tue, 23 Sep 2025 00:00:00 +0000</pubDate>
-      <guid>https://iccycling.github.io/blog/news/2025/mtb-tasters/</guid>
+      <guid>http://localhost:1313/blog/news/2025/mtb-tasters/</guid>
       <description>&lt;strong&gt;Oct 2025&lt;/strong&gt;: MTB Taster Session at Lee Valley VeloPark Stratford</description>
     </item>
     <item>
       <title>Ride at Peaslake – 4th October</title>
-      <link>https://iccycling.github.io/blog/news/2025/mtb-kickoff/</link>
+      <link>http://localhost:1313/blog/news/2025/mtb-kickoff/</link>
       <pubDate>Mon, 22 Sep 2025 00:00:00 +0000</pubDate>
-      <guid>https://iccycling.github.io/blog/news/2025/mtb-kickoff/</guid>
+      <guid>http://localhost:1313/blog/news/2025/mtb-kickoff/</guid>
       <description>&lt;strong&gt;04 Oct 2025&lt;/strong&gt;: Ride at Peaslake – Intermediate MTB Trip</description>
     </item>
     <item>
       <title>2025 Welcome Fair on campus</title>
-      <link>https://iccycling.github.io/blog/news/2025/welcome-fair/</link>
+      <link>http://localhost:1313/blog/news/2025/welcome-fair/</link>
       <pubDate>Sat, 20 Sep 2025 00:00:00 +0000</pubDate>
-      <guid>https://iccycling.github.io/blog/news/2025/welcome-fair/</guid>
+      <guid>http://localhost:1313/blog/news/2025/welcome-fair/</guid>
       <description>&lt;strong&gt;30 Sept – 01 Oct 2025&lt;/strong&gt;: Welcome Fair on Campus: Find us there&amp;hellip;</description>
     </item>
     <item>
       <title>New Website launched</title>
-      <link>https://iccycling.github.io/blog/news/2025/new-website/</link>
+      <link>http://localhost:1313/blog/news/2025/new-website/</link>
       <pubDate>Sat, 20 Sep 2025 00:00:00 +0000</pubDate>
-      <guid>https://iccycling.github.io/blog/news/2025/new-website/</guid>
+      <guid>http://localhost:1313/blog/news/2025/new-website/</guid>
       <description>&lt;strong&gt;Sept 2025&lt;/strong&gt;: New Website launched</description>
     </item>
     <item>
       <title>How to create a News Post</title>
-      <link>https://iccycling.github.io/blog/news/2025/example-news/</link>
+      <link>http://localhost:1313/blog/news/2025/example-news/</link>
       <pubDate>Fri, 20 Jun 2025 00:00:00 +0000</pubDate>
-      <guid>https://iccycling.github.io/blog/news/2025/example-news/</guid>
+      <guid>http://localhost:1313/blog/news/2025/example-news/</guid>
       <description>&lt;strong&gt;Jun 2025&lt;/strong&gt;: How to create a News Post</description>
     </item>
   </channel>
