@@ -11,15 +11,15 @@ tags: ["News", "Gear"]
 
 🚴‍♂️ **The new ICCC Road Kit 2025 is here!** 🚴‍♀️  
 
-This year’s design includes:  
-- Short sleeve jersey  
-- Long sleeve jersey  
-- Bib shorts  
+This year’s design includes:
+- Short sleeve jersey
+- Long sleeve jersey 
+- Bib shorts
 - Bib tights  
 - Jacket
 - and more
 
-- Best Quality from Kalas
+Professional Quality from Kalas
 
 Check out the full kit and details in the [Gear section](https://iccycling.github.io/gear.html).  
 
