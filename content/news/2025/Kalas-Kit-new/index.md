@@ -16,7 +16,10 @@ This year’s design includes:
 - Long sleeve jersey  
 - Bib shorts  
 - Bib tights  
-- Jacket from Kalas  
+- Jacket
+- and more
+
+- Best Quality from Kalas
 
 Check out the full kit and details in the [Gear section](https://iccycling.github.io/gear.html).  
 
