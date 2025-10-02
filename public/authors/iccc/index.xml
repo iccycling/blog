@@ -2,24 +2,31 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>ICCC on ICCC Blog</title>
-    <link>http://localhost:1313/blog/authors/iccc/</link>
+    <link>https://iccycling.github.io/blog/authors/iccc/</link>
     <description>Recent content in ICCC on ICCC Blog</description>
     <generator>Hugo</generator>
     <language>de-DE</language>
-    <lastBuildDate>Tue, 23 Sep 2025 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/blog/authors/iccc/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 02 Oct 2025 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://iccycling.github.io/blog/authors/iccc/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>2025 Road Kit</title>
+      <link>https://iccycling.github.io/blog/gear/2025/road-jersey/</link>
+      <pubDate>Thu, 02 Oct 2025 00:00:00 +0000</pubDate>
+      <guid>https://iccycling.github.io/blog/gear/2025/road-jersey/</guid>
+      <description>ICCC Road Racing Kit 2025 – New design now ready! Professional Quality by Kalas.</description>
+    </item>
     <item>
       <title>Taster Session at Lee Valley VeloPark</title>
-      <link>http://localhost:1313/blog/news/2025/mtb-tasters/</link>
+      <link>https://iccycling.github.io/blog/news/2025/mtb-tasters/</link>
       <pubDate>Tue, 23 Sep 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/blog/news/2025/mtb-tasters/</guid>
+      <guid>https://iccycling.github.io/blog/news/2025/mtb-tasters/</guid>
       <description>&lt;strong&gt;Oct 2025&lt;/strong&gt;: MTB Taster Session at Lee Valley VeloPark Stratford</description>
     </item>
     <item>
       <title>Ride at Peaslake – 4th October</title>
-      <link>http://localhost:1313/blog/news/2025/mtb-kickoff/</link>
+      <link>https://iccycling.github.io/blog/news/2025/mtb-kickoff/</link>
       <pubDate>Mon, 22 Sep 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/blog/news/2025/mtb-kickoff/</guid>
+      <guid>https://iccycling.github.io/blog/news/2025/mtb-kickoff/</guid>
       <description>&lt;strong&gt;04 Oct 2025&lt;/strong&gt;: Ride at Peaslake – Intermediate MTB Trip</description>
     </item>
   </channel>

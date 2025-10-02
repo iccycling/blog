@@ -1,20 +1,39 @@
 ---
 title: "2025 Road Kit"
-date: 2025-09-16
+date: 2025-10-02
+authors: ["ICCC"]
 draft: false
-featured_image: "des0.png"
+featured_image: "kit25-preview.jpg"
 tags: ["gear"]
-summary: "ICCC Road Racing Kit – Coming Soon! Stylish and high-performance kit for serious riders."
+summary: "ICCC Road Racing Kit 2025 – New design now ready! Professional Quality by Kalas."
 expired: false
 ---
 
-The **ICCC Road Racing Kit** is coming soon! Designed for serious road riders, this kit combines style, comfort, and performance. Perfect for club rides and training sessions, it reflects the spirit of ICCC.
+The **ICCC Road Racing Kit 2025** is here! 🎉  
+The new design is finished and production with **Kalas** is ready – soon you’ll be able to place your orders.  
 
-In the meantime, enjoy some design inspirations from members’ drafts below.
+This year’s kit combines **style, comfort, and performance**:  
+- Short & long sleeve jerseys  
+- Bib shorts & tights  
+- Jacket  
 
-## Gallery: Member Drafts & Inspirations
+👉 If you’re interested in **other items** (e.g. TT skinsuits, warmers, or additional gear in the same design), please get in touch.
 
-{{< gallery-swipe 
-    images="des0.png,icc-kit10.png,bib5.png,des1.jpg,des4.jpg,des6.jpg," 
-    captions="Preview,ICL Essential Jersey (Sportful.com Generator),ICL Essential Bib Shorts (Sportful.com Generator),AI Design,AI Design"  
->}}
+It’s the perfect update for club rides, races, and training sessions.  
+
+## Jerseys & Bib Shorts/Tights
+
+<embed src="GA8-598 Imperial College 25 design.pdf" type="application/pdf" width="100%" height="600px" />
+
+---
+
+## Jacket
+
+<embed src="GA8-620 Imperial College 25 design - Jacket.pdf" type="application/pdf" width="100%" height="600px" />
+
+<br>
+
+---
+
+✨ **Tip:** Interested in the new kit or ready to order?  
+The best way to reach us is **via Instagram** – drop us a message there! 📲
