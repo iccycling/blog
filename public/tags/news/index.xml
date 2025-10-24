@@ -6,8 +6,15 @@
     <description>Recent content in News on ICCC Blog</description>
     <generator>Hugo</generator>
     <language>de-DE</language>
-    <lastBuildDate>Wed, 01 Oct 2025 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 23 Oct 2025 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/blog/tags/news/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>University of London Hill Climb</title>
+      <link>http://localhost:1313/blog/news/2025/hill-climb/</link>
+      <pubDate>Thu, 23 Oct 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/blog/news/2025/hill-climb/</guid>
+      <description>&lt;strong&gt;29 Oct 2025&lt;/strong&gt;: University of London Hill Climb</description>
+    </item>
     <item>
       <title>Road Tasters Longer Group Ride</title>
       <link>http://localhost:1313/blog/news/2025/road-taster/</link>
